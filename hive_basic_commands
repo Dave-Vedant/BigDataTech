@@ -1,0 +1,904 @@
+Script started on Mon 16 Mar 2020 11:11:14 AM PDT
+]0;cloudera@quickstart:~[?1034h[cloudera@quickstart ~]$ k[Khive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> shoe[10G[Kw daba[15G[Kta[16G[K[15G[K[14G[Ktabases;
+OK
+d1
+d2
+d3
+default
+Time taken: 0.85 seconds, Fetched: 4 row(s)
+hive> d[7G[Kcreate database d1 if not exists;'[40G[K
+FAILED: ParseException line 1:19 missing EOF at 'if' near 'd1'
+hive> create daba[17G[K[16G[Ktabase dq[24G[K1;[25G[K if not exit[36G[Ksts;[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G if not exists;[K[24G[23G if not exists;[K[23G[24G[25G[26G[27G[28G[29G[30G[31G[32G[33G[34G[35G[36G[37Gd;[38G[37G;[K[37G ;[38Gd;[39G1;[40G[41G
+OK
+Time taken: 0.071 seconds
+hive> use d2;'[14G[K
+OK
+Time taken: 0.09 seconds
+hive> select * a[16G[Kfrom d2;
+FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'd2'
+hive> create tabe [18G[K[17G[K[16G[Kle[17G[K[16G[Kble if not exists tabe[37G[Kle1;[40G[K(xo[42G[K[41G[K[40G[K 9[41G[K(colw[45G[K1 string,colw arraay[64G[K[63G[K[62G[Kay,[64G[K<a[65G[Kstring. [72G[K[71G[K[70G[Kg.[71G[K>, cow[76G[Kl3[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[58G[57G array<string>, col3[K[57G2 array<string>, col3[58G[59G[60G[61G[62G[63G[64G[65G[66G[67G[68G[69G[70G[71G[72G[73G[74G[75G[76G[77G[78G string, cole[90G[K3[90G[K4 int) row format e[108G[Kdelimited fi[119G[Kields terminated by [138G[K',' collection items terminated by ':' lines terminated by 'm[198G[Kn' stored as tw[212G[Kextfile;
+FAILED: SemanticException 1:190 LINES TERMINATED BY only supports newline '\n' right now. Error encountered near token ''n''
+hive> create table if not exists table1 (col1 string,col2 array<string>, col3 string, col4 int) row format delimited fields terminated by',' collection items terminated by ':' lines terminated by 'n' stored as textfile;[219G[218G[217G[216G[215G[214G[213G[212G[211G[210G[209G[208G[207G[206G[205G[204G[203G[202G[201G[200G[199G[198G\n' stored as textfile;[199G\n' stored as textfile;[200G\n' stored as textfile;[201G\n' stored as textfile;[202G\n' stored as textfile;[203G[202Gn' stored as textfile;[K[202G[201Gn' stored as textfile;[K[201G[200Gn' stored as textfile;[K[200G[199Gn' stored as textfile;[K[199G[198Gn' stored as textfile;[K[198G\n' stored as textfile;[199G[221G
+OK
+Time taken: 0.211 seconds
+hive> 
+    > \
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > \\\\\\\\]\[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K\\\\\\\[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K\\\\\\\\\\\\\\\[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K\\\[9G[K[8G[K[7G[K\[7G[K]0;cloudera@quickstart:~[cloudera@quickstart ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> show table;
+MismatchedTokenException(-1!=103)
+	at org.antlr.runtime.BaseRecognizer.recoverFromMismatchedToken(BaseRecognizer.java:617)
+	at org.antlr.runtime.BaseRecognizer.match(BaseRecognizer.java:115)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.showStatement(HiveParser.java:20995)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:10 mismatched input '<EOF>' expecting EXTENDED near 'table' in show statement
+hive> h[7G[Kshow ta[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kcreate [13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kde[8G[K[7G[Kshow daba[15G[K[14G[Ktabs[17G[Kases;
+OK
+d1
+d2
+d3
+default
+Time taken: 0.349 seconds, Fetched: 4 row(s)
+hive> show tablw[16G[Kes;
+OK
+table2
+table3
+Time taken: 0.125 seconds, Fetched: 2 row(s)
+hive> show tables;[12G[Kdatabases;[12G[Ktable;[12G[Kdatabases;[12G[Ktables;[7G[Kcreate table 1[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kuse d2;
+OK
+Time taken: 0.034 seconds
+hive> tab[9G[K[8G[K[7G[Kcreate table in[21G[Kf not exists table [39G[K4 [40G[K(col1 string, clo[56G[K[55G[Kol2 array<string> [72G[K, col3 string, col4 int)row format delimited fil[119G[Kelds terminated by',',[140G[K collection items terminated by '";[174G[K[173G[K[172G[K':' lines terminated by [195G[K'\n
+    > create table if not exists table4(col1 string, col2 array<string>, col3 string, col4 int)row format delimited fields terminated by',' collection items terminated by ':' lines terminated by'\n' stored as tes[212G[Kxtfile location'home/col[235G[K[234G[Kloud era/Downloads/tabe[18G[K[17G[K[16G[K[15G[Kh[15G[Ktable_hive.txt';
+FAILED: ParseException line 2:131 missing EOF at ',' near ''\n
+create table if not exists table4(col1 string, col2 array<string>, col3 string, col4 int)row format delimited fields terminated by''
+hive> create table if not exists table4(col1 string, col2 array<string>, col3 string, col4 int)row format delimited fields terminated by',' collection items terminated by ':' lines terminated by'\n' stored as textfile location'home/cloudera/Downloads/table_hive.txt';
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. MetaException(message:java.lang.IllegalArgumentException: java.net.URISyntaxException: Relative path in absolute URI: hdfs://quickstart.cloudera:8020./home/cloudera/Downloads/table_hive.txt)
+hive> create table if not exists table4(col1 string, col2 array<string>, col3 string, col4 int)row format delimited fields terminated by',' collection items terminated by ':' lines terminated by'\n' stored as textfile location'home/cloudera/Downloads/table_hive.txt';
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. MetaException(message:java.lang.IllegalArgumentException: java.net.URISyntaxException: Relative path in absolute URI: hdfs://quickstart.cloudera:8020./home/cloudera/Downloads/table_hive.txt)
+hive> show daba[15G[Kt[15G[K[14G[Ktabs[17G[K[16G[Ka[16G[Kbases;
+OK
+d1
+d2
+d3
+default
+Time taken: 0.016 seconds, Fetched: 4 row(s)
+hive> show databases;[7G[Kcreate table if not exists table4(col1 string, col2 array<string>, col3 string, col4 int)row format delimited fields terminated by',' collection items terminated by ':' lines terminated by'\n' stored as textfile location'home/cloudera/Downloads/table_hive.txt';
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. MetaException(message:java.lang.IllegalArgumentException: java.net.URISyntaxException: Relative path in absolute URI: hdfs://quickstart.cloudera:8020./home/cloudera/Downloads/table_hive.txt)
+hive> create table if not exists table4(col1 string, col2 array<string>, col3 string, col4 int)row format delimited fields terminated by',' collection items terminated by ':' lines terminated by'\n' stored as textfile location'home/cloudera/Downloads/table_hive.txt';[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[237G[236G[235G[234G[233G[232G[231G[230G[229G[228G/home/clou dera/Downloads/table_hive.txt';[1A[229G[1B[32G
+OK
+Time taken: 0.413 seconds
+hive> load data into[20G[K[19G[K[18G[K[17G[Klocal inpath'.[30G[K/[30G[K[29G[K '/home/cloudera/Downloads/t[56G[Ktable/[61G[K[60G[K[59G[K[58G[K[57G[K[56G[Khive_b[61G[Ktable.txt' into table table4;
+FAILED: SemanticException Line 1:23 Invalid path ''/home/cloudera/Downloads/hive_table.txt'': No files matching path file:/home/cloudera/Downloads/hive_table.txt
+hive> load data local inpath '/home/cloudera/Downloads/hive_table.txt' into table table4;[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G.txt' into table table4;[K[65G[64G.txt' into table table4;[K[64G[63G.txt' into table table4;[K[63G[62G.txt' into table table4;[K[62G[61G.txt' into table table4;[K[61G[60G.txt' into table table4;[K[60G[59G.txt' into table table4;[K[59G[58G.txt' into table table4;[K[58G[57G.txt' into table table4;[K[57G[56G.txt' into table table4;[K[56Gt.txt' into table table4;[57Ga.txt' into table table4;[58Gb.txt' into table table4;[59Gl.txt' into table table4;[60Ge.txt' into table table4;[61GP.txt' into table table4;[62G[61G.txt' into table table4;[K[61G_.txt' into table table4;[62Gh.txt' into table table4;[63Gi.txt' into table table4;[64Gv.txt' into table table4;[65Ge.txt' into table table4;[66G[90G
+Loading data to table d2.table4
+Table d2.table4 stats: [numFiles=1, totalSize=185]
+OK
+Time taken: 0.833 seconds
+hive> select * from table 2[27G[K[26G[K4;
+OK
+499	["Poole","GBR"]	England	141000
+501	["Blackburn","GBR"]	England	140000
+500	["Bolton","GBR"]	England	139020
+502	["Newport","GBR"]	Wales	139000
+503	["PrestON","GBR"]	England	135000
+504	["Stockport","GBR"]	England	132813
+Time taken: 0.482 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > create table inster[25G[K[24G[K[23G[Kert_table f[33G[K(col1 string, col2 array<string> [65G[K, col3 string);[79G[K stored as textfile;
+OK
+Time taken: 0.087 seconds
+hive> 
+    > 
+    > c[7G[Kinsert into ba[20G[K[19G[Ktable insert_table([37G[K select col1,col2,c0l[57G[K[56G[Ko.[57G[Kl3 from tal[67G[Kble4;
+Query ID = cloudera_20200316122727_c3b16980-1eaf-4195-8bad-b9c0001ad106
+Total jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584300088534_0001, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0001/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0001
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2020-03-16 12:28:00,730 Stage-1 map = 0%,  reduce = 0%
+2020-03-16 12:28:11,423 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.53 sec
+MapReduce Total cumulative CPU time: 1 seconds 530 msec
+Ended Job = job_1584300088534_0001
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/d2.db/insert_table/.hive-staging_hive_2020-03-16_12-27-41_921_3851496570207889858-1/-ext-10000
+Loading data to table d2.insert_table
+Table d2.insert_table stats: [numFiles=1, numRows=6, totalSize=143, rawDataSize=137]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.53 sec   HDFS Read: 3673 HDFS Write: 215 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 530 msec
+OK
+Time taken: 32.163 seconds
+hive> 
+    > select * form [20G[K[19G[K[18G[K[17G[Kfro[19G[K[18G[K[17G[Krom insert_b[28G[Ktable;
+OK
+499	["Poole","GBR"]	England
+501	["Blackburn","GBR"]	England
+500	["Bolton","GBR"]	England
+502	["Newport","GBR"]	Wales
+503	["PrestON","GBR"]	England
+504	["Stockport","GBR"]	England
+Time taken: 0.084 seconds, Fetched: 6 row(s)
+hive> freom[11G[K[10G[K[9G[Kom talbe[16G[K[15G[K[14G[Kble4 insert table Enl[34G[Kgland_tab select col1,col2,col3 where col3 = 'engl[83G[K[82G[K[81G[K[80G[KEngland"[87G[K' insert into table wales_tab s elect t[7G[Kco2[9G[K1,col2[14G[K[13G[K[12G[K[11G[K[10G[K[9G[Kl2[10G[K2[10G[K1, [12G[Kcol2,col3 f[22G[Kj[22G[K=[22G[Kwhere col3 = 'wha[38G[K[37G[K[36G[KWalw[39G[Kes';
+NoViableAltException(136@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.insertClause(HiveParser.java:43006)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.body(HiveParser.java:42132)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleFromStatement(HiveParser.java:40795)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.fromStatement(HiveParser.java:40501)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40168)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:12 cannot recognize input near 'insert' 'table' 'England_tab' in insert clause
+hive> from table4 insert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[117G[116G[115G[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G insert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab se lect col1,col2,col3 where col3 = 'Wales';[K[1A[17G[16G insert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab sel ect col1,col2,col3 where col3 = 'Wales';[K[1A[16G[15G insert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab sele ct col1,col2,col3 where col3 = 'Wales';[K[1A[15Ginsert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab selec t col1,col2,col3 where col3 = 'Wales';[K[1A[15Gnsert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select  col1,col2,col3 where col3 = 'Wales';[K[1A[15Gsert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select  col1,col2,col3 where col3 = 'Wales';[K[1A[15Gert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select c ol1,col2,col3 where col3 = 'Wales';[K[1A[15Grt table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select co l1,col2,col3 where col3 = 'Wales';[K[1A[15Gt table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col 1,col2,col3 where col3 = 'Wales';[K[1A[15G table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1 ,col2,col3 where col3 = 'Wales';[K[1A[15Gtable England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1, col2,col3 where col3 = 'Wales';[K[1A[15Gable England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,c ol2,col3 where col3 = 'Wales';[K[1A[15Gble England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,co l2,col3 where col3 = 'Wales';[K[1A[15Gle England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col 2,col3 where col3 = 'Wales';[K[1A[15Ge England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2 ,col3 where col3 = 'Wales';[K[1A[15G England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2, col3 where col3 = 'Wales';[K[1A[15GEngland_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,c ol3 where col3 = 'Wales';[K[1A[15Gngland_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,co l3 where col3 = 'Wales';[K[1A[15Ggland_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col 3 where col3 = 'Wales';[K[1A[15Gland_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3  where col3 = 'Wales';[K[1A[15Gand_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3  where col3 = 'Wales';[K[1A[15Gnd_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 w here col3 = 'Wales';[K[1A[15Gd_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 wh ere col3 = 'Wales';[K[1A[15G_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 whe re col3 = 'Wales';[K[1A[15Gtab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 wher e col3 = 'Wales';[K[1A[15Gab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where  col3 = 'Wales';[K[1A[15Gb select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where  col3 = 'Wales';[K[1A[15G select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where c ol3 = 'Wales';[K[1A[15Gselect col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where co l3 = 'Wales';[K[1A[15Gelect col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col 3 = 'Wales';[K[1A[15Glect col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3  = 'Wales';[K[1A[15Gect col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3  = 'Wales';[K[1A[15Gct col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 =  'Wales';[K[1A[15Gt col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 =  'Wales';[K[1A[15G col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = ' Wales';[K[1A[15Gcol1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'W ales';[K[1A[15Gol1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wa les';[K[1A[15Gl1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wal es';[K[1A[15G1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wale s';[K[1A[15G,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales ';[K[1A[15Gcol2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales' ;[K[1A[15Gol2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales'; [K[1A[15Gl2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gcol3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gol3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gl3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gwhere col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ghere col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gere col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gre col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ge col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gcol3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gol3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gl3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G= 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15GEngland' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gngland' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ggland' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gland' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gand' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gnd' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gd' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ginsert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gnsert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gsert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Grt into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gt into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G into table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ginto table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gnto table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gto table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Go table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G table wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gtable wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gable wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gble wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gle wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ge wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15G wales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gwales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gales_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gles_tab select col1,col2,col3 where col3 = 'Wales';[K[15Ges_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gs_tab select col1,col2,col3 where col3 = 'Wales';[K[15G_tab select col1,col2,col3 where col3 = 'Wales';[K[15Gtab select col1,col2,col3 where col3 = 'Wales';[K[15Gab select col1,col2,col3 where col3 = 'Wales';[K[15Gb select col1,col2,col3 where col3 = 'Wales';[K[15G select col1,col2,col3 where col3 = 'Wales';[K[15Gselect col1,col2,col3 where col3 = 'Wales';[K[15Gelect col1,col2,col3 where col3 = 'Wales';[K[15Glect col1,col2,col3 where col3 = 'Wales';[K[15Gect col1,col2,col3 where col3 = 'Wales';[K[15Gct col1,col2,col3 where col3 = 'Wales';[K[15Gt col1,col2,col3 where col3 = 'Wales';[K[15G col1,col2,col3 where col3 = 'Wales';[K[15Gcol1,col2,col3 where col3 = 'Wales';[K[15Gol1,col2,col3 where col3 = 'Wales';[K[15Gl1,col2,col3 where col3 = 'Wales';[K[15G1,col2,col3 where col3 = 'Wales';[K[15G,col2,col3 where col3 = 'Wales';[K[15Gcol2,col3 where col3 = 'Wales';[K[15Gol2,col3 where col3 = 'Wales';[K[15Gl2,col3 where col3 = 'Wales';[K[15G2,col3 where col3 = 'Wales';[K[15G,col3 where col3 = 'Wales';[K[15Gcol3 where col3 = 'Wales';[K[15Gol3 where col3 = 'Wales';[K[15Gl3 where col3 = 'Wales';[K[15G3 where col3 = 'Wales';[K[15G where col3 = 'Wales';[K[15Gwhere col3 = 'Wales';[K[15Ghere col3 = 'Wales';[K[15Gere col3 = 'Wales';[K[15Gre col3 = 'Wales';[K[15Ge col3 = 'Wales';[K[15G col3 = 'Wales';[K[15Gcol3 = 'Wales';[K[15Gol3 = 'Wales';[K[15Gl3 = 'Wales';[K[15G3 = 'Wales';[K[15G = 'Wales';[K[15G= 'Wales';[K[15G 'Wales';[K[15G'Wales';[K[15GWales';[K[15Gales';[K[15Gles';[K[15Ges';[K[15Gs';[K[15G';[K[15G;[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kcreate table 
+    > en[8G[K[7G[Kcreate table England_tab (id int[38G[K[37G[K[36G[K[35G[K[34G[K[33G[Kcol1 stinf,[43G[K[42G[Kg,col2 array,[54G[K<string>)[62G[K, col3 string) stored as text til[94G[K[93G[K[92G[Kfile;
+NoViableAltException(241@[184:1: tableName : (db= identifier DOT tab= identifier -> ^( TOK_TABNAME $db $tab) |tab= identifier -> ^( TOK_TABNAME $tab) );])
+	at org.antlr.runtime.DFA.noViableAlt(DFA.java:158)
+	at org.antlr.runtime.DFA.predict(DFA.java:116)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.tableName(HiveParser_FromClauseParser.java:4674)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.tableName(HiveParser.java:44373)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.createTableStatement(HiveParser.java:4656)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2355)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 2:7 cannot recognize input near 'create' 'table' 'England_tab' in table name
+hive> create table England_tab (col1 sting,col2 array<string>, col3 string) stored as text file;[96G[95G[94G[93G[92G[91Gfile;[K[91G[96G
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.type(HiveParser.java:38574)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.colType(HiveParser.java:38339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.columnNameType(HiveParser.java:38039)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.columnNameTypeList(HiveParser.java:36234)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.createTableStatement(HiveParser.java:4840)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2355)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:31 cannot recognize input near 'sting' ',' 'col2' in column type
+hive> create table England_tab (col1 sting,col2 array<string>, col3 string) stored as textfile;[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[84G[85G[86G[87G[88G[89G[90G[91G[92G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[40Gring,col2 array<string>, col3 string) stored as textfile;[41G[97G
+OK
+Time taken: 0.131 seconds
+hive> create table England_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61Gdg>, col3 string) stored as textfile;[62G[61Gg>, col3 string) stored as textfile;[K[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[24G[25G[26G[27G[26G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[26G[25G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[25G[24G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[24G[23G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[23G[22G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[22G[21G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[21G[20G_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[K[20GW_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[21Ga_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[22Gl_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[23Ge_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[24Gs_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[25G[26G[95G
+OK
+Time taken: 0.148 seconds
+hive> create table Wales_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[20G[KEngland_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[40G[King,col2 array<string>, col3 string) stored as textfile;[91G[K file;[20G[K[7G[Kfrom table4 insert table England_tab select col1,col2,col3 where col3 = 'England' insert into table wales_tab select col1,col2,col3 where col3 = 'Wales';[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[117G[116G[115G[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[105G[106G[107G[108G[107Gales_tab se lect col1,col2,col3 where col3 = 'Wales';[K[1A[107GWales_tab s elect col1,col2,col3 where col3 = 'Wales';[1A[108G[1B[43G
+NoViableAltException(136@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.insertClause(HiveParser.java:43006)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.body(HiveParser.java:42132)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleFromStatement(HiveParser.java:40795)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.fromStatement(HiveParser.java:40501)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40168)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:12 cannot recognize input near 'insert' 'table' 'England_tab' in insert clause
+hive> from table4 insert table England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_tab select col1,col2,col3 where col3 = 'Wales';[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[117G[116G[115G[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26Gitable England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_tab  select col1,col2,col3 where col3 = 'Wales';[1A[27Gntable England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_tab  select col1,col2,col3 where col3 = 'Wales';[1A[28Gttable England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_ta b select col1,col2,col3 where col3 = 'Wales';[1A[29Gotable England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_t ab select col1,col2,col3 where col3 = 'Wales';[1A[30G table England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_ tab select col1,col2,col3 where col3 = 'Wales';[1A[31G[32G[33G[34G[35G[36G[37G[38G[1B[48G
+Query ID = cloudera_20200316130000_6bf0610b-c621-437d-b7cd-ffdfa9a9d772
+Total jobs = 5
+Launching Job 1 out of 5
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584300088534_0002, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0002/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0002
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 0
+2020-03-16 13:00:20,648 Stage-2 map = 0%,  reduce = 0%
+2020-03-16 13:00:37,664 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 3.48 sec
+MapReduce Total cumulative CPU time: 3 seconds 480 msec
+Ended Job = job_1584300088534_0002
+Stage-5 is selected by condition resolver.
+Stage-4 is filtered out by condition resolver.
+Stage-6 is filtered out by condition resolver.
+Stage-11 is selected by condition resolver.
+Stage-10 is filtered out by condition resolver.
+Stage-12 is filtered out by condition resolver.
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/d2.db/england_tab/.hive-staging_hive_2020-03-16_13-00-00_459_7581027259772921113-1/-ext-10000
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/d2.db/wales_tab/.hive-staging_hive_2020-03-16_13-00-00_459_7581027259772921113-1/-ext-10002
+Loading data to table d2.england_tab
+Loading data to table d2.wales_tab
+Table d2.england_tab stats: [numFiles=1, numRows=0, totalSize=121, rawDataSize=0]
+Table d2.wales_tab stats: [numFiles=1, numRows=0, totalSize=22, rawDataSize=0]
+MapReduce Jobs Launched: 
+Stage-Stage-2: Map: 1   Cumulative CPU: 3.48 sec   HDFS Read: 5041 HDFS Write: 282 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 480 msec
+OK
+Time taken: 40.898 seconds
+hive> 
+    >   
+    >   [7G[Kfrom table4 insert into table England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_tab select col1,col2,col3 where col3 = 'Wales';[1A[26G[K[K[B[2K[Atable England_tab select col1,col2,col3 where col3 = 'England' insert into table Wales_tab select col1,col2,col3 where col3 = 'Wales';[1A[7G[K[K[B[2K[Acreate table Wales_tab (col1 string,col2 array<string>, col3 string) stored as textfile;[94G[K[93G[K[92G[K[91G[K[90G[K[89G[K[88G[K[87G[K[86G[K[85G[K[84G[K[83G[K[82G[K[81G[K[80G[K[79G[K[78G[K[77G[K[76G[K[75G[K[74G[K[73G[K[72G[K[71G[K[70G[K[69G[K[68G[K[67G[K[66G[K[65G[K[64G[K[63G[K[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kselect* for[17G[K[16G[K[15G[K[14G[K[13G[K[12G[Kt * fo[17G[Krom England_tab
+    > select * from England_tab;
+FAILED: ParseException line 3:0 missing EOF at 'select' near 'England_tab'
+hive> seect ([13G[K*[13G[K[12G[K[11G[K[10G[K[9G[Klect * from England_tab;
+OK
+499	["Poole","GBR"]	England
+501	["Blackburn","GBR"]	England
+500	["Bolton","GBR"]	England
+503	["PrestON","GBR"]	England
+504	["Stockport","GBR"]	England
+Time taken: 0.097 seconds, Fetched: 5 row(s)
+hive> select * from Wal[23G[K[22G[Kales_tab;
+OK
+502	["Newport","GBR"]	Wales
+Time taken: 0.103 seconds, Fetched: 1 row(s)
+hive> selecgt [14G[K[13G[K[12G[Kt * from Wales_tab;
+OK
+502	["Newport","GBR"]	Wales
+Time taken: 0.124 seconds, Fetched: 1 row(s)
+hive>   [8G[K[7G[Kddes[10G[K[9G[K[8G[Kesc table3;[18G[K[17G[K4;
+OK
+col1                	string              	                    
+col2                	array<string>       	                    
+col3                	string              	                    
+col4                	int                 	                    
+Time taken: 0.175 seconds, Fetched: 4 row(s)
+hive> alter table table4 add colun[34G[Kmns (col4 string, col5 int);
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. Duplicate column name: col4
+hive> alter table table4 add columns (col4 string, col5 int);[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[42G[43G[42G string, col5 int);[K[42G5 string, col5 int);[43G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[55G int);[K[55G6 int);[56G[62G
+OK
+Time taken: 0.221 seconds
+hive> alter table table4 cange[30G[K[29G[K[28G[K[27G[Khabe[30G[K[29G[Kge[30G[K[29G[Kgn[30G[K[29G[Knge col[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kalter table tal[21G[Kble4 changec[32G[K col1 col1 after t[49G[Kcol3;
+NoViableAltException(29@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.type(HiveParser.java:38574)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.colType(HiveParser.java:38339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatementSuffixRenameCol(HiveParser.java:9844)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTblPartitionStatementSuffix(HiveParser.java:8252)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTableStatementSuffix(HiveParser.java:7882)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6936)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:36 cannot recognize input near 'after' 'col3' '<EOF>' in column type
+hive> alter table table4 change col1 col1 after col3;[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kselect * from col[23G[K[22G[K[21G[Ktable4;
+OK
+499	["Poole","GBR"]	England	141000	NULL	NULL
+501	["Blackburn","GBR"]	England	140000	NULL	NULL
+500	["Bolton","GBR"]	England	139020	NULL	NULL
+502	["Newport","GBR"]	Wales	139000	NULL	NULL
+503	["PrestON","GBR"]	England	135000	NULL	NULL
+504	["Stockport","GBR"]	England	132813	NULL	NULL
+Time taken: 0.125 seconds, Fetched: 6 row(s)
+hive> set hive.cli.print.header- t[34G[K[33G[K[32G[K= ture;
+hive> set hive.cli.print.header= ture;[9G[Klect * from table4;
+OK
+499	["Poole","GBR"]	England	141000	NULL	NULL
+501	["Blackburn","GBR"]	England	140000	NULL	NULL
+500	["Bolton","GBR"]	England	139020	NULL	NULL
+502	["Newport","GBR"]	Wales	139000	NULL	NULL
+503	["PrestON","GBR"]	England	135000	NULL	NULL
+504	["Stockport","GBR"]	England	132813	NULL	NULL
+Time taken: 0.082 seconds, Fetched: 6 row(s)
+hive> select * from table4;[9G[Kt hive.cli.print.header= ture;[9G[Klect * from table4;[7G[Kalter table table4 change col1 col1 after col3;
+NoViableAltException(29@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.type(HiveParser.java:38574)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.colType(HiveParser.java:38339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatementSuffixRenameCol(HiveParser.java:9844)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTblPartitionStatementSuffix(HiveParser.java:8252)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTableStatementSuffix(HiveParser.java:7882)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6936)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:36 cannot recognize input near 'after' 'col3' '<EOF>' in column type
+hive> alter table table4 change col1 col1 after col3;<<[55G[K[54G[K[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[43Giafter col3;[44Gnafter col3;[45Gtafter col3;[46G after col3;[47G[58G
+OK
+Time taken: 0.301 seconds
+hive> alter table table4 change col1 col1 int after col3;[43G[Kafter col3;[7G[Kselect * from table4;
+OK
+["499"]	Poole:GBR	NULL	141000	NULL	NULL
+["501"]	Blackburn:GBR	NULL	140000	NULL	NULL
+["500"]	Bolton:GBR	NULL	139020	NULL	NULL
+["502"]	Newport:GBR	NULL	139000	NULL	NULL
+["503"]	PrestON:GBR	NULL	135000	NULL	NULL
+["504"]	Stockport:GBR	NULL	132813	NULL	NULL
+Time taken: 0.091 seconds, Fetched: 6 row(s)
+hive> desc col[14G[K[13G[K[12G[Ktable4;
+OK
+col2                	array<string>       	                    
+col3                	string              	                    
+col1                	int                 	                    
+col4                	int                 	                    
+col5                	string              	                    
+col6                	int                 	                    
+Time taken: 0.153 seconds, Fetched: 6 row(s)
+hive> alter table g[19G[Ktable4 chagn[30G[K[29G[Knge col2 [37G[K[36G[K1 [37G[K[36G[K2 p[38G[Kcodes after col3;
+NoViableAltException(29@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.type(HiveParser.java:38574)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.colType(HiveParser.java:38339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatementSuffixRenameCol(HiveParser.java:9844)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTblPartitionStatementSuffix(HiveParser.java:8252)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTableStatementSuffix(HiveParser.java:7882)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6936)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:37 cannot recognize input near 'after' 'col3' '<EOF>' in column type
+hive> alter table table4 change col2 codes after col3;[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44Gaafter col3;[45Grafter col3;[46Grafter col3;[47Gaafter col3;[48Gyafter col3;[49G<after col3;[50Gsafter col3;[51Gtafter col3;[52Grafter col3;[53Giafter col3;[54Gnafter col3;[55Ggafter col3;[56G>after col3;[57G after col3;[58G[69G
+OK
+Time taken: 0.152 seconds
+hive> select * form table [26G[K4;
+FAILED: ParseException line 1:9 missing EOF at 'form' near '*'
+hive> seel[10G[K[9G[Klect ([14G[K* from table3;[27G[K[26G[K4;
+OK
+499	["Poole","GBR"]	NULL	141000	NULL	NULL
+501	["Blackburn","GBR"]	NULL	140000	NULL	NULL
+500	["Bolton","GBR"]	NULL	139020	NULL	NULL
+502	["Newport","GBR"]	NULL	139000	NULL	NULL
+503	["PrestON","GBR"]	NULL	135000	NULL	NULL
+504	["Stockport","GBR"]	NULL	132813	NULL	NULL
+Time taken: 0.073 seconds, Fetched: 6 row(s)
+hive> ca[8G[K[7G[Kalter table4 raname to information;
+NoViableAltException(31@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6899)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'alter' 'table4' 'raname' in alter statement
+hive> alter table4 raname to information;[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G  table4 raname to information;[13Gt table4 raname to information;[14Ga table4 raname to information;[15Gl table4 raname to information;[16G[15G table4 raname to information;[K[15Gb table4 raname to information;[16Gl table4 raname to information;[17Ge table4 raname to information;[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[30G[31G[32G[33G[34G[35G[36G[37G[38G[39G[40G[41G[42G[43G[44G[45G[48G
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTableStatementSuffix(HiveParser.java:7678)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6936)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:19 cannot recognize input near 'raname' 'to' 'information' in alter table statement
+hive> alter table table4 raname to information;[47G[48G[47G[48G[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[Krm;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTableStatementSuffix(HiveParser.java:7678)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6936)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:19 cannot recognize input near 'raname' 'to' 'inform' in alter table statement
+hive> alter table table4 raname to inform;[42G[Kation;[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kal[8G[K[7G[K
+    > 
+    > alter table table4 rename to information;
+OK
+Time taken: 0.195 seconds
+hive> select * from information;
+OK
+499	["Poole","GBR"]	NULL	141000	NULL	NULL
+501	["Blackburn","GBR"]	NULL	140000	NULL	NULL
+500	["Bolton","GBR"]	NULL	139020	NULL	NULL
+502	["Newport","GBR"]	NULL	139000	NULL	NULL
+503	["PrestON","GBR"]	NULL	135000	NULL	NULL
+504	["Stockport","GBR"]	NULL	132813	NULL	NULL
+Time taken: 0.088 seconds, Fetched: 6 row(s)
+hive> select * from information;
+OK
+499	["Poole","GBR"]	NULL	141000	NULL	NULL
+501	["Blackburn","GBR"]	NULL	140000	NULL	NULL
+500	["Bolton","GBR"]	NULL	139020	NULL	NULL
+502	["Newport","GBR"]	NULL	139000	NULL	NULL
+503	["PrestON","GBR"]	NULL	135000	NULL	NULL
+504	["Stockport","GBR"]	NULL	132813	NULL	NULL
+Time taken: 0.099 seconds, Fetched: 6 row(s)
+hive> rr[8G[K[7G[Kalter table table [24G[K4 [25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[Kble information replace colun[43G[Kmns ( No string, List array<stiri[75G[K[74G[K[73G[Kring> p[79G[KPopulation string;[96G[K);
+MismatchedTokenException(26!=296)
+	at org.antlr.runtime.BaseRecognizer.recoverFromMismatchedToken(BaseRecognizer.java:617)
+	at org.antlr.runtime.BaseRecognizer.match(BaseRecognizer.java:115)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatementSuffixAddCol(HiveParser.java:9638)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTblPartitionStatementSuffix(HiveParser.java:8267)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterTableStatementSuffix(HiveParser.java:7882)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.alterStatement(HiveParser.java:6936)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2400)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:72 mismatched input 'Population' expecting ) near '>' in add column statement
+hive> alter table information replace columns ( No string, List array<string> Population string);[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G Population string);[K[77G, Population string);[78G[98G
+FAILED: ParseException line 1:70 missing > at ',' near '<EOF>'
+hive> alter table information replace columns ( No string, List array<string, Population string);[7G[K
+    > 
+    > alter table information replace columns ( No string, List array<string, Population string);[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[47G[48G[49G[48GNo string, List array<string, Population string);[K[48G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[41G[42G[43G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G[59G[60G[61G[62G[63G[64G[65G[66G[67G[68G[69G[70G[71G[72G[73G[74G[75G[76G[75G, Population string);[K[75Gg, Population string);[76G>, Population string);[77G[98G
+OK
+Time taken: 0.128 seconds
+hive> select * from information;
+OK
+499	["Poole","GBR"]	England
+501	["Blackburn","GBR"]	England
+500	["Bolton","GBR"]	England
+502	["Newport","GBR"]	Wales
+503	["PrestON","GBR"]	England
+504	["Stockport","GBR"]	England
+Time taken: 0.089 seconds, Fetched: 6 row(s)
+hive> hive [11G[K[10G[K[9G[K[8G[K[7G[Kset hive.clo[18G[Ki.print.header - [34G[K[33G[K= true;
+hive> set hive.cli.print.header = true;[9G[Klect * from information;
+OK
+information.no	information.list	information.population
+499	["Poole","GBR"]	England
+501	["Blackburn","GBR"]	England
+500	["Bolton","GBR"]	England
+502	["Newport","GBR"]	Wales
+503	["PrestON","GBR"]	England
+504	["Stockport","GBR"]	England
+Time taken: 0.072 seconds, Fetched: 6 row(s)
+hive> show data[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K
+    > 
+    > select col3 [18G[K[17G[K[16G[K[15G[K[14G[Kpopulation from information orderde [49G[K[48G[K[47G[K by col[53G[K[52G[K[51G[Kpopulation;
+Query ID = cloudera_20200316144040_c91c6c0c-a40a-4fb1-8001-60ac2d854764
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584300088534_0003, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0003/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0003
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2020-03-16 14:40:57,455 Stage-1 map = 0%,  reduce = 0%
+2020-03-16 14:41:08,509 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.37 sec
+2020-03-16 14:41:22,907 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.27 sec
+MapReduce Total cumulative CPU time: 3 seconds 270 msec
+Ended Job = job_1584300088534_0003
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.27 sec   HDFS Read: 5838 HDFS Write: 46 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 270 msec
+OK
+population
+England
+England
+England
+England
+England
+Wales
+Time taken: 41.595 seconds, Fetched: 6 row(s)
+hive> select population from information order by population;[61G[K limit 3;
+Query ID = cloudera_20200316144343_00a15f20-bdb7-4204-ad45-41dbb20fc7f5
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584300088534_0004, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0004/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0004
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2020-03-16 14:43:22,457 Stage-1 map = 0%,  reduce = 0%
+Interrupting... Be patient, this might take some time.
+Press Ctrl+C again to kill JVM
+killing job with: job_1584300088534_0004
+2020-03-16 14:43:31,534 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1584300088534_0004 with errors
+Error during job, obtaining debugging information...
+Job Tracking URL: http://quickstart.cloudera:8088/proxy/application_1584300088534_0004/
+Examining task ID: task_1584300088534_0004_m_000000 (and more) from job job_1584300088534_0004
+
+Task with the most failures(1): 
+-----
+Task ID:
+  task_1584300088534_0004_m_000000
+
+URL:
+  http://0.0.0.0:8088/taskdetails.jsp?jobid=job_1584300088534_0004&tipid=task_1584300088534_0004_m_000000
+-----
+Diagnostic Messages for this Task:
+Task KILL is received. Killing attempt!
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   HDFS Read: 0 HDFS Write: 0 FAIL
+Total MapReduce CPU Time Spent: 0 msec
+hive> select population from information order by population limit 3;
+Query ID = cloudera_20200316144343_3ff0955d-834c-4cd3-b30c-e56d05c9de81
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584300088534_0005, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0005/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0005
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2020-03-16 14:43:57,639 Stage-1 map = 0%,  reduce = 0%
+2020-03-16 14:44:08,744 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.48 sec
+2020-03-16 14:44:22,250 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.34 sec
+MapReduce Total cumulative CPU time: 3 seconds 340 msec
+Ended Job = job_1584300088534_0005
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.34 sec   HDFS Read: 5988 HDFS Write: 24 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 340 msec
+OK
+population
+England
+England
+England
+Time taken: 38.465 seconds, Fetched: 3 row(s)
+hive> see[9G[Klect c[14G[K[13G[K p[14G[Kl[14G[Ks[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kselect ^ [15G[K[14G[K^[14G[K* from information;
+OK
+information.no	information.list	information.population
+499	["Poole","GBR"]	England
+501	["Blackburn","GBR"]	England
+500	["Bolton","GBR"]	England
+502	["Newport","GBR"]	Wales
+503	["PrestON","GBR"]	England
+504	["Stockport","GBR"]	England
+Time taken: 0.084 seconds, Fetched: 6 row(s)
+hive> select list from information sort by i[44G[Klist [48G[K;
+Query ID = cloudera_20200316144545_982dc67d-06db-44ca-a0ec-40de251b5188
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584300088534_0006, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0006/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0006
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2020-03-16 14:45:37,413 Stage-1 map = 0%,  reduce = 0%
+2020-03-16 14:45:47,226 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.16 sec
+2020-03-16 14:46:00,544 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.13 sec
+MapReduce Total cumulative CPU time: 3 seconds 130 msec
+Ended Job = job_1584300088534_0006
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.13 sec   HDFS Read: 6042 HDFS Write: 73 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 130 msec
+OK
+list
+["Blackburn","GBR"]
+["Bolton","GBR"]
+["Newport","GBR"]
+["Poole","GBR"]
+["PrestON","GBR"]
+["Stockport","GBR"]
+Time taken: 36.999 seconds, Fetched: 6 row(s)
+hive> seect list from infr=o[28G[K[27G[K[26G[Kormation cluster by list [50G[K;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'seect' 'list' 'from'
+hive> seect list from information cluster by list;[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G eect list from information cluster by list;[9G[8Geect list from information cluster by list;[K[8G[9Glect list from information cluster by list;[10G[52G
+Query ID = cloudera_20200316144848_35b268ff-6a26-4efc-99a5-4ae2d8e46acd
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584300088534_0007, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0007/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0007
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2020-03-16 14:48:42,550 Stage-1 map = 0%,  reduce = 0%
+2020-03-16 14:48:52,312 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.17 sec
+2020-03-16 14:49:06,918 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.28 sec
+MapReduce Total cumulative CPU time: 3 seconds 280 msec
+Ended Job = job_1584300088534_0007
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.28 sec   HDFS Read: 6067 HDFS Write: 73 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 280 msec
+OK
+list
+["Blackburn","GBR"]
+["Bolton","GBR"]
+["Newport","GBR"]
+["Poole","GBR"]
+["PrestON","GBR"]
+["Stockport","GBR"]
+Time taken: 37.233 seconds, Fetched: 6 row(s)
+hive> select ([14G[K* from table 3;[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[Kinformation;
+OK
+information.no	information.list	information.population
+499	["Poole","GBR"]	England
+501	["Blackburn","GBR"]	England
+500	["Bolton","GBR"]	England
+502	["Newport","GBR"]	Wales
+503	["PrestON","GBR"]	England
+504	["Stockport","GBR"]	England
+Time taken: 0.072 seconds, Fetched: 6 row(s)
+hive> exit[10G[K[9G[K[8G[K[7G[K]0;cloudera@quickstart:~[cloudera@quickstart ~]$ exit
+exit
+
+Script done on Mon 16 Mar 2020 02:50:35 PM PDT
