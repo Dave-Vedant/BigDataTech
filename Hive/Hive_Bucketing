@@ -1,0 +1,2527 @@
+Script started on Fri 20 Mar 2020 03:22:06 PM PDT
+]0;cloudera@quickstart:~[?1034h[cloudera@quickstart ~]$ hv[Kive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> set hi[12G[K[11G[Khive.enforce.vu[25G[K[24G[Kbuch[27G[Kketing = true;
+hive> set hive.exec.dynai[25G[Kmic.partition.mofe[42G[K[41G[Kde = nonstrict;
+hive> s[7G[Kuse d2;
+OK
+Time taken: 0.553 seconds
+hive> select * from table11;
+OK
+10	Accounts	Edouard	2384
+40	HR	Teddy	3747
+10	Accounts	Paloma	3833
+40	HR	Ana	3603
+20	Sales	Claudette	2084
+40	HR	Naoko	2698
+10	Accounts	Bill	2582
+10	Accounts	Miwa	2002
+10	Accounts	Claudette	3836
+10	Accounts	Gordon	3906
+20	Sales	Juan	2627
+20	Sales	Harvey	2655
+10	Accounts	Kaori	2353
+20	Sales	Alex	2038
+20	Sales	Harvey	2316
+20	Sales	Lorenzo	3451
+30	Marketing	Ophelia	3808
+40	HR	Danielle	3613
+10	Accounts	Odette	3488
+30	Marketing	Paula	2921
+10	Accounts	Omar	2783
+20	Sales	Chiaki	2306
+10	Accounts	Isabel	3932
+30	Marketing	Fabian	2475
+10	Accounts	Maria	2920
+30	Marketing	Barry	2442
+20	Sales	Ana	3744
+40	HR	Hanna	2916
+10	Accounts	Harvey	2749
+40	HR	Barry	2564
+20	Sales	Naoko	2093
+40	HR	Kirk	2304
+10	Accounts	Charley	2797
+20	Sales	Fay	2883
+40	HR	Lili	3233
+40	HR	Pablo	2909
+40	HR	Miyako	3705
+10	Accounts	Otto	2904
+30	Marketing	Paula	3699
+40	HR	Sayuri	3511
+30	Marketing	Sally	3011
+30	Marketing	Emi	2751
+40	HR	Chantal	2990
+20	Sales	Tammy	2914
+20	Sales	Sayuri	3113
+30	Marketing	Nicholas	2460
+10	Accounts	Olga	2906
+20	Sales	Paula	3141
+40	HR	Nana	2137
+40	HR	Jeanne	2412
+10	Accounts	Iris	2663
+40	HR	Henri	3167
+30	Marketing	Maria	2886
+30	Marketing	Walter	2344
+10	Accounts	Karen	3747
+40	HR	Olga	3676
+30	Marketing	Mieko	2349
+40	HR	Rafael	3124
+10	Accounts	Wilfred	3240
+40	HR	Dennis	2448
+40	HR	Arlene	2982
+30	Marketing	Walter	2032
+30	Marketing	Hermine	2888
+20	Sales	Nanaho	2311
+10	Accounts	Rene	3638
+30	Marketing	Mindy	3002
+20	Sales	Barry	2602
+30	Marketing	Shary	2794
+30	Marketing	Nadine	2956
+40	HR	Franklin	3000
+10	Accounts	Alex	3716
+30	Marketing	Wendy	3683
+20	Sales	Valerie	3873
+20	Sales	Itoe	2060
+30	Marketing	Gordon	3773
+30	Marketing	Pablo	3873
+30	Marketing	Vince	3622
+40	HR	Isabel	3871
+10	Accounts	Youko	3012
+30	Marketing	Nate	2835
+20	Sales	Felix	2182
+30	Marketing	Nana	2787
+20	Sales	Patty	3200
+40	HR	Michael	3010
+10	Accounts	Juan	3332
+20	Sales	Isabel	2503
+30	Marketing	Yumi	3514
+40	HR	Florence	2415
+40	HR	Odette	2935
+10	Accounts	Emily	3256
+40	HR	Patty	3268
+30	Marketing	Frances	2529
+20	Sales	Felix	2617
+10	Accounts	Rose	3303
+40	HR	Etsuko	2572
+40	HR	Grace	2648
+40	HR	Wilfred	3964
+20	Sales	Lorenzo	2592
+20	Sales	Barry	2346
+40	HR	Nicole	3805
+30	Marketing	Walter	2359
+30	Marketing	Gordon	3707
+20	Sales	Peter	3043
+30	Marketing	Youko	3823
+40	HR	Larry	3686
+40	HR	Lili	3587
+30	Marketing	Rita	2501
+30	Marketing	Wilfred	2904
+30	Marketing	Youko	3179
+30	Marketing	Hermine	3639
+10	Accounts	Kaori	3896
+10	Accounts	Wendy	2668
+10	Accounts	Alberto	3509
+40	HR	Kate	2219
+40	HR	Nadine	2437
+30	Marketing	Paloma	2184
+40	HR	Itoe	2423
+20	Sales	Paloma	3119
+20	Sales	Alberto	2508
+30	Marketing	Fabian	3899
+30	Marketing	Helene	2425
+30	Marketing	Ernesto	3136
+10	Accounts	Dean	3266
+10	Accounts	Danielle	3552
+30	Marketing	Beryl	3615
+10	Accounts	Nana	3653
+40	HR	Teresa	2121
+20	Sales	Mindy	3866
+30	Marketing	Yumi	2769
+20	Sales	Walter	2448
+20	Sales	Wilfred	3539
+40	HR	Rafael	3696
+30	Marketing	Bertha	2015
+30	Marketing	Reina	3458
+40	HR	Hitomi	3352
+30	Marketing	Aki	2156
+20	Sales	Rene	2639
+30	Marketing	Isidore	2777
+40	HR	Joyce	3868
+10	Accounts	Gabielle	3615
+30	Marketing	Kirk	3430
+40	HR	Katrina	3015
+20	Sales	Vince	3164
+10	Accounts	Shary	2721
+20	Sales	Chantal	3320
+40	HR	Walter	3810
+40	HR	Odette	3788
+30	Marketing	Jose	3927
+40	HR	Teddy	3285
+40	HR	Kate	2389
+20	Sales	Sally	2696
+30	Marketing	Lili	3471
+20	Sales	Nicholas	3669
+10	Accounts	Isaac	2192
+30	Marketing	Teresa	3934
+30	Marketing	Jose	2384
+40	HR	Miyako	3367
+20	Sales	Michael	3784
+10	Accounts	Emi	3071
+20	Sales	Rene	2409
+10	Accounts	Karen	3690
+20	Sales	Nicholas	2088
+30	Marketing	Miwa	3549
+20	Sales	Tanya	2998
+10	Accounts	Omar	2447
+20	Sales	Nana	2275
+30	Marketing	Allison	2979
+40	HR	Lorenzo	2247
+20	Sales	Stan	2281
+20	Sales	Kate	3364
+20	Sales	Leslie	3937
+10	Accounts	Dolly	3610
+20	Sales	Rebekah	3547
+10	Accounts	Helene	2488
+10	Accounts	Josephine	2372
+40	HR	Claudette	2792
+20	Sales	Michelle	2109
+30	Marketing	Beryl	3608
+20	Sales	Lili	3521
+40	HR	Bertha	2665
+30	Marketing	Jeanne	2844
+40	HR	Grace	2815
+40	HR	Vince	2630
+30	Marketing	Sandy	2602
+10	Accounts	Noel	3298
+40	HR	Otto	3228
+30	Marketing	Cindy	2946
+30	Marketing	Virginie	3967
+30	Marketing	Michiyo	2838
+40	HR	Allison	3010
+30	Marketing	Bertha	3456
+10	Accounts	Hanna	3076
+40	HR	Isaac	2774
+10	Accounts	Hanna	3017
+10	Accounts	Kaori	3362
+10	Accounts	Gustav	3106
+20	Sales	Erika	2384
+40	HR	Larry	2189
+30	Marketing	Rene	2569
+10	Accounts	Michael	3858
+10	Accounts	Rita	2955
+30	Marketing	Gaston	2174
+10	Accounts	Michael	3780
+20	Sales	Juan	3995
+30	Marketing	Michiyo	2358
+40	HR	Nana	2379
+40	HR	Ophelia	3988
+40	HR	Frances	2339
+30	Marketing	Claudette	3491
+40	HR	Naoko	2698
+10	Accounts	Bill	2582
+10	Accounts	Miwa	2002
+10	Accounts	Claudette	3836
+10	Accounts	Gordon	3906
+20	Sales	Juan	2627
+20	Sales	Harvey	2655
+10	Accounts	Kaori	2353
+20	Sales	Alex	2038
+20	Sales	Harvey	2316
+20	Sales	Lorenzo	3451
+30	Marketing	Ophelia	3808
+40	HR	Danielle	3613
+10	Accounts	Odette	3488
+30	Marketing	Paula	2921
+10	Accounts	Omar	2783
+20	Sales	Chiaki	2306
+10	Accounts	Isabel	3932
+30	Marketing	Fabian	2475
+10	Accounts	Maria	2920
+30	Marketing	Barry	2442
+20	Sales	Ana	3744
+40	HR	Hanna	2916
+10	Accounts	Harvey	2749
+40	HR	Barry	2564
+20	Sales	Naoko	2093
+40	HR	Kirk	2304
+10	Accounts	Charley	2797
+20	Sales	Fay	2883
+40	HR	Lili	3233
+40	HR	Pablo	2909
+40	HR	Miyako	3705
+10	Accounts	Otto	2904
+30	Marketing	Paula	3699
+40	HR	Sayuri	3511
+30	Marketing	Sally	3011
+30	Marketing	Emi	2751
+40	HR	Chantal	2990
+20	Sales	Tammy	2914
+20	Sales	Sayuri	3113
+30	Marketing	Nicholas	2460
+10	Accounts	Olga	2906
+20	Sales	Paula	3141
+40	HR	Nana	2137
+40	HR	Jeanne	2412
+10	Accounts	Iris	2663
+40	HR	Henri	3167
+30	Marketing	Maria	2886
+30	Marketing	Walter	2344
+10	Accounts	Karen	3747
+40	HR	Olga	3676
+30	Marketing	Mieko	2349
+40	HR	Rafael	3124
+10	Accounts	Wilfred	3240
+40	HR	Dennis	2448
+40	HR	Arlene	2982
+30	Marketing	Walter	2032
+30	Marketing	Hermine	2888
+20	Sales	Nanaho	2311
+10	Accounts	Rene	3638
+30	Marketing	Mindy	3002
+20	Sales	Barry	2602
+30	Marketing	Shary	2794
+30	Marketing	Nadine	2956
+40	HR	Franklin	3000
+10	Accounts	Alex	3716
+30	Marketing	Wendy	3683
+20	Sales	Valerie	3873
+20	Sales	Itoe	2060
+30	Marketing	Gordon	3773
+30	Marketing	Pablo	3873
+30	Marketing	Vince	3622
+40	HR	Isabel	3871
+10	Accounts	Youko	3012
+30	Marketing	Nate	2835
+20	Sales	Felix	2182
+30	Marketing	Nana	2787
+20	Sales	Patty	3200
+40	HR	Michael	3010
+10	Accounts	Juan	3332
+20	Sales	Isabel	2503
+30	Marketing	Yumi	3514
+40	HR	Florence	2415
+40	HR	Odette	2935
+10	Accounts	Emily	3256
+40	HR	Patty	3268
+30	Marketing	Frances	2529
+20	Sales	Felix	2617
+10	Accounts	Rose	3303
+40	HR	Etsuko	2572
+40	HR	Grace	2648
+40	HR	Wilfred	3964
+20	Sales	Lorenzo	2592
+20	Sales	Barry	2346
+40	HR	Nicole	3805
+30	Marketing	Walter	2359
+30	Marketing	Gordon	3707
+20	Sales	Peter	3043
+30	Marketing	Youko	3823
+40	HR	Larry	3686
+40	HR	Lili	3587
+30	Marketing	Rita	2501
+30	Marketing	Wilfred	2904
+30	Marketing	Youko	3179
+30	Marketing	Hermine	3639
+10	Accounts	Kaori	3896
+10	Accounts	Wendy	2668
+10	Accounts	Alberto	3509
+40	HR	Kate	2219
+40	HR	Nadine	2437
+30	Marketing	Paloma	2184
+40	HR	Itoe	2423
+20	Sales	Paloma	3119
+20	Sales	Alberto	2508
+30	Marketing	Fabian	3899
+30	Marketing	Helene	2425
+30	Marketing	Ernesto	3136
+10	Accounts	Dean	3266
+10	Accounts	Danielle	3552
+30	Marketing	Beryl	3615
+10	Accounts	Nana	3653
+40	HR	Teresa	2121
+20	Sales	Mindy	3866
+30	Marketing	Yumi	2769
+20	Sales	Walter	2448
+20	Sales	Wilfred	3539
+40	HR	Rafael	3696
+30	Marketing	Bertha	2015
+30	Marketing	Reina	3458
+40	HR	Hitomi	3352
+30	Marketing	Aki	2156
+20	Sales	Rene	2639
+30	Marketing	Isidore	2777
+40	HR	Joyce	3868
+10	Accounts	Gabielle	3615
+30	Marketing	Kirk	3430
+40	HR	Katrina	3015
+20	Sales	Vince	3164
+10	Accounts	Shary	2721
+20	Sales	Chantal	3320
+40	HR	Walter	3810
+40	HR	Odette	3788
+30	Marketing	Jose	3927
+40	HR	Teddy	3285
+40	HR	Kate	2389
+20	Sales	Sally	2696
+30	Marketing	Lili	3471
+20	Sales	Nicholas	3669
+10	Accounts	Isaac	2192
+30	Marketing	Teresa	3934
+30	Marketing	Jose	2384
+40	HR	Miyako	3367
+20	Sales	Michael	3784
+10	Accounts	Emi	3071
+20	Sales	Rene	2409
+10	Accounts	Karen	3690
+20	Sales	Nicholas	2088
+30	Marketing	Miwa	3549
+20	Sales	Tanya	2998
+10	Accounts	Omar	2447
+20	Sales	Nana	2275
+30	Marketing	Allison	2979
+40	HR	Lorenzo	2247
+20	Sales	Stan	2281
+20	Sales	Kate	3364
+20	Sales	Leslie	3937
+10	Accounts	Dolly	3610
+20	Sales	Rebekah	3547
+10	Accounts	Helene	2488
+10	Accounts	Josephine	2372
+40	HR	Claudette	2792
+20	Sales	Michelle	2109
+30	Marketing	Beryl	3608
+20	Sales	Lili	3521
+40	HR	Bertha	2665
+30	Marketing	Jeanne	2844
+40	HR	Grace	2815
+40	HR	Vince	2630
+30	Marketing	Sandy	2602
+10	Accounts	Noel	3298
+40	HR	Otto	3228
+30	Marketing	Cindy	2946
+30	Marketing	Virginie	3967
+30	Marketing	Michiyo	2838
+40	HR	Allison	3010
+30	Marketing	Bertha	3456
+10	Accounts	Hanna	3076
+40	HR	Isaac	2774
+10	Accounts	Hanna	3017
+10	Accounts	Kaori	3362
+10	Accounts	Gustav	3106
+20	Sales	Erika	2384
+40	HR	Larry	2189
+30	Marketing	Rene	2569
+10	Accounts	Michael	3858
+10	Accounts	Rita	2955
+30	Marketing	Gaston	2174
+10	Accounts	Michael	3780
+20	Sales	Juan	3995
+30	Marketing	Michiyo	2358
+40	HR	Nana	2379
+40	HR	Ophelia	3988
+40	HR	Frances	2339
+30	Marketing	Claudette	3491
+40	HR	Naoko	2698
+10	Accounts	Bill	2582
+10	Accounts	Miwa	2002
+10	Accounts	Claudette	3836
+10	Accounts	Gordon	3906
+20	Sales	Juan	2627
+20	Sales	Harvey	2655
+10	Accounts	Kaori	2353
+20	Sales	Alex	2038
+20	Sales	Harvey	2316
+20	Sales	Lorenzo	3451
+30	Marketing	Ophelia	3808
+40	HR	Danielle	3613
+10	Accounts	Odette	3488
+30	Marketing	Paula	2921
+10	Accounts	Omar	2783
+20	Sales	Chiaki	2306
+10	Accounts	Isabel	3932
+30	Marketing	Fabian	2475
+10	Accounts	Maria	2920
+30	Marketing	Barry	2442
+20	Sales	Ana	3744
+40	HR	Hanna	2916
+10	Accounts	Harvey	2749
+40	HR	Barry	2564
+20	Sales	Naoko	2093
+40	HR	Kirk	2304
+10	Accounts	Charley	2797
+20	Sales	Fay	2883
+40	HR	Lili	3233
+40	HR	Pablo	2909
+40	HR	Miyako	3705
+10	Accounts	Otto	2904
+30	Marketing	Paula	3699
+40	HR	Sayuri	3511
+30	Marketing	Sally	3011
+30	Marketing	Emi	2751
+40	HR	Chantal	2990
+20	Sales	Tammy	2914
+20	Sales	Sayuri	3113
+30	Marketing	Nicholas	2460
+10	Accounts	Olga	2906
+20	Sales	Paula	3141
+40	HR	Nana	2137
+40	HR	Jeanne	2412
+10	Accounts	Iris	2663
+40	HR	Henri	3167
+30	Marketing	Maria	2886
+30	Marketing	Walter	2344
+10	Accounts	Karen	3747
+40	HR	Olga	3676
+30	Marketing	Mieko	2349
+40	HR	Rafael	3124
+10	Accounts	Wilfred	3240
+40	HR	Dennis	2448
+40	HR	Arlene	2982
+30	Marketing	Walter	2032
+30	Marketing	Hermine	2888
+20	Sales	Nanaho	2311
+10	Accounts	Rene	3638
+30	Marketing	Mindy	3002
+20	Sales	Barry	2602
+30	Marketing	Shary	2794
+30	Marketing	Nadine	2956
+40	HR	Franklin	3000
+10	Accounts	Alex	3716
+30	Marketing	Wendy	3683
+20	Sales	Valerie	3873
+20	Sales	Itoe	2060
+30	Marketing	Gordon	3773
+30	Marketing	Pablo	3873
+30	Marketing	Vince	3622
+40	HR	Isabel	3871
+10	Accounts	Youko	3012
+30	Marketing	Nate	2835
+20	Sales	Felix	2182
+30	Marketing	Nana	2787
+20	Sales	Patty	3200
+40	HR	Michael	3010
+10	Accounts	Juan	3332
+20	Sales	Isabel	2503
+30	Marketing	Yumi	3514
+40	HR	Florence	2415
+40	HR	Odette	2935
+10	Accounts	Emily	3256
+40	HR	Patty	3268
+30	Marketing	Frances	2529
+20	Sales	Felix	2617
+10	Accounts	Rose	3303
+40	HR	Etsuko	2572
+40	HR	Grace	2648
+40	HR	Wilfred	3964
+20	Sales	Lorenzo	2592
+20	Sales	Barry	2346
+40	HR	Nicole	3805
+30	Marketing	Walter	2359
+30	Marketing	Gordon	3707
+20	Sales	Peter	3043
+30	Marketing	Youko	3823
+40	HR	Larry	3686
+40	HR	Lili	3587
+30	Marketing	Rita	2501
+30	Marketing	Wilfred	2904
+30	Marketing	Youko	3179
+30	Marketing	Hermine	3639
+10	Accounts	Kaori	3896
+10	Accounts	Wendy	2668
+10	Accounts	Alberto	3509
+40	HR	Kate	2219
+40	HR	Nadine	2437
+30	Marketing	Paloma	2184
+40	HR	Itoe	2423
+20	Sales	Paloma	3119
+20	Sales	Alberto	2508
+30	Marketing	Fabian	3899
+30	Marketing	Helene	2425
+30	Marketing	Ernesto	3136
+10	Accounts	Dean	3266
+10	Accounts	Danielle	3552
+30	Marketing	Beryl	3615
+10	Accounts	Nana	3653
+40	HR	Teresa	2121
+20	Sales	Mindy	3866
+30	Marketing	Yumi	2769
+20	Sales	Walter	2448
+20	Sales	Wilfred	3539
+40	HR	Rafael	3696
+30	Marketing	Bertha	2015
+30	Marketing	Reina	3458
+40	HR	Hitomi	3352
+30	Marketing	Aki	2156
+20	Sales	Rene	2639
+30	Marketing	Isidore	2777
+40	HR	Joyce	3868
+10	Accounts	Gabielle	3615
+30	Marketing	Kirk	3430
+40	HR	Katrina	3015
+20	Sales	Vince	3164
+10	Accounts	Shary	2721
+20	Sales	Chantal	3320
+40	HR	Walter	3810
+40	HR	Odette	3788
+30	Marketing	Jose	3927
+40	HR	Teddy	3285
+40	HR	Kate	2389
+20	Sales	Sally	2696
+30	Marketing	Lili	3471
+20	Sales	Nicholas	3669
+10	Accounts	Isaac	2192
+30	Marketing	Teresa	3934
+30	Marketing	Jose	2384
+40	HR	Miyako	3367
+20	Sales	Michael	3784
+10	Accounts	Emi	3071
+20	Sales	Rene	2409
+10	Accounts	Karen	3690
+20	Sales	Nicholas	2088
+30	Marketing	Miwa	3549
+20	Sales	Tanya	2998
+10	Accounts	Omar	2447
+20	Sales	Nana	2275
+30	Marketing	Allison	2979
+40	HR	Lorenzo	2247
+20	Sales	Stan	2281
+20	Sales	Kate	3364
+20	Sales	Leslie	3937
+10	Accounts	Dolly	3610
+20	Sales	Rebekah	3547
+10	Accounts	Helene	2488
+10	Accounts	Josephine	2372
+40	HR	Claudette	2792
+20	Sales	Michelle	2109
+30	Marketing	Beryl	3608
+20	Sales	Lili	3521
+40	HR	Bertha	2665
+30	Marketing	Jeanne	2844
+40	HR	Grace	2815
+40	HR	Vince	2630
+30	Marketing	Sandy	2602
+10	Accounts	Noel	3298
+40	HR	Otto	3228
+30	Marketing	Cindy	2946
+30	Marketing	Virginie	3967
+30	Marketing	Michiyo	2838
+40	HR	Allison	3010
+30	Marketing	Bertha	3456
+10	Accounts	Hanna	3076
+40	HR	Isaac	2774
+10	Accounts	Hanna	3017
+10	Accounts	Kaori	3362
+10	Accounts	Gustav	3106
+Time taken: 0.995 seconds, Fetched: 604 row(s)
+hive> /home/cloudera/Downloads/alter partitioned t[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kcreat [12G[Ke table table[24G[K[23G[K[22G[K[21G[K[20G[Kif not e[27G[Kexixts[32G[K[31G[K[30G[Ksts table13;[41G[K (col1 int [51G[K, col2 st[59G[K[58G[Kstring co[66G[K[65G[K,col3 int,[74G[K[73G[K[72G[K[71G[Kstring, col4 str[86G[K[85G[K[84G[Kint, colt[92G[K5 string [1A[99G[K[Kg ) row format delimited fields terminated by [44G[K',' collection ti[60G[K[59G[Kitems terminated by ':' linew[87G[Ks terminated  by '\n' stroed as text file[27G[K[26G[K[25G[K[24G[K[23G[K[22G[Kfile;
+FAILED: ParseException line 1:200 missing EOF at 'stroed' near ''\n''
+hive> create table if not exists table13 (col1 int, col2 string ,col3 string, col4 int, col5 string) row format delimited fields terminated by',' collection items terminated by ':' lines terminated by '\n' stroed as texfile;[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[99G[98G[97G[96G[95G[94G[93G[92G[93G[94G[95G[96G[97G[98G[99G[1B[1G[2G[3G[4G[5G[6G[7G[8G[9G[10G[11G[12G[13G[12Ged as texfile;[K[12G[11Ged as texfile;[K[11Goed as texfile;[12Gred as texfile;[13G[27G
+FAILED: SemanticException Unrecognized file format in STORED AS clause: 'TEXFILE'
+hive> create table if not exists table13 (col1 int, col2 string ,col3 string, col4 int, col5 string) row format delimited fields terminated by',' collection items terminated by ':' lines terminated by '\n' stored as texfile;[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[18G[19G[20G[21G[22Gtfile;[23G[28G
+OK
+Time taken: 0.149 seconds
+hive> load data local inpath'[29G[K'/home/d[36G[Kcloudera/Downloads/dept_la[61G[Kocation.txt' into table table13;
+Loading data to table d2.table13
+Table d2.table13 stats: [numFiles=1, totalSize=18617]
+OK
+Time taken: 0.503 seconds
+hive> create table if not exists dept [38G[K_buck (dp[46G[Keptno int, dmpname st[66G[K[65G[K[64G[K[63G[K[62G[K[61G[K[60G[K[59G[K[58G[K[57G[Kempname string, sl[74G[Kal int, location string) p artitioned by (deptname string) clustered by (deptname string) clu[66G[K[65G[K[64G[K[63G[K[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[Klocation) into 4 buckets row format delime[88G[Kited fields  terminated by ',' lines terminated by '
+    > create table if not exists dept_buck (deptno int, empname string, sal int, location string) partitioned by (deptname string) clustered by (location) into 4 buckets row format delimited fields terminated by ',' lines terminated by '\n/[42G[K' stored as textfile;
+FAILED: ParseException line 2:207 missing EOF at ',' near ''
+create table if not exists dept_buck (deptno int, empname string, sal int, location string) partitioned by (deptname string) clustered by (location) into 4 buckets row format delimited fields terminated by ''
+hive> create table if not exists dept_buck (deptno int, empname string, sal int, location string) partitioned by (deptname string) clustered by (location) into 4 buckets row format delimited fields terminated by ',' lines terminated by '\n' stored as textfile;[62G[63G
+OK
+Time taken: 0.119 seconds
+hive> insert into table dept_buck partition(dpet[48G[K[47G[K[46G[Keptname) select col1, col3, col4, co5[82G[Kl5 , col2 from  ta ble [4G[K13;
+Query ID = cloudera_20200320162121_9fa04fbf-cd03-4116-83a2-fca844cf2327
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 4
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584300088534_0014, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584300088534_0014/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584300088534_0014
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 4
+2020-03-20 16:21:40,306 Stage-1 map = 0%,  reduce = 0%
+2020-03-20 16:21:54,502 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.48 sec
+2020-03-20 16:22:45,648 Stage-1 map = 100%,  reduce = 17%, Cumulative CPU 2.39 sec
+2020-03-20 16:22:48,332 Stage-1 map = 100%,  reduce = 50%, Cumulative CPU 5.12 sec
+2020-03-20 16:22:51,115 Stage-1 map = 100%,  reduce = 67%, Cumulative CPU 6.33 sec
+2020-03-20 16:22:55,001 Stage-1 map = 100%,  reduce = 83%, Cumulative CPU 9.07 sec
+2020-03-20 16:22:57,702 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 11.24 sec
+MapReduce Total cumulative CPU time: 11 seconds 240 msec
+Ended Job = job_1584300088534_0014
+Loading data to table d2.dept_buck partition (deptname=null)
+	 Time taken for load dynamic partitions : 870
+	Loading partition {deptname=Accounts}
+	Loading partition {deptname=HR}
+	Loading partition {deptname=Sales}
+	Loading partition {deptname=Marketing}
+	 Time taken for adding to write entity : 4
+Partition d2.dept_buck{deptname=Accounts} stats: [numFiles=4, numRows=161, totalSize=3701, rawDataSize=3540]
+Partition d2.dept_buck{deptname=HR} stats: [numFiles=4, numRows=132, totalSize=3002, rawDataSize=2870]
+Partition d2.dept_buck{deptname=Marketing} stats: [numFiles=4, numRows=138, totalSize=3169, rawDataSize=3031]
+Partition d2.dept_buck{deptname=Sales} stats: [numFiles=4, numRows=173, totalSize=3880, rawDataSize=3707]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 4   Cumulative CPU: 11.24 sec   HDFS Read: 36276 HDFS Write: 14670 SUCCESS
+Total MapReduce CPU Time Spent: 11 seconds 240 msec
+OK
+Time taken: 97.609 seconds
+hive> show partition [21G[Ks dept_buck;
+OK
+deptname=Accounts
+deptname=HR
+deptname=Marketing
+deptname=Sales
+Time taken: 0.115 seconds, Fetched: 4 row(s)
+hive> 
+    > 
+    > Display all 461 possibilities? (y or n)]0;cloudera@quickstart:~[cloudera@quickstart ~]$ HIVE[K[K[K[KHIVE[K[K[K[KHI[K[Khive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> FKKFDL[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kselect * from dept b[26G[K[25G[K_vu[27G[K[26G[Kbuck limit 15;
+FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'dept_buck'
+hive> use d2;
+OK
+Time taken: 0.126 seconds
+hive> use d2;[7G[Kselect * from dept_buck limit 15;
+OK
+10	Rafael	3236	Pune	Accounts
+10	Edouard	2393	Chennai	Accounts
+10	Beryl	2411	Delhi	Accounts
+10	Alex	2901	Washington	Accounts
+10	Lorenzo	2467	Chennai	Accounts
+10	Joyce	2662	Delhi	Accounts
+10	Beryl	2814	Hyderabad	Accounts
+10	Tanya	2179	Chennai	Accounts
+10	Joyce	2098	Delhi	Accounts
+10	Maria	3688	Washington	Accounts
+10	Edouard	3308	Chennai	Accounts
+10	Beryl	2873	Delhi	Accounts
+10	Lorenzo	2146	Chennai	Accounts
+10	Rafael	3711	Pune	Accounts
+10	Alex	2600	Washington	Accounts
+Time taken: 0.806 seconds, Fetched: 15 row(s)
+hive> select deptno, empname, sal, la[37G[Kocation r[45G[Kfrom dept buc[57G[K[56G[K[55G[K[54G[K[53G[Kt_buck sample(bucket Display all 461 possibilities? (y or n)
+hive> select deptno, empname, sal, location from dept_buck sample(bucket 2[74G[K1 out of 3 on locaton[94G[K[93G[Kion);
+FAILED: ParseException line 1:59 missing EOF at '(' near 'sample'
+hive> select deptno, empname, sal, location from dept_buck sample(bucket 1 out of 3 on location);[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[59G[60Gtsample(bucket 1 out of 3 on location);[61Gasample(bucket 1 out of 3 on location); [1A[62Gnsample(bucket 1 out of 3 on location) ;[1A[63G[62Gsample(bucket 1 out of 3 on location); [K[1A[62Gbsample(bucket 1 out of 3 on location) ;[1A[63Glsample(bucket 1 out of 3 on location );[1A[64Gesample(bucket 1 out of 3 on locatio n);[1A[65G[1B[4G
+OK
+10	Rafael	3236	Pune
+10	Edouard	2393	Chennai
+10	Beryl	2411	Delhi
+10	Lorenzo	2467	Chennai
+10	Joyce	2662	Delhi
+10	Tanya	2179	Chennai
+10	Joyce	2098	Delhi
+10	Edouard	3308	Chennai
+10	Beryl	2873	Delhi
+10	Lorenzo	2146	Chennai
+10	Rafael	3711	Pune
+10	Tanya	2263	Chennai
+10	Franklin	2328	Pune
+10	Joyce	2054	Delhi
+10	Teresa	2124	Delhi
+10	Tanya	2894	Chennai
+10	Edouard	3023	Chennai
+10	Lorenzo	3429	Chennai
+10	Beryl	3463	Delhi
+10	Joyce	2212	Delhi
+10	Rafael	2765	Pune
+10	Franklin	3322	Pune
+10	Teresa	3799	Delhi
+10	Teresa	2783	Delhi
+10	Franklin	2322	Pune
+10	Joyce	2975	Houston
+10	Joyce	2485	Houston
+10	Joyce	3572	Houston
+10	Odette	3012	Houston
+10	Barry	2895	Denver
+10	Victor	3718	Houston
+10	Odette	2599	Houston
+10	Akane	2756	Denver
+10	Victor	2743	Houston
+10	Akane	2180	Denver
+10	Akane	2554	Denver
+10	Odette	2524	Houston
+10	Victor	2947	Houston
+10	Barry	3824	Denver
+10	Barry	2596	Denver
+40	Wanda	3736	Pune
+40	Oscar	3593	Delhi
+40	Mieko	3186	Delhi
+40	Gaston	2971	Delhi
+40	Rafael	2610	Pune
+40	Marco	2915	Pune
+40	Mieko	2629	Delhi
+40	Gaston	2881	Delhi
+40	Marco	3735	Pune
+40	Marco	3505	Pune
+40	Gaston	3552	Delhi
+40	Oscar	3450	Delhi
+40	Mieko	2002	Delhi
+40	Oscar	2174	Delhi
+40	Rafael	3934	Pune
+40	Lili	3349	Chennai
+40	Oscar	2878	Delhi
+40	Rafael	2551	Pune
+40	Wanda	3968	Pune
+40	Lili	2230	Chennai
+40	Wanda	3514	Pune
+40	Lili	2980	Chennai
+40	Miharu	2538	Houston
+40	Sachiko	2545	Denver
+40	Miharu	3347	Houston
+40	Tammy	2880	Houston
+40	Gordon	3137	Denver
+40	Valerie	3890	Denver
+40	Miharu	2073	Houston
+40	Nate	3648	Denver
+40	Sachiko	3715	Denver
+40	Sebastien	3061	Houston
+40	Kaori	3265	Houston
+40	Gordon	3441	Denver
+40	Valerie	2091	Denver
+40	Kaori	3393	Houston
+40	Sebastien	2064	Houston
+40	Valerie	2889	Denver
+40	Tammy	3284	Houston
+40	Gordon	2065	Denver
+40	Sachiko	3728	Denver
+40	Nate	2859	Denver
+40	Kaori	3420	Houston
+40	Sebastien	2629	Houston
+40	Tammy	2184	Houston
+40	Nate	3287	Denver
+40	Valerie	3393	Denver
+40	Gordon	2809	Denver
+40	Tammy	2664	Houston
+30	Henri	3380	Pune
+30	Leslie	3669	Delhi
+30	Leslie	3222	Delhi
+30	Nicole	3902	Pune
+30	Arlene	3746	Pune
+30	Dennis	2846	Pune
+30	Tony	2978	Chennai
+30	Dennis	2598	Pune
+30	Arlene	2266	Pune
+30	Arlene	3042	Pune
+30	Dennis	3151	Pune
+30	Nicole	2142	Pune
+30	Tony	3342	Chennai
+30	Nicole	2176	Pune
+30	Kazuko	2941	Chennai
+30	Leslie	2810	Delhi
+30	Henri	3306	Pune
+30	Kazuko	2085	Chennai
+30	Tony	2926	Chennai
+30	Henri	3943	Pune
+30	Kazuko	3385	Chennai
+30	Nanaho	3843	Houston
+30	Pablo	3758	Houston
+30	Victor	2093	Houston
+30	Pablo	2416	Houston
+30	Victor	2365	Houston
+30	Rafael	2983	Denver
+30	Rafael	3573	Denver
+30	Victor	2414	Houston
+30	Rafael	3203	Denver
+30	Pablo	3042	Houston
+30	Victor	3840	Houston
+30	Nanaho	2445	Houston
+30	Nanaho	2255	Houston
+20	Charley	2212	Pune
+20	Bonnie	3071	Pune
+20	Gaston	3250	Pune
+20	Gaston	3984	Pune
+20	Stan	3817	Chennai
+20	Paloma	3472	Pune
+20	Alex	3631	Chennai
+20	Gaston	3665	Pune
+20	Stan	3725	Chennai
+20	Isidore	2084	Delhi
+20	Gabielle	3962	Chennai
+20	Danny	3162	Delhi
+20	Debby	3833	Pune
+20	Charley	2298	Pune
+20	Paloma	3972	Pune
+20	Isidore	3187	Delhi
+20	Debby	2310	Pune
+20	Danny	2757	Delhi
+20	Gabielle	2806	Chennai
+20	Danny	3566	Delhi
+20	Gabielle	2056	Chennai
+20	Debby	3239	Pune
+20	Alex	3670	Chennai
+20	Isidore	2957	Delhi
+20	Naoko	3596	Delhi
+20	Paloma	3132	Pune
+20	Charley	3173	Pune
+20	Alex	2165	Chennai
+20	Stan	2906	Chennai
+20	Bonnie	2049	Pune
+20	Gaston	3197	Pune
+20	Naoko	3824	Delhi
+20	Naoko	2885	Delhi
+20	Bonnie	3519	Pune
+20	Kaori	2720	Denver
+20	Kaori	3664	Denver
+20	Karl	2282	Houston
+20	Ana	2538	Denver
+20	Grace	2632	Houston
+20	Junko	2374	Houston
+20	Humberto	2376	Denver
+20	Ana	3229	Denver
+20	Grace	3038	Houston
+20	Humberto	3885	Denver
+20	Junko	2605	Houston
+20	Ana	3171	Denver
+20	Junko	2030	Houston
+20	Humberto	2295	Denver
+20	Grace	2947	Houston
+20	Karl	3295	Houston
+20	Kaori	3763	Denver
+20	Karl	2105	Houston
+20	Kaori	2206	Denver
+Time taken: 0.231 seconds, Fetched: 176 row(s)
+hive> select deptno, empname, sal, location from dept_buck tablesample(bucket 1 out of 3 on location);`[4G[K``[5G[K[4G[K[3G[K[2G[K`[2G[K[1G[K[1A[99G[K[K[98G[K[97G[K[96G[K[95G[K[94G[K[93G[Klocation [2G[K[1G[K[1A[99G[K[K[98G[K[97G[K[96G[K[95G[K[94G[K[93G[Klocation [2G[K`[2G[K[1A[60G[K[K[B[2K[Asample(bucket 1 out of 3 on location);[60G[Ktablesample(bucket 1 out of 3 on location);[1A[7G[K[K[B[2K[Aselect deptno, empname, sal, location from dept_buck tablesample(bucket 1 out of 3 on location);<<[5G[K[4G[K[3G[2G[1G);[K[1G[1A[99G[K) ;[K[1A[99G[98G); [K[1A[98G[97G);[K[97G[96G);[K[96G[95G);[K[95G[94G);[K[94G[93G);[K[93G[92G);[K[92G[91G);[K[91G[90G);[K[90G[89G);[K[89G[88G);[K[88G[87G);[K[87G[86G);[K[86G[85G);[K[85G[84G);[K[84G[83G);[K[83G[82G);[K[82G[81G);[K[81G[80G);[K[80G[79G);[K[79G[78G);[K[78G[77G);[K[77G[76G);[K[76G[75G);[K[75G[74G);[K[74G[73G);[K[73G[72G);[K[72G1);[73Gm);[74G[73G);[K[73Gm);[74G[73G);[K[73Gm);[74G[73G);[K[73GM);[74G[76G
+OK
+10	Rafael	3236	Pune
+10	Edouard	2393	Chennai
+10	Beryl	2411	Delhi
+10	Alex	2901	Washington
+10	Lorenzo	2467	Chennai
+10	Joyce	2662	Delhi
+10	Beryl	2814	Hyderabad
+10	Tanya	2179	Chennai
+10	Joyce	2098	Delhi
+10	Maria	3688	Washington
+10	Edouard	3308	Chennai
+10	Beryl	2873	Delhi
+10	Lorenzo	2146	Chennai
+10	Rafael	3711	Pune
+10	Alex	2600	Washington
+10	Tanya	2263	Chennai
+10	Alex	2562	Washington
+10	Franklin	2328	Pune
+10	Joyce	2054	Delhi
+10	Beryl	2631	Hyderabad
+10	Teresa	2124	Delhi
+10	Tanya	2894	Chennai
+10	Edouard	3023	Chennai
+10	Lorenzo	3429	Chennai
+10	Maria	2143	Washington
+10	Beryl	3463	Delhi
+10	Beryl	2415	Hyderabad
+10	Joyce	2212	Delhi
+10	Alex	2492	Washington
+10	Valerie	2968	Hyderabad
+10	Rafael	2765	Pune
+10	Franklin	3322	Pune
+10	Valerie	3021	Hyderabad
+10	Teresa	3799	Delhi
+10	Valerie	3891	Hyderabad
+10	Teresa	2783	Delhi
+10	Maria	3814	Washington
+10	Franklin	2322	Pune
+10	Alberto	2236	Chandigarh
+10	Sandy	2103	New York
+10	Nanaho	2133	Chandigarh
+10	Emi	2089	Los Angeles
+10	Florence	3593	Chandigarh
+10	Sebastien	2468	Kolkata
+10	Nicholas	2711	Kolkata
+10	Juan	2399	New York
+10	Sachiko	2806	New York
+10	Cindy	3311	New York
+10	Miyako	3664	New York
+10	Sandy	2665	New York
+10	Nana	2965	New York
+10	Sebastien	2537	Los Angeles
+10	Virginie	3110	Los Angeles
+10	Hermine	2511	Chandigarh
+10	Valerie	3361	Chandigarh
+10	Omar	3718	Los Angeles
+10	Alberto	3989	Chandigarh
+10	Sandy	2870	New York
+10	Nanaho	2535	Chandigarh
+10	Emi	3589	Los Angeles
+10	Florence	2787	Chandigarh
+10	Sebastien	3147	Kolkata
+10	Nicholas	2306	Kolkata
+10	Juan	3302	New York
+10	Sachiko	2438	New York
+10	Cindy	3114	New York
+10	Sandy	2131	New York
+10	Nana	2744	New York
+10	Sebastien	2338	Los Angeles
+10	Virginie	2788	Los Angeles
+10	Hermine	2314	Chandigarh
+10	Valerie	3763	Chandigarh
+10	Omar	2516	Los Angeles
+10	Alberto	2009	Chandigarh
+10	Sandy	2730	New York
+10	Nanaho	3472	Chandigarh
+10	Emi	2243	Los Angeles
+10	Florence	2549	Chandigarh
+10	Sebastien	2698	Kolkata
+10	Nicholas	3433	Kolkata
+10	Juan	2955	New York
+10	Sachiko	3249	New York
+10	Cindy	3617	New York
+10	Miyako	2583	New York
+10	Sandy	2073	New York
+10	Nana	2039	New York
+10	Sebastien	3594	Los Angeles
+10	Virginie	3539	Los Angeles
+10	Hermine	2168	Chandigarh
+10	Valerie	2993	Chandigarh
+10	Omar	2292	Los Angeles
+10	Alberto	3786	Chandigarh
+10	Sandy	3284	New York
+10	Miyako	2039	New York
+10	Miwa	3395	Austin
+10	Joyce	2975	Houston
+10	Arlene	2296	Austin
+10	Mieko	3282	Chicago
+10	Emily	3329	Chicago
+10	Mieko	2806	Chicago
+10	Arlene	2321	Austin
+10	Joyce	2485	Houston
+10	Miwa	2251	Austin
+10	Emily	2136	Chicago
+10	Hanna	3500	Chicago
+10	Joyce	3572	Houston
+10	Arlene	3427	Austin
+10	Odette	3012	Houston
+10	Teddy	3991	Austin
+10	Barry	2895	Denver
+10	Mieko	2402	Chicago
+10	Victor	3718	Houston
+10	Sam	3550	Chicago
+10	Odette	2599	Houston
+10	Fabian	3176	Austin
+10	Akane	2756	Denver
+10	Victor	2743	Houston
+10	Miwa	2727	Austin
+10	Akane	2180	Denver
+10	Hanna	2639	Chicago
+10	Fabian	3578	Austin
+10	Akane	2554	Denver
+10	Odette	2524	Houston
+10	Sam	2103	Chicago
+10	Hanna	2449	Chicago
+10	Victor	2947	Houston
+10	Barry	3824	Denver
+10	Teddy	3080	Austin
+10	Sam	2501	Chicago
+10	Fabian	2928	Austin
+10	Barry	2596	Denver
+10	Teddy	2832	Austin
+10	Hanna	3696	Chicago
+10	Emily	3723	Chicago
+10	Omar	3400	Miami
+10	Reina	2447	Mumbai
+10	Omar	2922	Miami
+10	Harvey	2180	Miami
+10	Hitomi	3942	Mumbai
+10	Sam	2729	Miami
+10	Philippe	2308	Mumbai
+10	Karl	3681	Boston
+10	Harvey	2692	Miami
+10	Lili	3366	Miami
+10	Reina	3415	Mumbai
+10	Omar	2952	Miami
+10	Jeanne	3233	Boston
+10	Jeanne	3898	Boston
+10	Jeanne	2569	Boston
+10	Karl	3292	Boston
+10	Reina	3468	Mumbai
+10	Karl	2032	Boston
+10	Hitomi	3744	Mumbai
+10	Sam	3920	Miami
+10	Lili	2934	Miami
+10	Hitomi	2836	Mumbai
+10	Harvey	2944	Miami
+10	Lili	3694	Miami
+10	Sam	2975	Miami
+10	Philippe	2030	Mumbai
+10	Philippe	3058	Mumbai
+40	Wanda	3736	Pune
+40	Oscar	3593	Delhi
+40	Rafael	3419	Hyderabad
+40	Mieko	3186	Delhi
+40	Paula	3262	Washington
+40	Michiyo	3916	Washington
+40	Gaston	2971	Delhi
+40	Rafael	2610	Pune
+40	Marco	2915	Pune
+40	Nadine	3927	Hyderabad
+40	Michiyo	2239	Washington
+40	Mieko	2629	Delhi
+40	Gaston	2881	Delhi
+40	Nadine	2165	Hyderabad
+40	Marco	3735	Pune
+40	Paula	2422	Washington
+40	Michiyo	2427	Washington
+40	Marco	3505	Pune
+40	Nadine	3497	Hyderabad
+40	Gaston	3552	Delhi
+40	Paula	3684	Washington
+40	Oscar	3450	Delhi
+40	Mieko	2002	Delhi
+40	Rafael	3053	Hyderabad
+40	Michael	2450	Washington
+40	Oscar	2174	Delhi
+40	Rafael	3934	Pune
+40	Lili	3349	Chennai
+40	Michiyo	2842	Washington
+40	Rafael	3089	Hyderabad
+40	Oscar	2878	Delhi
+40	Rafael	2551	Pune
+40	Rafael	2638	Hyderabad
+40	Wanda	3968	Pune
+40	Lili	2230	Chennai
+40	Wanda	3514	Pune
+40	Michael	3323	Washington
+40	Michael	3921	Washington
+40	Lili	2980	Chennai
+40	Miharu	2638	Kolkata
+40	Yumi	2993	Los Angeles
+40	Rie	3182	Chandigarh
+40	Sayuri	2932	Chandigarh
+40	Gabielle	3809	Chandigarh
+40	Barry	2491	Chandigarh
+40	Lili	3168	Chandigarh
+40	Kaori	3404	Kolkata
+40	Juan	3711	Chandigarh
+40	Miharu	2593	Kolkata
+40	Yumi	3795	Los Angeles
+40	Rie	2793	Chandigarh
+40	Sayuri	3640	Chandigarh
+40	Gabielle	2757	Chandigarh
+40	Barry	2092	Chandigarh
+40	Lili	2101	Chandigarh
+40	Kaori	3930	Kolkata
+40	Juan	2810	Chandigarh
+40	Miharu	3712	Kolkata
+40	Yumi	3277	Los Angeles
+40	Rie	2825	Chandigarh
+40	Sayuri	3770	Chandigarh
+40	Gabielle	3860	Chandigarh
+40	Barry	3527	Chandigarh
+40	Lili	2864	Chandigarh
+40	Kaori	3430	Kolkata
+40	Juan	3944	Chandigarh
+40	Miharu	3094	Kolkata
+40	Yumi	3154	Los Angeles
+40	Miharu	2538	Houston
+40	Sachiko	2545	Denver
+40	Miharu	3347	Houston
+40	Gustav	2340	Austin
+40	Tammy	2880	Houston
+40	Gordon	3137	Denver
+40	Valerie	3890	Denver
+40	Gordon	3784	Austin
+40	Miharu	2073	Houston
+40	Emi	3064	Austin
+40	Emi	3178	Austin
+40	Nate	3648	Denver
+40	Sachiko	3715	Denver
+40	Gordon	2780	Austin
+40	Kate	3535	Austin
+40	Sebastien	3061	Houston
+40	Odette	2376	Chicago
+40	Kaori	3265	Houston
+40	Claudette	2118	Chicago
+40	Claudette	2271	Chicago
+40	Gordon	3441	Denver
+40	Gordon	2011	Austin
+40	Valerie	2091	Denver
+40	Kaori	3393	Houston
+40	Sebastien	2064	Houston
+40	Kate	2188	Austin
+40	Valerie	2889	Denver
+40	Gustav	2909	Austin
+40	Tammy	3284	Houston
+40	Gordon	2065	Denver
+40	Odette	2268	Chicago
+40	Sachiko	3728	Denver
+40	Claudette	2567	Chicago
+40	Nate	2859	Denver
+40	Emi	2478	Austin
+40	Odette	2056	Chicago
+40	Kaori	3420	Houston
+40	Sebastien	2629	Houston
+40	Kate	3304	Austin
+40	Tammy	2184	Houston
+40	Gordon	3862	Austin
+40	Nate	3287	Denver
+40	Valerie	3393	Denver
+40	Gordon	2809	Denver
+40	Tammy	2664	Houston
+40	Gustav	3697	Austin
+40	Omar	2164	Mumbai
+40	Cindy	3451	Mumbai
+40	Ernesto	3438	Boston
+40	Ernesto	3134	Boston
+40	Omar	2561	Mumbai
+40	Isidore	2488	Miami
+40	Frances	2093	Boston
+40	Isidore	2063	Miami
+40	Isidore	2657	Miami
+40	Cindy	2428	Mumbai
+40	Nana	2125	Mumbai
+40	Cindy	2325	Mumbai
+40	Frances	2783	Boston
+40	Frances	2080	Boston
+40	Omar	3320	Mumbai
+40	Ernesto	3429	Boston
+40	Nana	3837	Mumbai
+40	Nana	3709	Mumbai
+30	Nanaho	2332	Hyderabad
+30	Henri	3380	Pune
+30	Jeanne	2597	Washington
+30	Leslie	3967	Washington
+30	Jeanne	3389	Washington
+30	Leslie	3669	Delhi
+30	Leslie	3222	Delhi
+30	Frances	2398	Washington
+30	Wendy	2937	Hyderabad
+30	Nicole	3902	Pune
+30	Wilma	2665	Washington
+30	Arlene	3746	Pune
+30	Dennis	2846	Pune
+30	Tony	2978	Chennai
+30	Frances	3675	Washington
+30	Alberto	3093	Washington
+30	Leslie	2540	Washington
+30	Alberto	3675	Washington
+30	Wendy	3571	Hyderabad
+30	Dennis	2598	Pune
+30	Wilma	2479	Washington
+30	Nanaho	2693	Hyderabad
+30	Arlene	2266	Pune
+30	Arlene	3042	Pune
+30	Dennis	3151	Pune
+30	Wilma	3529	Washington
+30	Leslie	3704	Washington
+30	Alberto	2320	Washington
+30	Nicole	2142	Pune
+30	Tony	3342	Chennai
+30	Wendy	2524	Hyderabad
+30	Nicole	2176	Pune
+30	Frances	2086	Washington
+30	Kazuko	2941	Chennai
+30	Leslie	2810	Delhi
+30	Jeanne	3078	Washington
+30	Leslie	3220	Washington
+30	Henri	3306	Pune
+30	Nanaho	2353	Hyderabad
+30	Kazuko	2085	Chennai
+30	Tony	2926	Chennai
+30	Henri	3943	Pune
+30	Kazuko	3385	Chennai
+30	Leslie	3960	Los Angeles
+30	Irene	2238	Kolkata
+30	Philippe	2803	Chandigarh
+30	Naoko	2039	Chandigarh
+30	Ernesto	2623	Kolkata
+30	Gert	3469	Kolkata
+30	Bill	3090	Kolkata
+30	Michael	2839	Kolkata
+30	Itoe	3074	Chandigarh
+30	Etsuko	2294	Kolkata
+30	Josephine	2951	Chandigarh
+30	Wendy	2667	Kolkata
+30	Ernesto	2984	Kolkata
+30	Leslie	3088	Los Angeles
+30	Irene	3905	Kolkata
+30	Philippe	3453	Chandigarh
+30	Naoko	2616	Chandigarh
+30	Ernesto	2536	Kolkata
+30	Gert	3581	Kolkata
+30	Bill	2663	Kolkata
+30	Michael	2905	Kolkata
+30	Itoe	3538	Chandigarh
+30	Etsuko	2266	Kolkata
+30	Josephine	2485	Chandigarh
+30	Wendy	2284	Kolkata
+30	Ernesto	3593	Kolkata
+30	Leslie	2251	Los Angeles
+30	Irene	2325	Kolkata
+30	Philippe	3404	Chandigarh
+30	Naoko	3814	Chandigarh
+30	Ernesto	3624	Kolkata
+30	Gert	2269	Kolkata
+30	Bill	2374	Kolkata
+30	Michael	2124	Kolkata
+30	Itoe	2860	Chandigarh
+30	Etsuko	3940	Kolkata
+30	Josephine	3624	Chandigarh
+30	Wendy	2195	Kolkata
+30	Ernesto	2408	Kolkata
+30	Leslie	3959	Los Angeles
+30	Irene	2905	Kolkata
+30	Philippe	3244	Chandigarh
+30	Karl	2519	Chicago
+30	Charley	2949	Chicago
+30	Karl	2428	Chicago
+30	Charley	3684	Chicago
+30	Nanaho	3843	Houston
+30	Pablo	3758	Houston
+30	Victor	2093	Houston
+30	Pablo	2416	Houston
+30	Nana	3221	Chicago
+30	Victor	2365	Houston
+30	Rafael	2983	Denver
+30	Karl	2709	Chicago
+30	Isabel	2189	Chicago
+30	Rafael	3573	Denver
+30	Isabel	2457	Chicago
+30	Victor	2414	Houston
+30	Nana	2427	Chicago
+30	Isabel	2064	Chicago
+30	Rafael	3203	Denver
+30	Pablo	3042	Houston
+30	Nana	3975	Chicago
+30	Victor	3840	Houston
+30	Nanaho	2445	Houston
+30	Nanaho	2255	Houston
+30	Charley	3828	Chicago
+30	Ivan	2998	Miami
+30	Gordon	3318	Mumbai
+30	Marco	2144	Boston
+30	Harvey	2577	Mumbai
+30	Gabielle	2669	Mumbai
+30	Nicole	3304	Miami
+30	Marco	2663	Boston
+30	Marco	3974	Boston
+30	Wanda	3100	Mumbai
+30	Wanda	2069	Mumbai
+30	Gordon	3720	Mumbai
+30	Teresa	2613	Miami
+30	Teresa	3292	Miami
+30	Barry	2045	Miami
+30	Harvey	3885	Mumbai
+30	Wanda	3881	Mumbai
+30	Harvey	2362	Mumbai
+30	Teresa	3623	Miami
+30	Barry	3443	Miami
+30	Nicole	2464	Miami
+30	Gordon	3923	Mumbai
+30	Nicole	2911	Miami
+30	Barry	2921	Miami
+30	Gabielle	2092	Mumbai
+30	Ivan	3820	Miami
+30	Ivan	2354	Miami
+30	Gabielle	2715	Mumbai
+30	Ivan	2138	Miami
+20	Charley	2212	Pune
+20	Omar	2144	Washington
+20	Richard	2743	Hyderabad
+20	Bonnie	3071	Pune
+20	Gaston	3250	Pune
+20	Gaston	3984	Pune
+20	Stan	3817	Chennai
+20	Itoe	2389	Hyderabad
+20	Helene	2345	Hyderabad
+20	Ana	2079	Washington
+20	Paloma	3472	Pune
+20	Richard	3311	Hyderabad
+20	Jose	2508	Washington
+20	Alex	3631	Chennai
+20	Gaston	3665	Pune
+20	Sachiko	3619	Washington
+20	Stan	3725	Chennai
+20	Itoe	3448	Hyderabad
+20	Isidore	2084	Delhi
+20	Gabielle	3962	Chennai
+20	Helene	2827	Hyderabad
+20	Danny	3162	Delhi
+20	Debby	3833	Pune
+20	Charley	2298	Pune
+20	Van	3553	Washington
+20	Paloma	3972	Pune
+20	Van	3585	Washington
+20	Isidore	3187	Delhi
+20	Debby	2310	Pune
+20	Danny	2757	Delhi
+20	Ana	3674	Washington
+20	Jose	2126	Washington
+20	Sachiko	2851	Washington
+20	Gabielle	2806	Chennai
+20	Danny	3566	Delhi
+20	Gabielle	2056	Chennai
+20	Debby	3239	Pune
+20	Richard	3894	Hyderabad
+20	Alex	3670	Chennai
+20	Van	2779	Washington
+20	Isidore	2957	Delhi
+20	Ana	3457	Washington
+20	Sachiko	3014	Washington
+20	Naoko	3596	Delhi
+20	Jose	3975	Washington
+20	Lisa	2917	Washington
+20	Paloma	3132	Pune
+20	Charley	3173	Pune
+20	Kirk	3448	Hyderabad
+20	Alex	2165	Chennai
+20	Helene	3924	Hyderabad
+20	Richard	2411	Hyderabad
+20	Itoe	2185	Hyderabad
+20	Stan	2906	Chennai
+20	Ana	2364	Washington
+20	Bonnie	2049	Pune
+20	Gaston	3197	Pune
+20	Omar	3055	Washington
+20	Naoko	3824	Delhi
+20	Kirk	3446	Hyderabad
+20	Lisa	2401	Washington
+20	Omar	2272	Washington
+20	Kirk	3232	Hyderabad
+20	Lisa	2714	Washington
+20	Naoko	2885	Delhi
+20	Bonnie	3519	Pune
+20	Dean	2430	Los Angeles
+20	Oscar	3371	Los Angeles
+20	Bill	2203	Los Angeles
+20	Franklin	3106	Kolkata
+20	Miharu	2657	Kolkata
+20	Josephine	2639	New York
+20	Lee	3278	New York
+20	Patty	2523	New York
+20	Vicky	2189	Los Angeles
+20	Gordon	3825	Kolkata
+20	Cindy	2870	New York
+20	Sebastien	2254	New York
+20	Dean	2593	Los Angeles
+20	Oscar	3086	Los Angeles
+20	Bill	2131	Los Angeles
+20	Franklin	3594	Kolkata
+20	Miharu	2650	Kolkata
+20	Josephine	3006	New York
+20	Lee	2958	New York
+20	Patty	3227	New York
+20	Vicky	2055	Los Angeles
+20	Gordon	3664	Kolkata
+20	Cindy	2197	New York
+20	Sebastien	3991	New York
+20	Dean	3250	Los Angeles
+20	Oscar	2392	Los Angeles
+20	Bill	3947	Los Angeles
+20	Franklin	3154	Kolkata
+20	Miharu	3532	Kolkata
+20	Josephine	3933	New York
+20	Lee	2285	New York
+20	Patty	2262	New York
+20	Vicky	3670	Los Angeles
+20	Gordon	3838	Kolkata
+20	Cindy	3279	New York
+20	Sebastien	2042	New York
+20	Dean	2593	Los Angeles
+20	Dolly	3658	Austin
+20	Kaori	2720	Denver
+20	Kumiko	3280	Chicago
+20	Dolly	3843	Austin
+20	Kaori	3664	Denver
+20	Jeanne	3494	Chicago
+20	Karl	2282	Houston
+20	Ana	2538	Denver
+20	Miwa	2929	Austin
+20	Omar	3554	Chicago
+20	Grace	2632	Houston
+20	Erin	3395	Chicago
+20	Junko	2374	Houston
+20	Humberto	2376	Denver
+20	Ana	3229	Denver
+20	Erin	2568	Chicago
+20	Grace	3038	Houston
+20	Humberto	3885	Denver
+20	Junko	2605	Houston
+20	Kumiko	2443	Chicago
+20	Omar	3919	Chicago
+20	Miwa	3337	Austin
+20	Ana	3171	Denver
+20	Junko	2030	Houston
+20	Humberto	2295	Denver
+20	Erin	2698	Chicago
+20	Grace	2947	Houston
+20	Karl	3295	Houston
+20	Jeanne	3214	Chicago
+20	Kumiko	3275	Chicago
+20	Omar	3609	Chicago
+20	Kaori	3763	Denver
+20	Karl	2105	Houston
+20	Jeanne	2022	Chicago
+20	Kaori	2206	Denver
+20	Kumiko	3729	Chicago
+20	Dolly	3130	Austin
+20	Miwa	2566	Austin
+20	Fabian	2731	Mumbai
+20	Tanya	2420	Boston
+20	Joyce	3169	Boston
+20	Joyce	2341	Boston
+20	Gordon	2315	Mumbai
+20	Victor	3349	Mumbai
+20	Wilma	2209	Boston
+20	Wilma	2411	Boston
+20	Tanya	2580	Boston
+20	Gordon	2002	Mumbai
+20	Wilma	3622	Boston
+20	Fabian	2766	Mumbai
+20	Tanya	2348	Boston
+20	Sandy	2322	Miami
+20	Miwa	2213	Boston
+20	Karen	3045	Boston
+20	Miwa	3657	Boston
+20	Miwa	3913	Boston
+20	Victor	2012	Mumbai
+20	Joyce	2598	Boston
+20	Fabian	3062	Mumbai
+20	Karl	3506	Boston
+20	Victor	3737	Mumbai
+20	Karl	2030	Boston
+20	Joyce	2881	Boston
+20	Gordon	2532	Mumbai
+20	Karl	2158	Boston
+20	Fabian	3257	Mumbai
+20	Karen	3217	Boston
+20	Karen	3691	Boston
+20	Sandy	2631	Miami
+20	Sandy	2341	Miami
+Time taken: 0.088 seconds, Fetched: 604 row(s)
+hive> select deptno, empname, sal, location from dept_buck tablesample(1M);[7G[KjjjjJJ[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kselect deptno, empname, sal, location from dept_buck tablesample(1M);[72G[Kbucket 1 out of 3 on location);[1A[72G[K[K[B[2K[A1M);[7G[Kalter drop[16G[K[15G[K[14G[K[13G[Ktable t[19G[Kdept_buck notdrop[35G[K[34G[K[33G[K[32G[K[31G[K_de[33G[Krop;[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[Kenable d[36G[Kno_drp[41G[Ko;[42G[Kp;
+OK
+Time taken: 0.089 seconds
+hive> drop table dept_buck;
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. Table dept_buck is protected from being dropped
+hive> drop table dept_buck;
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. Table dept_buck is protected from being dropped
+hive> 
+    > alter table dept_buck enabel sds[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[Kt_buck disable n[37G[Kdrp[39G[Kop;[41G[K[40G[K[39G[K[38G[K[37G[Knp[38G[Ko_drop;
+OK
+Time taken: 0.08 seconds
+hive> alter table dept_buck disable no_drop;[7G[Kdrop table dept_buck;
+OK
+Time taken: 0.376 seconds
+hive> isdrop table dept_buck;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'isdrop' 'table' 'dept_buck'
+hive> isdrop table dept_buck;[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[9G[10G[11G[12G[13Gp table dept_buck;[14Ge table dept_buck;[15Gd table dept_buck;[16G[33G
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'isdropped' 'table' 'dept_buck'
+hive> isdropped table dept_buck;[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K
+    > 
+    > 
+    > 
+    > 
+    > ak[8G[Klter table dept_part_dynamic enable offline;
+OK
+Time taken: 0.075 seconds
+hive> slel[10G[K[9G[K[8G[K[7G[K
+    > 
+    > e[7G[Kselect *[14G[K* from table[25G[K[24G[K[23G[K[22G[K[21G[Kta[22G[K[21G[Kdept[24G[Kt__[26G[Kpart_dynamic;
+FAILED: SemanticException [Error 10113]: Query against an offline table or partition Table dept_part_dynamic
+hive> select * from dept_part_dynamic;[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[25G[26G[27G[28G[29G[30G[31G[32G[33G[34G[35G[36G[37G[38G[39G[7G[Kalter table dept_part_dynamic enable offline;[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[39G[40G[41G[40G[39Gble offline;[K[39G[38Gble offline;[K[38G[37Gble offline;[K[37Gdble offline;[38Gible offline;[39Gsble offline;[40Gable offline;[41G[53G
+OK
+Time taken: 0.077 seconds
+hive> s[7G[K
+    > 
+    > select ([14G[K* from dept_part_dynamic;
+OK
+10	Edouard	2384	Accounts
+10	Paloma	3833	Accounts
+10	Bill	2582	Accounts
+10	Miwa	2002	Accounts
+10	Claudette	3836	Accounts
+10	Gordon	3906	Accounts
+10	Kaori	2353	Accounts
+10	Odette	3488	Accounts
+10	Omar	2783	Accounts
+10	Isabel	3932	Accounts
+10	Maria	2920	Accounts
+10	Harvey	2749	Accounts
+10	Charley	2797	Accounts
+10	Otto	2904	Accounts
+10	Olga	2906	Accounts
+10	Iris	2663	Accounts
+10	Karen	3747	Accounts
+10	Wilfred	3240	Accounts
+10	Rene	3638	Accounts
+10	Alex	3716	Accounts
+10	Youko	3012	Accounts
+10	Juan	3332	Accounts
+10	Emily	3256	Accounts
+10	Rose	3303	Accounts
+10	Kaori	3896	Accounts
+10	Wendy	2668	Accounts
+10	Alberto	3509	Accounts
+10	Dean	3266	Accounts
+10	Danielle	3552	Accounts
+10	Nana	3653	Accounts
+10	Gabielle	3615	Accounts
+10	Shary	2721	Accounts
+10	Isaac	2192	Accounts
+10	Emi	3071	Accounts
+10	Karen	3690	Accounts
+10	Omar	2447	Accounts
+10	Dolly	3610	Accounts
+10	Helene	2488	Accounts
+10	Josephine	2372	Accounts
+10	Noel	3298	Accounts
+10	Hanna	3076	Accounts
+10	Hanna	3017	Accounts
+10	Kaori	3362	Accounts
+10	Gustav	3106	Accounts
+10	Michael	3858	Accounts
+10	Rita	2955	Accounts
+10	Michael	3780	Accounts
+10	Bill	2582	Accounts
+10	Miwa	2002	Accounts
+10	Claudette	3836	Accounts
+10	Gordon	3906	Accounts
+10	Kaori	2353	Accounts
+10	Odette	3488	Accounts
+10	Omar	2783	Accounts
+10	Isabel	3932	Accounts
+10	Maria	2920	Accounts
+10	Harvey	2749	Accounts
+10	Charley	2797	Accounts
+10	Otto	2904	Accounts
+10	Olga	2906	Accounts
+10	Iris	2663	Accounts
+10	Karen	3747	Accounts
+10	Wilfred	3240	Accounts
+10	Rene	3638	Accounts
+10	Alex	3716	Accounts
+10	Youko	3012	Accounts
+10	Juan	3332	Accounts
+10	Emily	3256	Accounts
+10	Rose	3303	Accounts
+10	Kaori	3896	Accounts
+10	Wendy	2668	Accounts
+10	Alberto	3509	Accounts
+10	Dean	3266	Accounts
+10	Danielle	3552	Accounts
+10	Nana	3653	Accounts
+10	Gabielle	3615	Accounts
+10	Shary	2721	Accounts
+10	Isaac	2192	Accounts
+10	Emi	3071	Accounts
+10	Karen	3690	Accounts
+10	Omar	2447	Accounts
+10	Dolly	3610	Accounts
+10	Helene	2488	Accounts
+10	Josephine	2372	Accounts
+10	Noel	3298	Accounts
+10	Hanna	3076	Accounts
+10	Hanna	3017	Accounts
+10	Kaori	3362	Accounts
+10	Gustav	3106	Accounts
+10	Michael	3858	Accounts
+10	Rita	2955	Accounts
+10	Michael	3780	Accounts
+10	Bill	2582	Accounts
+10	Miwa	2002	Accounts
+10	Claudette	3836	Accounts
+10	Gordon	3906	Accounts
+10	Kaori	2353	Accounts
+10	Odette	3488	Accounts
+10	Omar	2783	Accounts
+10	Isabel	3932	Accounts
+10	Maria	2920	Accounts
+10	Harvey	2749	Accounts
+10	Charley	2797	Accounts
+10	Otto	2904	Accounts
+10	Olga	2906	Accounts
+10	Iris	2663	Accounts
+10	Karen	3747	Accounts
+10	Wilfred	3240	Accounts
+10	Rene	3638	Accounts
+10	Alex	3716	Accounts
+10	Youko	3012	Accounts
+10	Juan	3332	Accounts
+10	Emily	3256	Accounts
+10	Rose	3303	Accounts
+10	Kaori	3896	Accounts
+10	Wendy	2668	Accounts
+10	Alberto	3509	Accounts
+10	Dean	3266	Accounts
+10	Danielle	3552	Accounts
+10	Nana	3653	Accounts
+10	Gabielle	3615	Accounts
+10	Shary	2721	Accounts
+10	Isaac	2192	Accounts
+10	Emi	3071	Accounts
+10	Karen	3690	Accounts
+10	Omar	2447	Accounts
+10	Dolly	3610	Accounts
+10	Helene	2488	Accounts
+10	Josephine	2372	Accounts
+10	Noel	3298	Accounts
+10	Hanna	3076	Accounts
+10	Hanna	3017	Accounts
+10	Kaori	3362	Accounts
+10	Gustav	3106	Accounts
+30	Ophelia	3808	Marketing
+30	Paula	2921	Marketing
+30	Fabian	2475	Marketing
+30	Barry	2442	Marketing
+30	Paula	3699	Marketing
+30	Sally	3011	Marketing
+30	Emi	2751	Marketing
+30	Nicholas	2460	Marketing
+30	Maria	2886	Marketing
+30	Walter	2344	Marketing
+30	Mieko	2349	Marketing
+30	Walter	2032	Marketing
+30	Hermine	2888	Marketing
+30	Mindy	3002	Marketing
+30	Shary	2794	Marketing
+30	Nadine	2956	Marketing
+30	Wendy	3683	Marketing
+30	Gordon	3773	Marketing
+30	Pablo	3873	Marketing
+30	Vince	3622	Marketing
+30	Nate	2835	Marketing
+30	Nana	2787	Marketing
+30	Yumi	3514	Marketing
+30	Frances	2529	Marketing
+30	Walter	2359	Marketing
+30	Gordon	3707	Marketing
+30	Youko	3823	Marketing
+30	Rita	2501	Marketing
+30	Wilfred	2904	Marketing
+30	Youko	3179	Marketing
+30	Hermine	3639	Marketing
+30	Paloma	2184	Marketing
+30	Fabian	3899	Marketing
+30	Helene	2425	Marketing
+30	Ernesto	3136	Marketing
+30	Beryl	3615	Marketing
+30	Yumi	2769	Marketing
+30	Bertha	2015	Marketing
+30	Reina	3458	Marketing
+30	Aki	2156	Marketing
+30	Isidore	2777	Marketing
+30	Kirk	3430	Marketing
+30	Jose	3927	Marketing
+30	Lili	3471	Marketing
+30	Teresa	3934	Marketing
+30	Jose	2384	Marketing
+30	Miwa	3549	Marketing
+30	Allison	2979	Marketing
+30	Beryl	3608	Marketing
+30	Jeanne	2844	Marketing
+30	Sandy	2602	Marketing
+30	Cindy	2946	Marketing
+30	Virginie	3967	Marketing
+30	Michiyo	2838	Marketing
+30	Bertha	3456	Marketing
+30	Rene	2569	Marketing
+30	Gaston	2174	Marketing
+30	Michiyo	2358	Marketing
+30	Claudette	3491	Marketing
+30	Ophelia	3808	Marketing
+30	Paula	2921	Marketing
+30	Fabian	2475	Marketing
+30	Barry	2442	Marketing
+30	Paula	3699	Marketing
+30	Sally	3011	Marketing
+30	Emi	2751	Marketing
+30	Nicholas	2460	Marketing
+30	Maria	2886	Marketing
+30	Walter	2344	Marketing
+30	Mieko	2349	Marketing
+30	Walter	2032	Marketing
+30	Hermine	2888	Marketing
+30	Mindy	3002	Marketing
+30	Shary	2794	Marketing
+30	Nadine	2956	Marketing
+30	Wendy	3683	Marketing
+30	Gordon	3773	Marketing
+30	Pablo	3873	Marketing
+30	Vince	3622	Marketing
+30	Nate	2835	Marketing
+30	Nana	2787	Marketing
+30	Yumi	3514	Marketing
+30	Frances	2529	Marketing
+30	Walter	2359	Marketing
+30	Gordon	3707	Marketing
+30	Youko	3823	Marketing
+30	Rita	2501	Marketing
+30	Wilfred	2904	Marketing
+30	Youko	3179	Marketing
+30	Hermine	3639	Marketing
+30	Paloma	2184	Marketing
+30	Fabian	3899	Marketing
+30	Helene	2425	Marketing
+30	Ernesto	3136	Marketing
+30	Beryl	3615	Marketing
+30	Yumi	2769	Marketing
+30	Bertha	2015	Marketing
+30	Reina	3458	Marketing
+30	Aki	2156	Marketing
+30	Isidore	2777	Marketing
+30	Kirk	3430	Marketing
+30	Jose	3927	Marketing
+30	Lili	3471	Marketing
+30	Teresa	3934	Marketing
+30	Jose	2384	Marketing
+30	Miwa	3549	Marketing
+30	Allison	2979	Marketing
+30	Beryl	3608	Marketing
+30	Jeanne	2844	Marketing
+30	Sandy	2602	Marketing
+30	Cindy	2946	Marketing
+30	Virginie	3967	Marketing
+30	Michiyo	2838	Marketing
+30	Bertha	3456	Marketing
+30	Rene	2569	Marketing
+30	Gaston	2174	Marketing
+30	Michiyo	2358	Marketing
+30	Claudette	3491	Marketing
+30	Ophelia	3808	Marketing
+30	Paula	2921	Marketing
+30	Fabian	2475	Marketing
+30	Barry	2442	Marketing
+30	Paula	3699	Marketing
+30	Sally	3011	Marketing
+30	Emi	2751	Marketing
+30	Nicholas	2460	Marketing
+30	Maria	2886	Marketing
+30	Walter	2344	Marketing
+30	Mieko	2349	Marketing
+30	Walter	2032	Marketing
+30	Hermine	2888	Marketing
+30	Mindy	3002	Marketing
+30	Shary	2794	Marketing
+30	Nadine	2956	Marketing
+30	Wendy	3683	Marketing
+30	Gordon	3773	Marketing
+30	Pablo	3873	Marketing
+30	Vince	3622	Marketing
+30	Nate	2835	Marketing
+30	Nana	2787	Marketing
+30	Yumi	3514	Marketing
+30	Frances	2529	Marketing
+30	Walter	2359	Marketing
+30	Gordon	3707	Marketing
+30	Youko	3823	Marketing
+30	Rita	2501	Marketing
+30	Wilfred	2904	Marketing
+30	Youko	3179	Marketing
+30	Hermine	3639	Marketing
+30	Paloma	2184	Marketing
+30	Fabian	3899	Marketing
+30	Helene	2425	Marketing
+30	Ernesto	3136	Marketing
+30	Beryl	3615	Marketing
+30	Yumi	2769	Marketing
+30	Bertha	2015	Marketing
+30	Reina	3458	Marketing
+30	Aki	2156	Marketing
+30	Isidore	2777	Marketing
+30	Kirk	3430	Marketing
+30	Jose	3927	Marketing
+30	Lili	3471	Marketing
+30	Teresa	3934	Marketing
+30	Jose	2384	Marketing
+30	Miwa	3549	Marketing
+30	Allison	2979	Marketing
+30	Beryl	3608	Marketing
+30	Jeanne	2844	Marketing
+30	Sandy	2602	Marketing
+30	Cindy	2946	Marketing
+30	Virginie	3967	Marketing
+30	Michiyo	2838	Marketing
+30	Bertha	3456	Marketing
+20	Claudette	2084	Sales
+20	Juan	2627	Sales
+20	Harvey	2655	Sales
+20	Alex	2038	Sales
+20	Harvey	2316	Sales
+20	Lorenzo	3451	Sales
+20	Chiaki	2306	Sales
+20	Ana	3744	Sales
+20	Naoko	2093	Sales
+20	Fay	2883	Sales
+20	Tammy	2914	Sales
+20	Sayuri	3113	Sales
+20	Paula	3141	Sales
+20	Nanaho	2311	Sales
+20	Barry	2602	Sales
+20	Valerie	3873	Sales
+20	Itoe	2060	Sales
+20	Felix	2182	Sales
+20	Patty	3200	Sales
+20	Isabel	2503	Sales
+20	Felix	2617	Sales
+20	Lorenzo	2592	Sales
+20	Barry	2346	Sales
+20	Peter	3043	Sales
+20	Paloma	3119	Sales
+20	Alberto	2508	Sales
+20	Mindy	3866	Sales
+20	Walter	2448	Sales
+20	Wilfred	3539	Sales
+20	Rene	2639	Sales
+20	Vince	3164	Sales
+20	Chantal	3320	Sales
+20	Sally	2696	Sales
+20	Nicholas	3669	Sales
+20	Michael	3784	Sales
+20	Rene	2409	Sales
+20	Nicholas	2088	Sales
+20	Tanya	2998	Sales
+20	Nana	2275	Sales
+20	Stan	2281	Sales
+20	Kate	3364	Sales
+20	Leslie	3937	Sales
+20	Rebekah	3547	Sales
+20	Michelle	2109	Sales
+20	Lili	3521	Sales
+20	Erika	2384	Sales
+20	Juan	3995	Sales
+20	Juan	2627	Sales
+20	Harvey	2655	Sales
+20	Alex	2038	Sales
+20	Harvey	2316	Sales
+20	Lorenzo	3451	Sales
+20	Chiaki	2306	Sales
+20	Ana	3744	Sales
+20	Naoko	2093	Sales
+20	Fay	2883	Sales
+20	Tammy	2914	Sales
+20	Sayuri	3113	Sales
+20	Paula	3141	Sales
+20	Nanaho	2311	Sales
+20	Barry	2602	Sales
+20	Valerie	3873	Sales
+20	Itoe	2060	Sales
+20	Felix	2182	Sales
+20	Patty	3200	Sales
+20	Isabel	2503	Sales
+20	Felix	2617	Sales
+20	Lorenzo	2592	Sales
+20	Barry	2346	Sales
+20	Peter	3043	Sales
+20	Paloma	3119	Sales
+20	Alberto	2508	Sales
+20	Mindy	3866	Sales
+20	Walter	2448	Sales
+20	Wilfred	3539	Sales
+20	Rene	2639	Sales
+20	Vince	3164	Sales
+20	Chantal	3320	Sales
+20	Sally	2696	Sales
+20	Nicholas	3669	Sales
+20	Michael	3784	Sales
+20	Rene	2409	Sales
+20	Nicholas	2088	Sales
+20	Tanya	2998	Sales
+20	Nana	2275	Sales
+20	Stan	2281	Sales
+20	Kate	3364	Sales
+20	Leslie	3937	Sales
+20	Rebekah	3547	Sales
+20	Michelle	2109	Sales
+20	Lili	3521	Sales
+20	Erika	2384	Sales
+20	Juan	3995	Sales
+20	Juan	2627	Sales
+20	Harvey	2655	Sales
+20	Alex	2038	Sales
+20	Harvey	2316	Sales
+20	Lorenzo	3451	Sales
+20	Chiaki	2306	Sales
+20	Ana	3744	Sales
+20	Naoko	2093	Sales
+20	Fay	2883	Sales
+20	Tammy	2914	Sales
+20	Sayuri	3113	Sales
+20	Paula	3141	Sales
+20	Nanaho	2311	Sales
+20	Barry	2602	Sales
+20	Valerie	3873	Sales
+20	Itoe	2060	Sales
+20	Felix	2182	Sales
+20	Patty	3200	Sales
+20	Isabel	2503	Sales
+20	Felix	2617	Sales
+20	Lorenzo	2592	Sales
+20	Barry	2346	Sales
+20	Peter	3043	Sales
+20	Paloma	3119	Sales
+20	Alberto	2508	Sales
+20	Mindy	3866	Sales
+20	Walter	2448	Sales
+20	Wilfred	3539	Sales
+20	Rene	2639	Sales
+20	Vince	3164	Sales
+20	Chantal	3320	Sales
+20	Sally	2696	Sales
+20	Nicholas	3669	Sales
+20	Michael	3784	Sales
+20	Rene	2409	Sales
+20	Nicholas	2088	Sales
+20	Tanya	2998	Sales
+20	Nana	2275	Sales
+20	Stan	2281	Sales
+20	Kate	3364	Sales
+20	Leslie	3937	Sales
+20	Rebekah	3547	Sales
+20	Michelle	2109	Sales
+20	Lili	3521	Sales
+10	Dev	NULL	dev
+20	Dev	NULL	dev
+20	Dev	NULL	dev
+20	Dev	NULL	dev
+Time taken: 0.094 seconds, Fetched: 448 row(s)
+hive> select * from dept_part_dynamic;[38G ;[39Gs;[40Ga;[41Gm;[42Gp;[43Gl;[44Ge;[45G(;[46G2;[47G0;[48G);[49G[50G
+FAILED: ParseException line 1:38 missing EOF at '(' near 'sample'
+hive> select * from dept_part_dynamic sample(20);[49G[48G[47G[48G[49G[48G;[K[48GM;[49G);[50G[51G
+NoViableAltException(8@[180:68: ( ( KW_AS )? alias= Identifier )?])
+	at org.antlr.runtime.DFA.noViableAlt(DFA.java:158)
+	at org.antlr.runtime.DFA.predict(DFA.java:116)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.tableSource(HiveParser_FromClauseParser.java:4524)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.fromSource(HiveParser_FromClauseParser.java:3654)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.joinSource(HiveParser_FromClauseParser.java:1823)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.fromClause(HiveParser_FromClauseParser.java:1478)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.fromClause(HiveParser.java:44339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41508)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:39 cannot recognize input near 'sample' '(' '20M' in table source
+hive> select * from dept_part_dynamic sample(20M);[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39Gtsample(20M);[40Gasample(20M);[41Gbsample(20M);[42Glsample(20M);[43Gesample(20M);[44G[56G
+OK
+10	Edouard	2384	Accounts
+10	Paloma	3833	Accounts
+10	Bill	2582	Accounts
+10	Miwa	2002	Accounts
+10	Claudette	3836	Accounts
+10	Gordon	3906	Accounts
+10	Kaori	2353	Accounts
+10	Odette	3488	Accounts
+10	Omar	2783	Accounts
+10	Isabel	3932	Accounts
+10	Maria	2920	Accounts
+10	Harvey	2749	Accounts
+10	Charley	2797	Accounts
+10	Otto	2904	Accounts
+10	Olga	2906	Accounts
+10	Iris	2663	Accounts
+10	Karen	3747	Accounts
+10	Wilfred	3240	Accounts
+10	Rene	3638	Accounts
+10	Alex	3716	Accounts
+10	Youko	3012	Accounts
+10	Juan	3332	Accounts
+10	Emily	3256	Accounts
+10	Rose	3303	Accounts
+10	Kaori	3896	Accounts
+10	Wendy	2668	Accounts
+10	Alberto	3509	Accounts
+10	Dean	3266	Accounts
+10	Danielle	3552	Accounts
+10	Nana	3653	Accounts
+10	Gabielle	3615	Accounts
+10	Shary	2721	Accounts
+10	Isaac	2192	Accounts
+10	Emi	3071	Accounts
+10	Karen	3690	Accounts
+10	Omar	2447	Accounts
+10	Dolly	3610	Accounts
+10	Helene	2488	Accounts
+10	Josephine	2372	Accounts
+10	Noel	3298	Accounts
+10	Hanna	3076	Accounts
+10	Hanna	3017	Accounts
+10	Kaori	3362	Accounts
+10	Gustav	3106	Accounts
+10	Michael	3858	Accounts
+10	Rita	2955	Accounts
+10	Michael	3780	Accounts
+10	Bill	2582	Accounts
+10	Miwa	2002	Accounts
+10	Claudette	3836	Accounts
+10	Gordon	3906	Accounts
+10	Kaori	2353	Accounts
+10	Odette	3488	Accounts
+10	Omar	2783	Accounts
+10	Isabel	3932	Accounts
+10	Maria	2920	Accounts
+10	Harvey	2749	Accounts
+10	Charley	2797	Accounts
+10	Otto	2904	Accounts
+10	Olga	2906	Accounts
+10	Iris	2663	Accounts
+10	Karen	3747	Accounts
+10	Wilfred	3240	Accounts
+10	Rene	3638	Accounts
+10	Alex	3716	Accounts
+10	Youko	3012	Accounts
+10	Juan	3332	Accounts
+10	Emily	3256	Accounts
+10	Rose	3303	Accounts
+10	Kaori	3896	Accounts
+10	Wendy	2668	Accounts
+10	Alberto	3509	Accounts
+10	Dean	3266	Accounts
+10	Danielle	3552	Accounts
+10	Nana	3653	Accounts
+10	Gabielle	3615	Accounts
+10	Shary	2721	Accounts
+10	Isaac	2192	Accounts
+10	Emi	3071	Accounts
+10	Karen	3690	Accounts
+10	Omar	2447	Accounts
+10	Dolly	3610	Accounts
+10	Helene	2488	Accounts
+10	Josephine	2372	Accounts
+10	Noel	3298	Accounts
+10	Hanna	3076	Accounts
+10	Hanna	3017	Accounts
+10	Kaori	3362	Accounts
+10	Gustav	3106	Accounts
+10	Michael	3858	Accounts
+10	Rita	2955	Accounts
+10	Michael	3780	Accounts
+10	Bill	2582	Accounts
+10	Miwa	2002	Accounts
+10	Claudette	3836	Accounts
+10	Gordon	3906	Accounts
+10	Kaori	2353	Accounts
+10	Odette	3488	Accounts
+10	Omar	2783	Accounts
+10	Isabel	3932	Accounts
+10	Maria	2920	Accounts
+10	Harvey	2749	Accounts
+10	Charley	2797	Accounts
+10	Otto	2904	Accounts
+10	Olga	2906	Accounts
+10	Iris	2663	Accounts
+10	Karen	3747	Accounts
+10	Wilfred	3240	Accounts
+10	Rene	3638	Accounts
+10	Alex	3716	Accounts
+10	Youko	3012	Accounts
+10	Juan	3332	Accounts
+10	Emily	3256	Accounts
+10	Rose	3303	Accounts
+10	Kaori	3896	Accounts
+10	Wendy	2668	Accounts
+10	Alberto	3509	Accounts
+10	Dean	3266	Accounts
+10	Danielle	3552	Accounts
+10	Nana	3653	Accounts
+10	Gabielle	3615	Accounts
+10	Shary	2721	Accounts
+10	Isaac	2192	Accounts
+10	Emi	3071	Accounts
+10	Karen	3690	Accounts
+10	Omar	2447	Accounts
+10	Dolly	3610	Accounts
+10	Helene	2488	Accounts
+10	Josephine	2372	Accounts
+10	Noel	3298	Accounts
+10	Hanna	3076	Accounts
+10	Hanna	3017	Accounts
+10	Kaori	3362	Accounts
+10	Gustav	3106	Accounts
+30	Ophelia	3808	Marketing
+30	Paula	2921	Marketing
+30	Fabian	2475	Marketing
+30	Barry	2442	Marketing
+30	Paula	3699	Marketing
+30	Sally	3011	Marketing
+30	Emi	2751	Marketing
+30	Nicholas	2460	Marketing
+30	Maria	2886	Marketing
+30	Walter	2344	Marketing
+30	Mieko	2349	Marketing
+30	Walter	2032	Marketing
+30	Hermine	2888	Marketing
+30	Mindy	3002	Marketing
+30	Shary	2794	Marketing
+30	Nadine	2956	Marketing
+30	Wendy	3683	Marketing
+30	Gordon	3773	Marketing
+30	Pablo	3873	Marketing
+30	Vince	3622	Marketing
+30	Nate	2835	Marketing
+30	Nana	2787	Marketing
+30	Yumi	3514	Marketing
+30	Frances	2529	Marketing
+30	Walter	2359	Marketing
+30	Gordon	3707	Marketing
+30	Youko	3823	Marketing
+30	Rita	2501	Marketing
+30	Wilfred	2904	Marketing
+30	Youko	3179	Marketing
+30	Hermine	3639	Marketing
+30	Paloma	2184	Marketing
+30	Fabian	3899	Marketing
+30	Helene	2425	Marketing
+30	Ernesto	3136	Marketing
+30	Beryl	3615	Marketing
+30	Yumi	2769	Marketing
+30	Bertha	2015	Marketing
+30	Reina	3458	Marketing
+30	Aki	2156	Marketing
+30	Isidore	2777	Marketing
+30	Kirk	3430	Marketing
+30	Jose	3927	Marketing
+30	Lili	3471	Marketing
+30	Teresa	3934	Marketing
+30	Jose	2384	Marketing
+30	Miwa	3549	Marketing
+30	Allison	2979	Marketing
+30	Beryl	3608	Marketing
+30	Jeanne	2844	Marketing
+30	Sandy	2602	Marketing
+30	Cindy	2946	Marketing
+30	Virginie	3967	Marketing
+30	Michiyo	2838	Marketing
+30	Bertha	3456	Marketing
+30	Rene	2569	Marketing
+30	Gaston	2174	Marketing
+30	Michiyo	2358	Marketing
+30	Claudette	3491	Marketing
+30	Ophelia	3808	Marketing
+30	Paula	2921	Marketing
+30	Fabian	2475	Marketing
+30	Barry	2442	Marketing
+30	Paula	3699	Marketing
+30	Sally	3011	Marketing
+30	Emi	2751	Marketing
+30	Nicholas	2460	Marketing
+30	Maria	2886	Marketing
+30	Walter	2344	Marketing
+30	Mieko	2349	Marketing
+30	Walter	2032	Marketing
+30	Hermine	2888	Marketing
+30	Mindy	3002	Marketing
+30	Shary	2794	Marketing
+30	Nadine	2956	Marketing
+30	Wendy	3683	Marketing
+30	Gordon	3773	Marketing
+30	Pablo	3873	Marketing
+30	Vince	3622	Marketing
+30	Nate	2835	Marketing
+30	Nana	2787	Marketing
+30	Yumi	3514	Marketing
+30	Frances	2529	Marketing
+30	Walter	2359	Marketing
+30	Gordon	3707	Marketing
+30	Youko	3823	Marketing
+30	Rita	2501	Marketing
+30	Wilfred	2904	Marketing
+30	Youko	3179	Marketing
+30	Hermine	3639	Marketing
+30	Paloma	2184	Marketing
+30	Fabian	3899	Marketing
+30	Helene	2425	Marketing
+30	Ernesto	3136	Marketing
+30	Beryl	3615	Marketing
+30	Yumi	2769	Marketing
+30	Bertha	2015	Marketing
+30	Reina	3458	Marketing
+30	Aki	2156	Marketing
+30	Isidore	2777	Marketing
+30	Kirk	3430	Marketing
+30	Jose	3927	Marketing
+30	Lili	3471	Marketing
+30	Teresa	3934	Marketing
+30	Jose	2384	Marketing
+30	Miwa	3549	Marketing
+30	Allison	2979	Marketing
+30	Beryl	3608	Marketing
+30	Jeanne	2844	Marketing
+30	Sandy	2602	Marketing
+30	Cindy	2946	Marketing
+30	Virginie	3967	Marketing
+30	Michiyo	2838	Marketing
+30	Bertha	3456	Marketing
+30	Rene	2569	Marketing
+30	Gaston	2174	Marketing
+30	Michiyo	2358	Marketing
+30	Claudette	3491	Marketing
+30	Ophelia	3808	Marketing
+30	Paula	2921	Marketing
+30	Fabian	2475	Marketing
+30	Barry	2442	Marketing
+30	Paula	3699	Marketing
+30	Sally	3011	Marketing
+30	Emi	2751	Marketing
+30	Nicholas	2460	Marketing
+30	Maria	2886	Marketing
+30	Walter	2344	Marketing
+30	Mieko	2349	Marketing
+30	Walter	2032	Marketing
+30	Hermine	2888	Marketing
+30	Mindy	3002	Marketing
+30	Shary	2794	Marketing
+30	Nadine	2956	Marketing
+30	Wendy	3683	Marketing
+30	Gordon	3773	Marketing
+30	Pablo	3873	Marketing
+30	Vince	3622	Marketing
+30	Nate	2835	Marketing
+30	Nana	2787	Marketing
+30	Yumi	3514	Marketing
+30	Frances	2529	Marketing
+30	Walter	2359	Marketing
+30	Gordon	3707	Marketing
+30	Youko	3823	Marketing
+30	Rita	2501	Marketing
+30	Wilfred	2904	Marketing
+30	Youko	3179	Marketing
+30	Hermine	3639	Marketing
+30	Paloma	2184	Marketing
+30	Fabian	3899	Marketing
+30	Helene	2425	Marketing
+30	Ernesto	3136	Marketing
+30	Beryl	3615	Marketing
+30	Yumi	2769	Marketing
+30	Bertha	2015	Marketing
+30	Reina	3458	Marketing
+30	Aki	2156	Marketing
+30	Isidore	2777	Marketing
+30	Kirk	3430	Marketing
+30	Jose	3927	Marketing
+30	Lili	3471	Marketing
+30	Teresa	3934	Marketing
+30	Jose	2384	Marketing
+30	Miwa	3549	Marketing
+30	Allison	2979	Marketing
+30	Beryl	3608	Marketing
+30	Jeanne	2844	Marketing
+30	Sandy	2602	Marketing
+30	Cindy	2946	Marketing
+30	Virginie	3967	Marketing
+30	Michiyo	2838	Marketing
+30	Bertha	3456	Marketing
+20	Claudette	2084	Sales
+20	Juan	2627	Sales
+20	Harvey	2655	Sales
+20	Alex	2038	Sales
+20	Harvey	2316	Sales
+20	Lorenzo	3451	Sales
+20	Chiaki	2306	Sales
+20	Ana	3744	Sales
+20	Naoko	2093	Sales
+20	Fay	2883	Sales
+20	Tammy	2914	Sales
+20	Sayuri	3113	Sales
+20	Paula	3141	Sales
+20	Nanaho	2311	Sales
+20	Barry	2602	Sales
+20	Valerie	3873	Sales
+20	Itoe	2060	Sales
+20	Felix	2182	Sales
+20	Patty	3200	Sales
+20	Isabel	2503	Sales
+20	Felix	2617	Sales
+20	Lorenzo	2592	Sales
+20	Barry	2346	Sales
+20	Peter	3043	Sales
+20	Paloma	3119	Sales
+20	Alberto	2508	Sales
+20	Mindy	3866	Sales
+20	Walter	2448	Sales
+20	Wilfred	3539	Sales
+20	Rene	2639	Sales
+20	Vince	3164	Sales
+20	Chantal	3320	Sales
+20	Sally	2696	Sales
+20	Nicholas	3669	Sales
+20	Michael	3784	Sales
+20	Rene	2409	Sales
+20	Nicholas	2088	Sales
+20	Tanya	2998	Sales
+20	Nana	2275	Sales
+20	Stan	2281	Sales
+20	Kate	3364	Sales
+20	Leslie	3937	Sales
+20	Rebekah	3547	Sales
+20	Michelle	2109	Sales
+20	Lili	3521	Sales
+20	Erika	2384	Sales
+20	Juan	3995	Sales
+20	Juan	2627	Sales
+20	Harvey	2655	Sales
+20	Alex	2038	Sales
+20	Harvey	2316	Sales
+20	Lorenzo	3451	Sales
+20	Chiaki	2306	Sales
+20	Ana	3744	Sales
+20	Naoko	2093	Sales
+20	Fay	2883	Sales
+20	Tammy	2914	Sales
+20	Sayuri	3113	Sales
+20	Paula	3141	Sales
+20	Nanaho	2311	Sales
+20	Barry	2602	Sales
+20	Valerie	3873	Sales
+20	Itoe	2060	Sales
+20	Felix	2182	Sales
+20	Patty	3200	Sales
+20	Isabel	2503	Sales
+20	Felix	2617	Sales
+20	Lorenzo	2592	Sales
+20	Barry	2346	Sales
+20	Peter	3043	Sales
+20	Paloma	3119	Sales
+20	Alberto	2508	Sales
+20	Mindy	3866	Sales
+20	Walter	2448	Sales
+20	Wilfred	3539	Sales
+20	Rene	2639	Sales
+20	Vince	3164	Sales
+20	Chantal	3320	Sales
+20	Sally	2696	Sales
+20	Nicholas	3669	Sales
+20	Michael	3784	Sales
+20	Rene	2409	Sales
+20	Nicholas	2088	Sales
+20	Tanya	2998	Sales
+20	Nana	2275	Sales
+20	Stan	2281	Sales
+20	Kate	3364	Sales
+20	Leslie	3937	Sales
+20	Rebekah	3547	Sales
+20	Michelle	2109	Sales
+20	Lili	3521	Sales
+20	Erika	2384	Sales
+20	Juan	3995	Sales
+20	Juan	2627	Sales
+20	Harvey	2655	Sales
+20	Alex	2038	Sales
+20	Harvey	2316	Sales
+20	Lorenzo	3451	Sales
+20	Chiaki	2306	Sales
+20	Ana	3744	Sales
+20	Naoko	2093	Sales
+20	Fay	2883	Sales
+20	Tammy	2914	Sales
+20	Sayuri	3113	Sales
+20	Paula	3141	Sales
+20	Nanaho	2311	Sales
+20	Barry	2602	Sales
+20	Valerie	3873	Sales
+20	Itoe	2060	Sales
+20	Felix	2182	Sales
+20	Patty	3200	Sales
+20	Isabel	2503	Sales
+20	Felix	2617	Sales
+20	Lorenzo	2592	Sales
+20	Barry	2346	Sales
+20	Peter	3043	Sales
+20	Paloma	3119	Sales
+20	Alberto	2508	Sales
+20	Mindy	3866	Sales
+20	Walter	2448	Sales
+20	Wilfred	3539	Sales
+20	Rene	2639	Sales
+20	Vince	3164	Sales
+20	Chantal	3320	Sales
+20	Sally	2696	Sales
+20	Nicholas	3669	Sales
+20	Michael	3784	Sales
+20	Rene	2409	Sales
+20	Nicholas	2088	Sales
+20	Tanya	2998	Sales
+20	Nana	2275	Sales
+20	Stan	2281	Sales
+20	Kate	3364	Sales
+20	Leslie	3937	Sales
+20	Rebekah	3547	Sales
+20	Michelle	2109	Sales
+20	Lili	3521	Sales
+10	Dev	NULL	dev
+20	Dev	NULL	dev
+20	Dev	NULL	dev
+20	Dev	NULL	dev
+Time taken: 0.078 seconds, Fetched: 448 row(s)
+hive> 
+    > 
+    > exit
+    > ]0;cloudera@quickstart:~[cloudera@quickstart ~]$ esi[K[Kxit
+exit
+
+Script done on Fri 20 Mar 2020 04:48:45 PM PDT
