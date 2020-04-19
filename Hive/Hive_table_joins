@@ -1,0 +1,664 @@
+Script started on Sat 21 Mar 2020 06:47:24 PM PDT
+]0;cloudera@quickstart:~[?1034h[cloudera@quickstart ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> us[8G[K[7G[Kshow databases;
+OK
+d1
+d2
+d3
+default
+Time taken: 0.959 seconds, Fetched: 4 row(s)
+hive> use d1k[13G[K;
+OK
+Time taken: 0.072 seconds
+hive> create table if not esi[29G[K[28G[Ksi[29G[K[28G[Kix[29G[K[28G[Kxists dept [38G[K(colq[42G[K1 int [47G[K, col2 string, col3 string [73G[K, col3[78G[K4 string) row format delimited fo[110G[Kields  terminated by ',' collection ie[32G[Ktems tr[38G[Kerminateed [48G[K[47G[K[46G[Kd by':' ines terminated gy[71G[K[70G[Kby '\m[75G[Kn' stored[83G[K[82G[Ked as tes[90G[Kxtfie[94G[Kle;
+NoViableAltException(26@[1750:103: ( tableRowFormatMapKeysIdentifier )?])
+	at org.antlr.runtime.DFA.noViableAlt(DFA.java:158)
+	at org.antlr.runtime.DFA.predict(DFA.java:144)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.rowFormatDelimited(HiveParser.java:33960)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.tableRowFormat(HiveParser.java:34195)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.createTableStatement(HiveParser.java:4979)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:2355)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1579)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:161 cannot recognize input near 'ines' 'terminated' 'by' in serde properties specification
+hive> create table if not exists dept(col1 int, col2 string, col3 string, col4 string) row format delimited fields terminated by ',' collection items terminated by':' ines terminated by '\n' stored as textfile;[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G;ines terminated by '\n' stored as textfile;[55G[54Gines terminated by '\n' stored as textfile;[K[54Glines terminated by '\n' stored as textfile;[55G[98G
+OK
+Time taken: 2.872 seconds
+hive> create table if not exists dept(col1 int, col2 string, col3 string, col4 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[38Gs(col1 int, col2 string, col3 string, col4 string) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[39G[38G(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[38G[37G(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[37G[36G(col1 int, col2 string, col3 string, col4 string) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[36G[35G(col1 int, col2 string, col3 string, col4 string) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[35G[34G(col1 int, col2 string, col3 string, col4 string) row format delimited fields ter minated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[34Ge(col1 int, col2 string, col3 string, col4 string) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[35Gm(col1 int, col2 string, col3 string, col4 string) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[36Gp(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[37Gl(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[38Go(col1 int, col2 string, col3 string, col4 string) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[39Gy(col1 int, col2 string, col3 string, col4 string) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[40Ge(col1 int, col2 string, col3 string, col4 string) row format delimited fie lds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[41Ge(col1 int, col2 string, col3 string, col4 string) row format delimited fi elds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[42G[43G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G[59G[60G[61G[62G[63G[64G[65G[66G[67G[68G[69G[70G[71G[72G[73G[74G[75G[76G[77G[78G[79G[80G[81G[82G[83G[84G[85G[86G[87G[88G[89G[90G[89G) row format delimited fie lds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[89G[88G) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[88G[87G) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[87G[86G) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[86G[85G) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[85G[84G) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[84Gi) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[85Gn) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[86Gt) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[87G,) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[88G ) row format delimited fie lds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[89Gc) row format delimited fi elds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[90Go) row format delimited f ields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[91Gl) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[92G5) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[93G ) row format delimite d fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[94Gi) row format delimit ed fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[95Gn) row format delimi ted fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[96Gt) row format delim ited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[97G,) row format deli mited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[98G ) row format del imited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[99Gc) row format de limited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[100Go) row format d elimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[101Gl) row format  delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[102G6) row format  delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile; [2A[103G ) row forma t delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile ;[2A[104Gi) row form at delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfil e;[2A[105Gn) row for mat delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfi le;[2A[106Gt) row fo rmat delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textf ile;[2A[107G,) row f ormat delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as text file;[2A[108G ) row  format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as tex tfile;[2A[109Go) row  format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as te xtfile;[2A[110G[109G) row  format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as tex tfile;[K[2A[109Gc) row  format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as te xtfile;[2A[110Go) ro w format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as t extfile;[2A[111Gl) r ow format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as  textfile;[2A[112G7)  row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as  textfile;[2A[113G )  row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored a s textfile;[2A[114Gs) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored  as textfile;[1A[1Gt) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored  as textfile;[1A[2Gi) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' store d as textfile;[1A[3Gr) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stor ed as textfile;[1A[4Gn) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' sto red as textfile;[1A[5Gg) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' st ored as textfile;[1A[6G[5G) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' sto red as textfile;[K[1A[5G[4G) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stor ed as textfile;[K[1A[4G[3G) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' store d as textfile;[K[1A[3G[2G) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored  as textfile;[K[1A[2G[1G) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored  as textfile;[K[1A[1G[1A[114G[K)  row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored a s textfile;[K[2A[114G[113G)  row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as  textfile;[K[2A[113G )  row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored a s textfile;[2A[114Gs) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored  as textfile;[1A[1Gt) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored  as textfile;[1A[2Gr) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' store d as textfile;[1A[3Gi) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stor ed as textfile;[1A[4Gn) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' sto red as textfile;[1A[5Gg) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' st ored as textfile;[1A[6G[1B[18G
+OK
+Time taken: 0.345 seconds
+hive> loc[9G[K[8G[K[7G[Kol[8G[K[7G[Kload data local inpht[27G[K[26G[Kath'/o[31G[Khome/cou]l[40G[K[39G[K[38G[K[37G[Kloudera.[44G[K/Donw[48G[K[47G[Kwn;[49G[Koad[51G[K[50G[K[49G[Kloads/Join/[59G[K/dept' into table de;t[80G[K[79G[Kpt;[81G[K;
+Loading data to table d1.dept
+Table d1.dept stats: [numFiles=1, totalSize=84]
+OK
+Time taken: 0.882 seconds
+hive> load data local inpath'/home/cloudera/Downloads/Join/dept' into table dept;[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[64G[63G' into table dept;[K[63G[62G' into table dept;[K[62G[61G' into table dept;[K[61G[60G' into table dept;[K[60Ge' into table dept;[61Gm' into table dept;[62Gp' into table dept;[63Gl' into table dept;[64Go' into table dept;[65Gy' into table dept;[66Ge' into table dept;[67Ge' into table dept;[68G[69G[70G[71G[72G[73G[74G[75G[76G[77G[78G[79G[80G[81G[82G[83G[84G[85G[84G;[K[84G[83G;[K[83G[82G;[K[82G[81G;[K[81Ge;[82Gm;[83Gp;[84Gy;[85Gl;[86G[85G;[K[85G[84G;[K[84Gl;[85Go;[86Gy;[87Ge;[88Ge;[89G[90G
+Loading data to table d1.employee
+Table d1.employee stats: [numFiles=1, totalSize=218]
+OK
+Time taken: 0.478 seconds
+hive> select emp [17G[Kpl[18G[Kl[18G[K[17G[Kloyee [22G[K.col1,c[28G[Kemployee.colw[40G[K2,employee.col4[54G[K3,dept.col1,dd[67G[K[66G[Kdept.col2,c[76G[Kdept.col3 from employee join dept_tab[112G[K[111G[K[110G[K[109G[K on (e mployee.col6= detp[18G[K[17G[Kpt.col1);
+Query ID = cloudera_20200321185858_31767b54-3cfe-48a5-945e-ed5eb9b7c9d4
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321185858_31767b54-3cfe-48a5-945e-ed5eb9b7c9d4.log
+2020-03-21 06:58:56	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 06:58:58	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_18-58-26_861_741224510998250891-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile01--.hashtable
+2020-03-21 06:58:58	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_18-58-26_861_741224510998250891-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile01--.hashtable (372 bytes)
+2020-03-21 06:58:58	End of local task; Time Taken: 2.402 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0001, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0001/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0001
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2020-03-21 18:59:23,602 Stage-3 map = 0%,  reduce = 0%
+2020-03-21 18:59:41,582 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 2.25 sec
+MapReduce Total cumulative CPU time: 2 seconds 250 msec
+Ended Job = job_1584766051669_0001
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 2.25 sec   HDFS Read: 6978 HDFS Write: 197 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 250 msec
+OK
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1781	John	Developer	10	INVENTORY	HYDERABAD
+Time taken: 76.038 seconds, Fetched: 5 row(s)
+hive> 
+    > select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee join dept on (employee.col6= dept.col1);<[26G[K[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G dept.col1);[K[13G< dept.col1);[14G[26G
+FAILED: SemanticException [Error 10017]: Line 1:107 Both left and right aliases encountered in JOIN 'col1'
+hive> select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee join dept on (employee.col6< dept.col1);[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[15G[16G[15G[14G[26G
+FAILED: SemanticException [Error 10017]: Line 1:107 Both left and right aliases encountered in JOIN 'col1'
+hive> 
+    > 
+    > 
+    > select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee join dept on (employee.col6< dept.col1);<<[27G[K[26G[K[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G dept.col1);[K[13G  dept.col1);[14G= dept.col1);[15G  dept.col1);[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[97G[98G[99G[100Gljoin dept on ( employee.col6 =  dept.col1);[1A[101Gejoin dept on  (employee.col6 =  dept.col1);[1A[102Gfjoin dept on  (employee.col6 =  dept.col1);[1A[103Gtjoin dept o n (employee.col6 =  dept.col1);[1A[104G join dept  on (employee.col6 =  dept.col1);[1A[105Gojoin dept  on (employee.col6 =  dept.col1);[1A[106Gujoin dep t on (employee.col6 =  dept.col1);[1A[107Gtjoin de pt on (employee.col6 =  dept.col1);[1A[108Gejoin d ept on (employee.col6 =  dept.col1);[1A[109Grjoin  dept on (employee.col6 =  dept.col1);[1A[110G join  dept on (employee.col6 =  dept.col1);[1A[111G[1B[39G
+Query ID = cloudera_20200321190707_8db4c892-4ec6-4554-92c4-46f70a0e92f7
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321190707_8db4c892-4ec6-4554-92c4-46f70a0e92f7.log
+2020-03-21 07:07:33	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 07:07:35	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-07-23_455_2574397903864313839-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile11--.hashtable
+2020-03-21 07:07:35	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-07-23_455_2574397903864313839-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile11--.hashtable (372 bytes)
+2020-03-21 07:07:35	End of local task; Time Taken: 2.023 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0002, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0002/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0002
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2020-03-21 19:07:53,200 Stage-3 map = 0%,  reduce = 0%
+2020-03-21 19:08:07,355 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.59 sec
+MapReduce Total cumulative CPU time: 1 seconds 590 msec
+Ended Job = job_1584766051669_0002
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.59 sec   HDFS Read: 6827 HDFS Write: 229 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 590 msec
+OK
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1581	Richard	Developer	NULL	NULL	NULL
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1781	John	Developer	10	INVENTORY	HYDERABAD
+Time taken: 45.007 seconds, Fetched: 6 row(s)
+hive>  
+    > 
+    >  [7G[K [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);<[39G[K[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[99G[100G[101G[102G[103G[104G[103G outer join  dept on (employee.col6 =  dept.col1);[K[1A[103G[102G outer join d ept on (employee.col6 =  dept.col1);[K[1A[102G[101G outer join de pt on (employee.col6 =  dept.col1);[K[1A[101G[100G outer join dep t on (employee.col6 =  dept.col1);[K[1A[100Gr outer join de pt on (employee.col6 =  dept.col1);[1A[101Gi outer join d ept on (employee.col6 =  dept.col1);[1A[102Gg outer join  dept on (employee.col6 =  dept.col1);[1A[103Gh outer join  dept on (employee.col6 =  dept.col1);[1A[104Gt outer joi n dept on (employee.col6 =  dept.col1);[1A[105G  outer jo in dept on (employee.col6 =  dept.col1);[1A[106G[105G outer joi n dept on (employee.col6 =  dept.col1);[K[1A[105G  outer jo in dept on (employee.col6 =  dept.col1);[1A[106G[1B[41G
+Query ID = cloudera_20200321190808_778d828e-4722-44f8-a15f-26ac28abc792
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321190808_778d828e-4722-44f8-a15f-26ac28abc792.log
+2020-03-21 07:08:45	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 07:08:47	Dump the side-table for tag: 0 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-08-36_524_3616678043336259860-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile20--.hashtable
+2020-03-21 07:08:47	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-08-36_524_3616678043336259860-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile20--.hashtable (430 bytes)
+2020-03-21 07:08:47	End of local task; Time Taken: 1.813 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0003, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0003/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0003
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2020-03-21 19:09:05,128 Stage-3 map = 0%,  reduce = 0%
+2020-03-21 19:09:21,704 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.99 sec
+MapReduce Total cumulative CPU time: 1 seconds 990 msec
+Ended Job = job_1584766051669_0003
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.99 sec   HDFS Read: 6698 HDFS Write: 229 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 990 msec
+OK
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1781	John	Developer	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+NULL	NULL	NULL	30	DEVELOPMENT	CHENNAI
+Time taken: 46.299 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee right  outer join dept on (employee.col6 =  dept.col1);[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[103G[104G[103Gt  outer joi n dept on (employee.col6 =  dept.col1);[K[1A[103G[102Gt  outer join  dept on (employee.col6 =  dept.col1);[K[1A[102G[101Gt  outer join  dept on (employee.col6 =  dept.col1);[K[1A[101G[100Gt  outer join d ept on (employee.col6 =  dept.col1);[K[1A[100G[101G[100G  outer join de pt on (employee.col6 =  dept.col1);[K[1A[100Gf  outer join d ept on (employee.col6 =  dept.col1);[1A[101Gu  outer join  dept on (employee.col6 =  dept.col1);[1A[102Gl  outer join  dept on (employee.col6 =  dept.col1);[1A[103Gl  outer joi n dept on (employee.col6 =  dept.col1);[1A[104G[1B[40G
+Query ID = cloudera_20200321191010_4fec6f06-a765-4ab9-88a7-bf638418bdab
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584766051669_0004, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0004/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0004
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 1
+2020-03-21 19:10:28,114 Stage-1 map = 0%,  reduce = 0%
+2020-03-21 19:10:54,620 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.79 sec
+2020-03-21 19:11:11,788 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.66 sec
+MapReduce Total cumulative CPU time: 4 seconds 660 msec
+Ended Job = job_1584766051669_0004
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 1   Cumulative CPU: 4.66 sec   HDFS Read: 13352 HDFS Write: 261 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 660 msec
+OK
+1781	John	Developer	10	INVENTORY	HYDERABAD
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+NULL	NULL	NULL	30	DEVELOPMENT	CHENNAI
+1581	Richard	Developer	NULL	NULL	NULL
+Time taken: 60.189 seconds, Fetched: 7 row(s)
+hive> 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > all hive [15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[KTHEREE[12G[K[11G[K[10G[K[9G[K[8G[KHREE TABLE JOIN 
+    > 
+    > ;[7G[KTHREE TABLE JOIN [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[39G[K[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[100G  outer join de pt on (employee.col6 =  dept.col1)[K[1A[100G[K[B[2K[Aright  outer join dept on (employee.col6 =  dept.col1);[1A[7G[K[K[B[2K[A [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);[1A[100G[K[K[B[2K[Ajoin dept on (employee.col6< dept.col1);[13G[K= dept.col1);[1A[7G[K[K[B[2K[Aload data local inpath'/home/cloudera/Downloads/Join/employee' into table employee;[60G[Kdept' into table dept;[7G[Kcreate table if not exists employee(col1 int, col2 string, col3 string, col4 int, col5 int, col6 int, col7 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[2A[34G[K[K[B[2K[B[2K[A[Adept(col1 int, col2 string, col3 string, col4 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[54G[Kines terminated by '\n' stored as textfile;[54G[Klines terminated by '\n' stored as textfile;[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[30G[31G[32G[33G[34G[35G[36G[37G[38G[37G(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[37G[36G(col1 int, col2 string, col3 string, col4 string) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[36G[35G(col1 int, col2 string, col3 string, col4 string) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[35G[34G(col1 int, col2 string, col3 string, col4 string) row format delimited fields ter minated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[34Gt(col1 int, col2 string, col3 string, col4 string) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[35Gh(col1 int, col2 string, col3 string, col4 string) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[36G[35G(col1 int, col2 string, col3 string, col4 string) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[35G[34G(col1 int, col2 string, col3 string, col4 string) row format delimited fields ter minated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[34Gt(col1 int, col2 string, col3 string, col4 string) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[35Gh(col1 int, col2 string, col3 string, col4 string) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[36Gi(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[37Gr(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[38Ge(col1 int, col2 string, col3 string, col4 string) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[39Gd(col1 int, col2 string, col3 string, col4 string) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[40G[39G(col1 int, col2 string, col3 string, col4 string) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[39Gd(col1 int, col2 string, col3 string, col4 string) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[40G[39G(col1 int, col2 string, col3 string, col4 string) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[39G[38G(col1 int, col2 string, col3 string, col4 string) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[38Gd(col1 int, col2 string, col3 string, col4 string) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[39G_(col1 int, col2 string, col3 string, col4 string) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[40Gt(col1 int, col2 string, col3 string, col4 string) row format delimited fie lds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[41Ga(col1 int, col2 string, col3 string, col4 string) row format delimited fi elds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[42Gl(col1 int, col2 string, col3 string, col4 string) row format delimited f ields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[43Gb(col1 int, col2 string, col3 string, col4 string) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[44Ge(col1 int, col2 string, col3 string, col4 string) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[45G[44G(col1 int, col2 string, col3 string, col4 string) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[44G[43G(col1 int, col2 string, col3 string, col4 string) row format delimited f ields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[43G[42G(col1 int, col2 string, col3 string, col4 string) row format delimited fi elds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[42Gb(col1 int, col2 string, col3 string, col4 string) row format delimited f ields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[43Gl(col1 int, col2 string, col3 string, col4 string) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[44Ge(col1 int, col2 string, col3 string, col4 string) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[45G[1B[105G[1A[7G[8G[9G[10G[11G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[30G[31G[32G[33G[34G[35G[36G[37G[38G[39G[40G[41G[42G[43G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G[59G[60G[61G[62G[63G[64G[65G[66G[67G[68G[69G[70G[71G[72G[73G[74G[75G[76G[77G[78G[79G[80G[81G[82G[83G[84G[85G[86G[87G[88G[89G[90G[91G[92G[93G[94G[95G[94G[93G[92G) row format delimited  fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[92G[91G) row format delimited f ields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[91G[90G) row format delimited fi elds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[90G[89G) row format delimited fie lds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[89G[88G) row format delimited fiel ds terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[88G[87G) row format delimited field s terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[87G[86G) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[86G[85G) row format delimited fields  terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[85G[84G) row format delimited fields t erminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[84G[83G) row format delimited fields te rminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[83G[82G) row format delimited fields ter minated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[82G[81G) row format delimited fields term inated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[81G[80G) row format delimited fields termi nated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[80G[79G) row format delimited fields termin ated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[79G[78G) row format delimited fields termina ted by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[78G[77G) row format delimited fields terminat ed by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[77G[76G) row format delimited fields terminate d by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[76G[75G) row format delimited fields terminated  by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[75G[74G) row format delimited fields terminated  by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[74G[73G) row format delimited fields terminated b y ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[73G[72G) row format delimited fields terminated by  ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[72G[71G) row format delimited fields terminated by  ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[71G[70G) row format delimited fields terminated by ' ,' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[70G[69G) row format delimited fields terminated by ', ' collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[69G[68G) row format delimited fields terminated by ','  collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[68G[67G) row format delimited fields terminated by ','  collection items terminated by':' lines terminated by '\n' stored as textfile;[K[1A[67G[1B[79G
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'THREE' 'TABLE' 'JOIN'
+hive> create table if not exists third_table(col1 int, col2 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[78G[77G[76G[75G[74G[79G
+OK
+Time taken: 0.092 seconds
+hive> create table if not exists third_table(col1 int, col2 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[7G[K[K[B[2K[ATHREE TABLE JOIN [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[100G[K[K[B[2K[Aright  outer join dept on (employee.col6 =  dept.col1);[1A[7G[K[K[B[2K[A [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);[1A[100G[K[K[B[2K[Ajoin dept on (employee.col6< dept.col1);[13G[K= dept.col1);[1A[7G[K[K[B[2K[Aload data local inpath'/home/cloudera/Downloads/Join/employee' into table employee;[60G[Kdept' into table dept;[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[70G[71G[72G[73G[74G[75G[76G[77G[78G[79G[80G[81G[80G;[K[80G[79G;[K[79G[78G;[K[78G[77G;[K[77Gt;[78Gh;[79Gi;[80Gd;[81G[80G;[K[80Gr;[81Gd;[82G_;[83Gt;[84Ga;[85Gl;[86Gb;[87Ge;[88Gj;[89G[88G;[K[88G[87G;[K[87G[86G;[K[86G[85G;[K[85Gb;[86Gl;[87Ge;[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[64G[63G' into table third_table;[K[63G[62G' into table third_table;[K[62G[61G' into table third_table;[K[61G[60G' into table third_table;[K[60Gt' into table third_table;[61Gh' into table third_table;[62Gi' into table third_table;[63Gr' into table third_table;[64Gd' into table third_table;[65G_' into table third_table;[66Gf' into table third_table;[67Gi' into table third_table;[68Gl' into table third_table;[69Ge' into table third_table;[70G[95G
+Loading data to table d1.third_table
+Table d1.third_table stats: [numFiles=1, totalSize=72]
+OK
+Time taken: 0.418 seconds
+hive> load data local inpath'/home/cloudera/Downloads/Join/third_file' into table third_table;[7G[Kcreate table if not exists third_table(col1 int, col2 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[7G[K[K[B[2K[ATHREE TABLE JOIN [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[39G[K join third_talbe on (dept[64G[Kt.col1 = third-[78G[K_talbe.col1);
+FAILED: SemanticException [Error 10001]: Line 1:152 Table not found 'third_talbe'
+hive> select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1) join third_talbe on (dept.col1 = third_talbe.col1);[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[56G[55G on (dept.col1 = third_talbe.col1);[K[55G[54G on (dept.col1 = third_talbe.col1);[K[54G[53G on (dept.col1 = third_talbe.col1);[K[53Gb on (dept.col1 = third_talbe.col1);[54Gl on (dept.col1 = third_talbe.col1);[55Ge on (dept.col1 = third_talbe.col1);[56G[91G
+FAILED: SemanticException [Error 10009]: Line 1:180 Invalid table alias 'third_talbe'
+hive> select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1) join third_table on (dept.col1 = third_talbe.col1);[90G[89G[88G[87G[86G[85G[86G[87G[88G[89G[90G[1A[7G[K;[K[B[2K[A[7G[K
+    > 
+    > 
+    > 
+    > 
+    > select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1) join third_table on (dept.col1 = third_talbe.col1);<<<<[94G[K[93G[K[92G[K[91G[K[90G[89G[88G[87G[86G[85G[84G[83G.col1);[K[83G[82G.col1);[K[82G[81G.col1);[K[81Gb.col1);[82Gl.col1);[83Ge.col1);[84G[91G
+Query ID = cloudera_20200321191616_4177b5d8-6391-4d37-973b-97234111b307
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584766051669_0005, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0005/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0005
+Hadoop job information for Stage-1: number of mappers: 3; number of reducers: 1
+2020-03-21 19:16:27,710 Stage-1 map = 0%,  reduce = 0%
+2020-03-21 19:17:03,203 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 2.75 sec
+2020-03-21 19:17:04,329 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 4.15 sec
+2020-03-21 19:17:19,122 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 6.01 sec
+MapReduce Total cumulative CPU time: 6 seconds 10 msec
+Ended Job = job_1584766051669_0005
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 3  Reduce: 1   Cumulative CPU: 6.01 sec   HDFS Read: 21415 HDFS Write: 229 SUCCESS
+Total MapReduce CPU Time Spent: 6 seconds 10 msec
+OK
+1781	John	Developer	10	INVENTORY	HYDERABAD
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+NULL	NULL	NULL	30	DEVELOPMENT	CHENNAI
+Time taken: 68.902 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > select empoyee.col1,c[27G[Kcomply[32G[Koyee.[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K,eo[28G[Kmpliy[32G[K[31G[Koyee.[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[Ko[17G[Kloyee.col1,employee.col2,dept.col2,c[52G[Kdeol[55G[K[54G[Kpl[55G[Kt.col3,thirdP[67G[K_c[68G[Ktable.col2 [78G[K form empll[88G[Koyee join dept([102G[K on (employee .col7 - de[10G[K[9G[K[8G[K[7G[K= dept.col4j)join ti[26G[Khird_table on [39G[K( [40G[Kdept.tab.co[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K.col1 - thi[54G[K[53G[K[52G[K[51G[K[50G[K= thire[56G[Kd.co[59G[Ktable[63G[K[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K.[57G[K_talb[61G[K[60G[Kble.col1);
+FAILED: ParseException line 1:77 missing EOF at 'employee' near 'form'
+hive> select employee.col1,employee.col2,dept.col2,dept.col3,third_table.col2 form employee join dept on (employee.col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[82G[83G[82G employee join dept on (employee. col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[K[1A[82G[81G employee join dept on (employee.c ol7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[K[1A[81G[80G employee join dept on (employee.co l7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[K[1A[80Gr employee join dept on (employee.c ol7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[1A[81Go employee join dept on (employee. col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[1A[82Gm employee join dept on (employee .col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[1A[83G  employee join dept on (employe e.col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[1A[84G[1B[71G
+FAILED: SemanticException [Error 10002]: Line 1:122 Invalid column reference 'col4j'
+hive> select employee.col1,employee.col2,dept.col2,dept.col3,third_table.col2 from  employee join dept on (employee.col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[70G[69G[68G[67G[66G[65G[64Gd.col1);[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G)join third_table on(dept.col1 = third_tabled.col1);[K[19G[71G
+FAILED: SemanticException [Error 10009]: Line 1:159 Invalid table alias 'third_tabled'
+hive> select employee.col1,employee.col2,dept.col2,dept.col3,third_table.col2 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_tabled.col1);[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G[59G[60G[61G[62G[63G[64G[63G.col1);[K[63G[70G
+Query ID = cloudera_20200321192222_2fa4c74f-8ff4-4468-afbe-67d0b53d128f
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321192222_2fa4c74f-8ff4-4468-afbe-67d0b53d128f.log
+2020-03-21 07:22:39	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 07:22:42	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-22-31_044_5700494498342512392-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile31--.hashtable
+2020-03-21 07:22:42	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-22-31_044_5700494498342512392-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile31--.hashtable (396 bytes)
+2020-03-21 07:22:42	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-22-31_044_5700494498342512392-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile41--.hashtable
+2020-03-21 07:22:42	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-22-31_044_5700494498342512392-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile41--.hashtable (385 bytes)
+2020-03-21 07:22:42	End of local task; Time Taken: 2.617 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0006, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0006/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0006
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 0
+2020-03-21 19:22:58,370 Stage-5 map = 0%,  reduce = 0%
+2020-03-21 19:23:13,438 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 2.34 sec
+MapReduce Total cumulative CPU time: 2 seconds 340 msec
+Ended Job = job_1584766051669_0006
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1   Cumulative CPU: 2.34 sec   HDFS Read: 8489 HDFS Write: 185 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 340 msec
+OK
+1281	Shawn	INVENTORY	HYDERABAD	Ist department
+1481	flink	INVENTORY	HYDERABAD	Ist department
+1581	Richard	DEVELOPMENT	CHENNAI	3rd department
+1781	John	INVENTORY	HYDERABAD	Ist department
+Time taken: 44.577 seconds, Fetched: 4 row(s)
+hive> 
+    > 
+    > select employee.col1,employee.col2,dept.col2,dept.col3,third_table.col2 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[63G[Kd.col1);[63G[K.col1);[1A[7G[K[K[B[2K[A
+    > 
+    > 
+    > 
+    > select employee.col1,employee.col2,dept.col2,dept.col3,third_table.col2 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[77G[78G[77G from  employee join dept on (employee .col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[77G[76G from  employee join dept on (employee. col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[76G[75G from  employee join dept on (employee.c ol7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[75G[74G from  employee join dept on (employee.co l7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[74G[73G from  employee join dept on (employee.col 7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[73G[72G from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[72G[71G from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[71G[70G from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[70G[69G from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[69G[68G from  employee join dept on (employee.col7 = d ept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[68G[67G from  employee join dept on (employee.col7 = de pt.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[67G[66G from  employee join dept on (employee.col7 = dep t.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[66G[65G from  employee join dept on (employee.col7 = dept .col4)join third_table on(dept.col1 = third_table.col1);[K[1A[65G[64G from  employee join dept on (employee.col7 = dept. col4)join third_table on(dept.col1 = third_table.col1);[K[1A[64G[63G from  employee join dept on (employee.col7 = dept.c ol4)join third_table on(dept.col1 = third_table.col1);[K[1A[63G[62G from  employee join dept on (employee.col7 = dept.co l4)join third_table on(dept.col1 = third_table.col1);[K[1A[62G[61G from  employee join dept on (employee.col7 = dept.col 4)join third_table on(dept.col1 = third_table.col1);[K[1A[61G[1B[53G
+Query ID = cloudera_20200321192424_fb3d0419-0605-4aa4-b7e9-a167b5efd385
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321192424_fb3d0419-0605-4aa4-b7e9-a167b5efd385.log
+2020-03-21 07:24:39	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 07:24:42	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-24-30_430_8601171739241945679-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile51--.hashtable
+2020-03-21 07:24:42	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-24-30_430_8601171739241945679-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile51--.hashtable (332 bytes)
+2020-03-21 07:24:42	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-24-30_430_8601171739241945679-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile61--.hashtable
+2020-03-21 07:24:42	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_19-24-30_430_8601171739241945679-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile61--.hashtable (385 bytes)
+2020-03-21 07:24:42	End of local task; Time Taken: 3.367 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0007, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0007/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0007
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 0
+2020-03-21 19:25:03,425 Stage-5 map = 0%,  reduce = 0%
+2020-03-21 19:25:21,328 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 2.15 sec
+MapReduce Total cumulative CPU time: 2 seconds 150 msec
+Ended Job = job_1584766051669_0007
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1   Cumulative CPU: 2.15 sec   HDFS Read: 8319 HDFS Write: 125 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 150 msec
+OK
+1281	Shawn	INVENTORY	HYDERABAD
+1481	flink	INVENTORY	HYDERABAD
+1581	Richard	DEVELOPMENT	CHENNAI
+1781	John	INVENTORY	HYDERABAD
+Time taken: 52.018 seconds, Fetched: 4 row(s)
+hive> 
+    > 
+    > select employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[7G[K[K[B[2K[Aselect employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[1A[7G[8G[9G[10G[11G[12G[13G  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.co l4)join third_table on(dept.col1 = third_table.col1);[1A[14G/ employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.c ol4)join third_table on(dept.col1 = third_table.col1);[1A[15G* employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept. col4)join third_table on(dept.col1 = third_table.col1);[1A[16G+ employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept .col4)join third_table on(dept.col1 = third_table.col1);[1A[17G  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dep t.col4)join third_table on(dept.col1 = third_table.col1);[1A[18Gs employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = de pt.col4)join third_table on(dept.col1 = third_table.col1);[1A[19Gt employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = d ept.col4)join third_table on(dept.col1 = third_table.col1);[1A[20Ge employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[21G[20G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = d ept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[20Gr employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[21Ga employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[22G[21G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[21Ge employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[22Ga employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[23Gm employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[24Gt employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col 7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[25Ga employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.co l7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[26Gb employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.c ol7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[27Gl employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee. col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[28Ge employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee .col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[29G[1B[69G
+MismatchedTokenException(26!=300)
+	at org.antlr.runtime.BaseRecognizer.recoverFromMismatchedToken(BaseRecognizer.java:617)
+	at org.antlr.runtime.BaseRecognizer.match(BaseRecognizer.java:115)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.hintClause(HiveParser_SelectClauseParser.java:2322)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.selectClause(HiveParser_SelectClauseParser.java:785)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectClause(HiveParser.java:44365)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41487)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:23 mismatched input 'employee' expecting * near 'streamtable' in hint clause
+hive> select /*+ streamtable employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[7G[8G[9G[10G[11G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[28G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee. col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[28G[27G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.c ol7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[27G[26G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.co l7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[26G[25G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col 7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[25G[24G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[24G[23G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[23G[22G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[22G[21G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[21G[20G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = d ept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[20G[19G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = de pt.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[19G[18G employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dep t.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[18GS employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = de pt.col4)join third_table on(dept.col1 = third_table.col1);[1A[19GT employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = d ept.col4)join third_table on(dept.col1 = third_table.col1);[1A[20GR employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[21GE employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 =  dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[22GA employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[23GM employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7  = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[24GT employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col 7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[25GA employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.co l7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[26GB employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.c ol7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[27GL employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee. col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[28GE employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee .col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[29G  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employe e.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[30G[1B[70G
+MismatchedTokenException(26!=300)
+	at org.antlr.runtime.BaseRecognizer.recoverFromMismatchedToken(BaseRecognizer.java:617)
+	at org.antlr.runtime.BaseRecognizer.match(BaseRecognizer.java:115)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.hintClause(HiveParser_SelectClauseParser.java:2322)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.selectClause(HiveParser_SelectClauseParser.java:785)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectClause(HiveParser.java:44365)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41487)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:24 mismatched input 'employee' expecting * near 'STREAMTABLE' in hint clause
+hive> select /*+ STREAMTABLE  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[7G[8G[9G[10G[11G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[30G[31G[32G[31G[30G* employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employ ee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[31G/ employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (emplo yee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[32G  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (empl oyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[33G[1B[73G
+FAILED: NullPointerException null
+hive> select /*+ STREAMTABLE */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[7G[8G[9G[10G[11G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G( */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (emp loyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[30GE */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (em ployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[31G[30G */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (emp loyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[30Ge */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (em ployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[31Gm */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (e mployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[32Gp */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on ( employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[33Gl */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on  (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[34Go */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on  (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[35Gy */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept o n (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[36Ge */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept  on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[37Ge */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept  on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[38G) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dep t on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[39G[1B[83G
+Query ID = cloudera_20200321200808_2362291b-4413-4671-b1be-dd4cc05b2c3f
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321200808_2362291b-4413-4671-b1be-dd4cc05b2c3f.log
+2020-03-21 08:08:59	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 08:09:01	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-08-50_905_5618310327705845969-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile71--.hashtable
+2020-03-21 08:09:01	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-08-50_905_5618310327705845969-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile71--.hashtable (332 bytes)
+2020-03-21 08:09:01	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-08-50_905_5618310327705845969-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile81--.hashtable
+2020-03-21 08:09:01	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-08-50_905_5618310327705845969-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile81--.hashtable (385 bytes)
+2020-03-21 08:09:01	End of local task; Time Taken: 1.975 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0008, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0008/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0008
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 0
+2020-03-21 20:09:12,747 Stage-5 map = 0%,  reduce = 0%
+2020-03-21 20:09:22,584 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 1.81 sec
+MapReduce Total cumulative CPU time: 1 seconds 810 msec
+Ended Job = job_1584766051669_0008
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1   Cumulative CPU: 1.81 sec   HDFS Read: 8319 HDFS Write: 125 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 810 msec
+OK
+1281	Shawn	INVENTORY	HYDERABAD
+1481	flink	INVENTORY	HYDERABAD
+1581	Richard	DEVELOPMENT	CHENNAI
+1781	John	INVENTORY	HYDERABAD
+Time taken: 33.88 seconds, Fetched: 4 row(s)
+hive> select /*+ STREAMTABLE(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[7G[K[K[B[2K[A
+    > 
+    > select /*+ STREAMTABLE(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[7G[8G[9G[10G[11G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[28G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept  on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[28G[27G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept  on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[27G[26G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept o n (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[26G[25G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on  (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[25G[24G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on  (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[24G[23G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on ( employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[23G[22G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (e mployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[22G[21G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (em ployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[21G[20G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (emp loyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[20G[19G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (empl oyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[19G[18G(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (emplo yee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[K[1A[18Gs(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (empl oyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[19Gt(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (emp loyee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[20Gr(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (em ployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[21Ge(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (e mployee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[22Ga(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on ( employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[23Gm(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on  (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[24Gt(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on  (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[25Ga(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept o n (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[26Gb(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept  on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[27Gl(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept  on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[28Ge(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dep t on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[29G[1B[83G
+Query ID = cloudera_20200321201010_47b949e3-9f45-41ee-a40f-84e4d414981f
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321201010_47b949e3-9f45-41ee-a40f-84e4d414981f.log
+2020-03-21 08:10:45	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 08:10:47	Dump the side-table for tag: 1 with group count: 4 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-10-38_098_3265232392031859625-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile91--.hashtable
+2020-03-21 08:10:47	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-10-38_098_3265232392031859625-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile91--.hashtable (332 bytes)
+2020-03-21 08:10:47	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-10-38_098_3265232392031859625-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile101--.hashtable
+2020-03-21 08:10:47	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-10-38_098_3265232392031859625-1/-local-10005/HashTable-Stage-5/MapJoin-mapfile101--.hashtable (385 bytes)
+2020-03-21 08:10:47	End of local task; Time Taken: 2.014 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0009, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0009/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0009
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 0
+2020-03-21 20:10:58,911 Stage-5 map = 0%,  reduce = 0%
+2020-03-21 20:11:08,575 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 1.77 sec
+MapReduce Total cumulative CPU time: 1 seconds 770 msec
+Ended Job = job_1584766051669_0009
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1   Cumulative CPU: 1.77 sec   HDFS Read: 8320 HDFS Write: 125 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 770 msec
+OK
+1281	Shawn	INVENTORY	HYDERABAD
+1481	flink	INVENTORY	HYDERABAD
+1581	Richard	DEVELOPMENT	CHENNAI
+1781	John	INVENTORY	HYDERABAD
+Time taken: 32.592 seconds, Fetched: 4 row(s)
+hive> 
+    > 
+    > 
+    > Display all 461 possibilities? (y or n)
+    > Display all 461 possibilities? (y or n)
+    > 
+    > mAPP[10G[K[9G[K[8G[K[7G[KmA[8G[K[7G[KmAPP[10G[K[9G[K[8G[K[7G[KMs[8G[Kapping;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'Mapping' '<EOF>' '<EOF>'
+hive> 
+    > 
+    > 
+    > Mapping;[7G[Kselect /*+ streamtable(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[82G[K[81G[K[80G[K[79G[K[78G[K[77G[K[76G[K[75G[K[74G[K[73G[K[72G[K[71G[K[70G[K[69G[K[68G[K[67G[K[66G[K[65G[K[64G[K[63G[K[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[1A[18G[K[K[B[2K[ASTREAMTABLE(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[29G[K[K[B[2K[A */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[30G[K[K[B[2K[A employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[18G[K[K[B[2K[Astreamtable employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[14G[K[K[B[2K[Aemployee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[61G[K[K[B[2K[A,third_table.col2 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[63G[Kd.col1);[19G[Kj)join third_table on(dept.col1 = third_table.col1);[1A[80G[K[K[B[2K[Aorm employee join dept on (employee.col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[1A[42G[K[K[B[2K[Aemployee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1) join third_table on (dept.col1 = third_table.col1);[81G[Klbe.col1);[53G[Klbe on (dept.col1 = third_talbe.col1);[1A[7G[K[K[B[2K[Aload data local inpath'/home/cloudera/Downloads/Join/third_file' into table third_table;[7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1) join third_talbe on (dept.col1 = third_talbe.col1);[1A[7G[K[K[B[2K[Aload data local inpath'/home/cloudera/Downloads/Join/third_file' into table third_table;[7G[Kcreate table if not exists third_table(col1 int, col2 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[7G[K[K[B[2K[ATHREE TABLE JOIN [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[7G[8G[9G[10G[11G[12G[13G  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer jo in dept on (employee.col6 =  dept.col1);[1A[14G/ employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer j oin dept on (employee.col6 =  dept.col1);[1A[15G* employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer  join dept on (employee.col6 =  dept.col1);[1A[16G+ employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer  join dept on (employee.col6 =  dept.col1);[1A[17G  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  oute r join dept on (employee.col6 =  dept.col1);[1A[18Gm employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  out er join dept on (employee.col6 =  dept.col1);[1A[19Ga employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  ou ter join dept on (employee.col6 =  dept.col1);[1A[20Gp employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  o uter join dept on (employee.col6 =  dept.col1);[1A[21Gj employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[1A[22Gi employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[1A[23Go employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[1A[24G[23G employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[K[1A[23G[22G employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[K[1A[22Go employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[1A[23Gi employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full   outer join dept on (employee.col6 =  dept.col1);[1A[24Gn employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee ful l  outer join dept on (employee.col6 =  dept.col1);[1A[25G( employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee fu ll  outer join dept on (employee.col6 =  dept.col1);[1A[26Ge employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee f ull  outer join dept on (employee.col6 =  dept.col1);[1A[27Gm employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee  full  outer join dept on (employee.col6 =  dept.col1);[1A[28Gp employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee  full  outer join dept on (employee.col6 =  dept.col1);[1A[29Gl employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employe e full  outer join dept on (employee.col6 =  dept.col1);[1A[30Go employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employ ee full  outer join dept on (employee.col6 =  dept.col1);[1A[31Gy employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from emplo yee full  outer join dept on (employee.col6 =  dept.col1);[1A[32Ge employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from empl oyee full  outer join dept on (employee.col6 =  dept.col1);[1A[33Ge employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from emp loyee full  outer join dept on (employee.col6 =  dept.col1);[1A[34G) employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from em ployee full  outer join dept on (employee.col6 =  dept.col1);[1A[35G  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from e mployee full  outer join dept on (employee.col6 =  dept.col1);[1A[36G( employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from  employee full  outer join dept on (employee.col6 =  dept.col1);[1A[37G[36G employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from e mployee full  outer join dept on (employee.col6 =  dept.col1);[K[1A[36G* employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from  employee full  outer join dept on (employee.col6 =  dept.col1);[1A[37G. employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from  employee full  outer join dept on (employee.col6 =  dept.col1);[1A[38G[37G employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from  employee full  outer join dept on (employee.col6 =  dept.col1);[K[1A[37G/ employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from  employee full  outer join dept on (employee.col6 =  dept.col1);[1A[38G  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 fro m employee full  outer join dept on (employee.col6 =  dept.col1);[1A[39G[1B[66G
+Query ID = cloudera_20200321201313_f5949876-264e-4c2c-b0a8-56ab16a7f85f
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584766051669_0010, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0010/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0010
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 1
+2020-03-21 20:13:40,879 Stage-1 map = 0%,  reduce = 0%
+2020-03-21 20:13:56,450 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 1.08 sec
+2020-03-21 20:13:57,493 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.14 sec
+2020-03-21 20:14:08,316 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.02 sec
+MapReduce Total cumulative CPU time: 4 seconds 20 msec
+Ended Job = job_1584766051669_0010
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 1   Cumulative CPU: 4.02 sec   HDFS Read: 13348 HDFS Write: 261 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 20 msec
+OK
+1781	John	Developer	10	INVENTORY	HYDERABAD
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+NULL	NULL	NULL	30	DEVELOPMENT	CHENNAI
+1581	Richard	Developer	NULL	NULL	NULL
+Time taken: 39.144 seconds, Fetched: 7 row(s)
+hive> select /*+ mapjoin(employee) */  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[7G[K[K[B[2K[AMapping;[7G[Kselect /*+ streamtable(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[18G[K[K[B[2K[ASTREAMTABLE(employee) */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[29G[K[K[B[2K[A */  employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[30G[K[K[B[2K[A employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[18G[K[K[B[2K[Astreamtable employee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[14G[K[K[B[2K[Aemployee.col1,employee.col2,dept.col2,dept.col3 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[1A[61G[K[K[B[2K[A,third_table.col2 from  employee join dept on (employee.col7 = dept.col4)join third_table on(dept.col1 = third_table.col1);[63G[Kd.col1);[19G[Kj)join third_table on(dept.col1 = third_table.col1);[1A[80G[K[K[B[2K[Aorm employee join dept on (employee.col7 = dept.col4j)join third_table on(dept.col1 = third_table.col1);[1A[42G[K[K[B[2K[Aemployee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1) join third_table on (dept.col1 = third_table.col1);[81G[Klbe.col1);[53G[Klbe on (dept.col1 = third_talbe.col1);[1A[7G[K[K[B[2K[Aload data local inpath'/home/cloudera/Downloads/Join/third_file' into table third_table;[7G[Kcreate table if not exists third_table(col1 int, col2 string) row format delimited fields terminated by ',' collection items terminated by':' lines terminated by '\n' stored as textfile;[1A[7G[K[K[B[2K[ATHREE TABLE JOIN [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[100G[K[K[B[2K[Aright  outer join dept on (employee.col6 =  dept.col1);[1A[7G[K[K[B[2K[A [7G[Kselect employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);
+Query ID = cloudera_20200321201414_321c783e-c10b-4efd-af69-93979ad2b6e6
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321201414_321c783e-c10b-4efd-af69-93979ad2b6e6.log
+2020-03-21 08:14:43	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 08:14:44	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-14-36_822_1366933080112432339-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile111--.hashtable
+2020-03-21 08:14:44	Uploaded 1 File to: file:/tmp/cloudera/b90ec595-b2f2-4b68-b7a0-d6a3d606608a/hive_2020-03-21_20-14-36_822_1366933080112432339-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile111--.hashtable (372 bytes)
+2020-03-21 08:14:44	End of local task; Time Taken: 1.478 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0011, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0011/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0011
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2020-03-21 20:14:57,086 Stage-3 map = 0%,  reduce = 0%
+2020-03-21 20:15:07,266 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.59 sec
+MapReduce Total cumulative CPU time: 1 seconds 590 msec
+Ended Job = job_1584766051669_0011
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.59 sec   HDFS Read: 6828 HDFS Write: 229 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 590 msec
+OK
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1581	Richard	Developer	NULL	NULL	NULL
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1781	John	Developer	10	INVENTORY	HYDERABAD
+Time taken: 32.611 seconds, Fetched: 6 row(s)
+hive> select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);[1A[14G[K[K[B[2K[A/*+ mapjoin(employee) */  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[7G[K[K[B[2K[AMapping;[7G[Kselect /*+ mapjoin(employee) */  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[14G[K[K[B[2K[Aemployee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);[1A[7G[K[K[B[2K[A
+    > 
+    > 
+    > select employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);[1A[14G[K[K[B[2K[A/*+ mapjoin(employee) */  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);
+Query ID = cloudera_20200321201515_eaf54063-ddd7-49cb-80d8-05d1f8ab5e35
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584766051669_0012, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0012/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0012
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 1
+2020-03-21 20:15:44,816 Stage-1 map = 0%,  reduce = 0%
+2020-03-21 20:16:01,772 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 1.3 sec
+2020-03-21 20:16:02,812 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.56 sec
+2020-03-21 20:16:13,633 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.35 sec
+MapReduce Total cumulative CPU time: 4 seconds 350 msec
+Ended Job = job_1584766051669_0012
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 1   Cumulative CPU: 4.35 sec   HDFS Read: 13352 HDFS Write: 261 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 350 msec
+OK
+1781	John	Developer	10	INVENTORY	HYDERABAD
+1681	Mira	Mgr	10	INVENTORY	HYDERABAD
+1481	flink	Mgr	10	INVENTORY	HYDERABAD
+1281	Shawn	Architect	10	INVENTORY	HYDERABAD
+1381	Jacob	Admin	20	Jacob	ACCOUNTS
+NULL	NULL	NULL	30	DEVELOPMENT	CHENNAI
+1581	Richard	Developer	NULL	NULL	NULL
+Time taken: 40.595 seconds, Fetched: 7 row(s)
+hive> set hive.auto.conr[24G[Kvert [28G[K.h[29G[Kjoin
+    > set hive.auto.convert.join;
+hive.auto.convert.join
+set hive.auto.convert.join is undefined
+hive> set hive.auto.convert.join;[33G[K = true;
+hive> set hive.mapjoin.smatabe.fisize;[38G[K[37G[K[36G[K[35G[K[34G[Klesize;
+hive.mapjoin.smatabe.filesize is undefined
+hive> set hive.mapjoin.smatabe.filesize;[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26Gaatabe.filesize;[27Glatabe.filesize;[28Glatabe.filesize;[29Gtabe.filesize;[K[29G[43G
+hive.mapjoin.smalltabe.filesize is undefined
+hive> set hive.mapjoin.smalltabe.filesize;[42G[41G[40G[39G[38G[37G[36G[35G[34G[33Gl.filesize;[34G[44G
+hive.mapjoin.smalltabel.filesize is undefined
+hive> set hive.mapjoin.smalltabel.filesize;[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kset hive.mapjoin.sa[25G[Kmalltable.filesia[41G[Kze;'
+    > set hive.mapjoin.smalltable.filesize;'[44G[K
+hive.mapjoin.smalltable.filesize=25000000
+FAILED: ParseException line 2:36 character '<EOF>' not supported here
+hive> set hive.mapjoin.smalltable.filesize;
+hive.mapjoin.smalltable.filesize=25000000
+hive> set hive.mapjoin.smalltable.filesize;'[32G[Kel.filesize;[33G[K.filesize;[27G[Ktabe.filesize;[16G[Kauto.convert.join = true;[33G[K;[33G[K[9G[Klect /*+ mapjoin(employee) */  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);[1A[14G[K[K[B[2K[Aemployee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee left outer join dept on (employee.col6 =  dept.col1);[1A[14G[K[K[B[2K[A/*+ mapjoin(employee) */  employee.col1,employee.col2,employee.col3,dept.col1,dept.col2,dept.col3 from employee full  outer join dept on (employee.col6 =  dept.col1);
+Query ID = cloudera_20200321205959_1384cdeb-5c26-4a24-b038-0b33aa2c2390
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1584766051669_0013, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0013/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0013
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 1
+2020-03-21 20:59:22,935 Stage-1 map = 0%,  reduce = 0%
+Interrupting... Be patient, this might take some time.
+Press Ctrl+C again to kill JVM
+killing job with: job_1584766051669_0013
+2020-03-21 20:59:30,686 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1584766051669_0013 with errors
+Error during job, obtaining debugging information...
+Job Tracking URL: http://quickstart.cloudera:8088/proxy/application_1584766051669_0013/
+Examining task ID: task_1584766051669_0013_m_000001 (and more) from job job_1584766051669_0013
+Exiting the JVM
+killing job with: job_1584766051669_0013
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ hive [K[K[K[K[K
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ 
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ exit
+exit
+
+Script done on Sat 21 Mar 2020 08:59:43 PM PDT
