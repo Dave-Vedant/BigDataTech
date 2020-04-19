@@ -1,0 +1,229 @@
+Script started on Sat 21 Mar 2020 09:04:02 PM PDT
+]0;cloudera@quickstart:~[?1034h[cloudera@quickstart ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> d[7G[Kuse dq;[13G[K[12G[Kq[12G[Kq[12G[Ka[12G[K1`;[14G[K[13G[K[12G[K;[12G[K1;
+OK
+Time taken: 0.633 seconds
+hive> a[7G[Kselect * from employee;
+OK
+1281	Shawn	Architect	7890	1481	10	IXZ
+1381	Jacob	Admin	4560	1481	20	POI
+1481	flink	Mgr	9580	1681	10	IXZ
+1581	Richard	Developer	1000	1681	40	LKJ
+1681	Mira	Mgr	5098	1481	10	IKZ
+1781	John	Developer	6500	1681	10	IXZ
+Time taken: 1.097 seconds, Fetched: 6 row(s)
+hive> 
+    > select v[14G[Kvie[16G[K[15G[K[14G[Kemp_view1 as [26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kcreate view emp_view1 f[29G[Kad[30G[Ks select ( f[41G[K[40G[K[39G[K([39G[K([39G[K_[39G[K([39G[K* from employee;
+OK
+Time taken: 0.22 seconds
+hive> see[9G[Klee[11G[Kct ([14G[K* from emp_view1;
+OK
+1281	Shawn	Architect	7890	1481	10	IXZ
+1381	Jacob	Admin	4560	1481	20	POI
+1481	flink	Mgr	9580	1681	10	IXZ
+1581	Richard	Developer	1000	1681	40	LKJ
+1681	Mira	Mgr	5098	1481	10	IKZ
+1781	John	Developer	6500	1681	10	IXZ
+Time taken: 0.182 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > crke[10G[K[9G[Keate view ep[20G[Kmpl[22G[K_view2 as d[32G[Kselect col1, col2k[49G[K, col4 [55G[K[54G[K3 fri[58G[Kom employee;
+OK
+Time taken: 0.104 seconds
+hive> select 9[14G[K* from s[21G[Kepm[23G[K[22G[Kmp_vie2[28G[Kw2'
+    > select * from emp_view2'[30G[K;
+FAILED: ParseException line 2:23 character '<EOF>' not supported here
+hive> select * from emp_view2;
+OK
+1281	Shawn	Architect
+1381	Jacob	Admin
+1481	flink	Mgr
+1581	Richard	Developer
+1681	Mira	Mgr
+1781	John	Developer
+Time taken: 0.19 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > ;[7G[Kselect col1,col2 from emp_view2
+    > select col1,col2 from emp_view2;
+FAILED: ParseException line 2:0 missing EOF at 'select' near 'emp_view2'
+hive> select col1,col2 from emp_view2;
+OK
+1281	Shawn
+1381	Jacob
+1481	flink
+1581	Richard
+1681	Mira
+1781	John
+Time taken: 0.117 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > creatle [14G[K[13G[K[12G[K[11G[Kte view if not exists as [35G[K[34G[K[33G[Kemp_view[40G[Ke[40G[Kw3 as sl[47G[Kelec [51G[Kt  col1 as id ,col2 as name from employee;
+OK
+Time taken: 0.188 seconds
+hive> select col1,col2 from emp_view [37G[K3;
+FAILED: SemanticException [Error 10004]: Line 1:7 Invalid table alias or column reference 'col1': (possible column names are: id, name)
+hive> select col1,col2 from emp_view3;[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G from emp_view3;[K[22G[21G from emp_view3;[K[21G[20G from emp_view3;[K[20G[19G from emp_view3;[K[19G[18G from emp_view3;[K[18G[17G from emp_view3;[K[17G[16G from emp_view3;[K[16G[15G from emp_view3;[K[15G[14G from emp_view3;[K[14Gi from emp_view3;[15Gd from emp_view3;[16Gn from emp_view3;[17G[16G from emp_view3;[K[16G, from emp_view3;[17Gn from emp_view3;[18Ga from emp_view3;[19Gm from emp_view3;[20Ge from emp_view3;[21G  from emp_view3;[22G[38G
+OK
+1281	Shawn
+1381	Jacob
+1481	flink
+1581	Richard
+1681	Mira
+1781	John
+Time taken: 0.147 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > create view emp_view3[27G[K4 as sle[34G[K[33G[Kelect employee[46G[K[45G[Kee.col1,comp[56G[K[55G[K[54G[K[53G[Kempl[56G[Kloyee.col3[65G[K2, dept.co3 from emplohe[88G[K[87G[K[86G[Koyee joindept g[100G[Ktab[102G[K[101G[K[100G[K[99G[K[98G[K[97G[K[96G[K[95G[K dept on (emp_[108G[Kloyee.c ol6 = deo[9G[Kt[9G[Kpt.col1);
+FAILED: SemanticException [Error 10002]: Line 1:66 Invalid column reference 'co3'
+hive> create view emp_view4 as select employee.col1,employee.col2, dept.co3 from employee join dept on (employee.col6 = dept.col1);[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[7G[6G[5G[4G[3G[2G[1G[1A[114G[113G[112G[111G[110G[109G[108G[107G[106G[105G[104G[103G[102G[101G[100G[99G[98G[97G[96G[95G[94G[93G[92G[91G[90G[89G[88G[87G[86G[85G[84G[83G[82G[81G[80G[79G[78G[77G[76G[75G[74G[73G[74G[75Gl3 from employee join dept on (employee. col6 = dept.col1);[1A[76G[1B[19G
+OK
+Time taken: 0.146 seconds
+hive> sl[8G[Kelect * from emp_view4;
+Query ID = cloudera_20200321221111_c80387c8-1b9c-4de1-84a7-391b10b1f708
+Total jobs = 1
+Execution log at: /tmp/cloudera/cloudera_20200321221111_c80387c8-1b9c-4de1-84a7-391b10b1f708.log
+2020-03-21 10:11:18	Starting to launch local task to process map join;	maximum memory = 1013645312
+2020-03-21 10:11:20	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/cloudera/25538465-d126-4626-972b-fb2f2a590e6e/hive_2020-03-21_22-11-09_552_4479925317748721801-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile01--.hashtable
+2020-03-21 10:11:20	Uploaded 1 File to: file:/tmp/cloudera/25538465-d126-4626-972b-fb2f2a590e6e/hive_2020-03-21_22-11-09_552_4479925317748721801-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile01--.hashtable (344 bytes)
+2020-03-21 10:11:20	End of local task; Time Taken: 2.296 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1584766051669_0014, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1584766051669_0014/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1584766051669_0014
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2020-03-21 22:11:36,700 Stage-3 map = 0%,  reduce = 0%
+2020-03-21 22:11:49,742 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 2.15 sec
+MapReduce Total cumulative CPU time: 2 seconds 150 msec
+Ended Job = job_1584766051669_0014
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 2.15 sec   HDFS Read: 6586 HDFS Write: 102 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 150 msec
+OK
+1281	Shawn	HYDERABAD
+1381	Jacob	ACCOUNTS
+1481	flink	HYDERABAD
+1681	Mira	HYDERABAD
+1781	John	HYDERABAD
+Time taken: 42.403 seconds, Fetched: 5 row(s)
+hive> 
+    > 
+    > alter view vie[20G[K[19G[Ke[19G[K[18G[Kemmp[21G[K[20G[Kp_view1 as seect[35G[K[34G[K[33G[Klect coq[40G[Klq[41G[K1 from  f[49G[Kemp;[52G[Kloyee;
+OK
+Time taken: 0.249 seconds
+hive> slec[10G[K[9G[K[8G[Kelect ([14G[K* from emp_view1;
+OK
+1281
+1381
+1481
+1581
+1681
+1781
+Time taken: 0.105 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > la[8G[K[7G[Kalter view emp-[21G[K_view1 renamet o[36G[K[35G[K[34G[K[33G[Ke to c[38G[Kemp_view_new;
+OK
+Time taken: 0.157 seconds
+hive> slect [12G[K[11G[K[10G[K[9G[K[8G[Kelect em[15G[K[14G[K* from emp_view_new;
+OK
+1281
+1381
+1481
+1581
+1681
+1781
+Time taken: 0.085 seconds, Fetched: 6 row(s)
+hive> 
+    > 
+    > deop view emp_view_emp;[29G[K[28G[K[27G[K[26G[Knew:[29G[K;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'deop' 'view' 'emp_view_new'
+hive> deop view emp_view_new;[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9G[8G[9G[8Gop view emp_view_new;[K[8Grop view emp_view_new;[9G[30G
+OK
+Time taken: 0.63 seconds
+hive> s[7G[Kdrop view emp_view_new;[8G[Keop view emp_view_new;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'deop' 'view' 'emp_view_new'
+hive> deop view emp_view_new;[8G[Krop view emp_view_new;[8G[Keop view emp_view_new;[7G[Kselect * from emp_view_new;
+FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'emp_view_new'
+hive> 
+    > 
+    > e[7G[Keix[9G[K[8G[K[7G[Kquit
+    > quit;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'quit' 'quit' '<EOF>'
+hive> quit[10G[K[9G[K[8G[K[7G[K]0;cloudera@quickstart:~[cloudera@quickstart ~]$ exig
+bash: exig: command not found
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ exit
+exit
+
+Script done on Sat 21 Mar 2020 10:14:22 PM PDT
