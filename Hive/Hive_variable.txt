@@ -1,0 +1,4239 @@
+Script started on Sun 22 Mar 2020 02:35:52 PM PDT
+]0;cloudera@quickstart:~[?1034h[cloudera@quickstart ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> set deptno =4;[20G[K0;
+hive> set deptno;
+deptno=40
+hive> ser[9G[Ktconf d1:40[19G[K[18G[K50;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'setconf' 'd1' ':'
+hive> set h[11G[K[10G[K[9G[K[8G[K[7G[Ksetconf d1:50;[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kset hivecof[17G[Knf dq[21G[K1 [22G[K[21G[K[20G[K[19G[K: dq[22G[K1 =50;
+hive> set[9G[Kt hiveconf;[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kset dq[12G[K1;
+d1=50
+hive> set hiveconf;
+hiveconf is undefined
+hive> select * from table13;[28G[K where coloum[40G[K[39G[K[38G[K6 = $( hove [49G[K[48G[K[47G[K[46G[Kiveconf: deptno);
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:35 cannot recognize input near '$' '(' 'hiveconf' in expression specification
+hive> select * from table13 where col6 = $( hiveconf: deptno);[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G[59G[60G[61G[62G[63G[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K
+    > ;
+FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'table13'
+hive> 
+    > set d2;
+d2 is undefined
+hive> use d2;
+OK
+Time taken: 0.146 seconds
+hive> use d2;[7G[Kset d2;[7G[K;[7G[Kselect * from table13
+    > ;
+OK
+10	Accounts	Joyce	2098	Delhi
+20	Sales	Richard	2743	Hyderabad
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+30	Marketing	Victor	2365	Houston
+40	HR	Gordon	2780	Austin
+10	Accounts	Sandy	3284	New York
+10	Accounts	Alex	2562	Washington
+20	Sales	Ana	3457	Washington
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+30	Marketing	Philippe	3244	Chandigarh
+20	Sales	Joyce	2598	Boston
+10	Accounts	Alberto	3786	Chandigarh
+40	HR	Rafael	3053	Hyderabad
+20	Sales	Kaori	2720	Denver
+20	Sales	Fabian	3257	Mumbai
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+30	Marketing	Irene	2905	Kolkata
+10	Accounts	Hanna	2449	Chicago
+30	Marketing	Ivan	2138	Miami
+20	Sales	Gaston	3984	Pune
+20	Sales	Kumiko	2443	Chicago
+30	Marketing	Leslie	2540	Washington
+20	Sales	Dean	2593	Los Angeles
+30	Marketing	Leslie	3959	Los Angeles
+40	HR	Gustav	2909	Austin
+10	Accounts	Rafael	3711	Pune
+10	Accounts	Miwa	2727	Austin
+10	Accounts	Sam	2729	Miami
+20	Sales	Sebastien	2042	New York
+30	Marketing	Nanaho	2693	Hyderabad
+10	Accounts	Franklin	2328	Pune
+10	Accounts	Omar	2292	Los Angeles
+10	Accounts	Teresa	2124	Delhi
+20	Sales	Cindy	3279	New York
+30	Marketing	Barry	2921	Miami
+30	Marketing	Karl	2709	Chicago
+20	Sales	Naoko	3596	Delhi
+20	Sales	Lisa	2917	Washington
+20	Sales	Karl	3506	Boston
+20	Sales	Gordon	3838	Kolkata
+20	Sales	Vicky	3670	Los Angeles
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+30	Marketing	Harvey	2577	Mumbai
+10	Accounts	Valerie	2993	Chandigarh
+10	Accounts	Lili	3366	Miami
+20	Sales	Kirk	3448	Hyderabad
+40	HR	Miharu	2073	Houston
+10	Accounts	Mieko	2402	Chicago
+40	HR	Lili	3349	Chennai
+30	Marketing	Kazuko	2941	Chennai
+10	Accounts	Valerie	2968	Hyderabad
+10	Accounts	Arlene	3427	Austin
+10	Accounts	Joyce	3572	Houston
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+10	Accounts	Hermine	2168	Chandigarh
+20	Sales	Omar	2272	Washington
+30	Marketing	Ernesto	2408	Kolkata
+30	Marketing	Henri	3943	Pune
+10	Accounts	Emily	3329	Chicago
+30	Marketing	Charley	2949	Chicago
+20	Sales	Dolly	3658	Austin
+20	Sales	Bonnie	3519	Pune
+30	Marketing	Jeanne	2597	Washington
+20	Sales	Tanya	2348	Boston
+30	Marketing	Leslie	3222	Delhi
+30	Marketing	Nanaho	2445	Houston
+30	Marketing	Wendy	2195	Kolkata
+10	Accounts	Teddy	3080	Austin
+20	Sales	Stan	3725	Chennai
+10	Accounts	Barry	3824	Denver
+20	Sales	Itoe	3448	Hyderabad
+40	HR	Kaori	3430	Kolkata
+20	Sales	Wilma	2209	Boston
+20	Sales	Patty	2262	New York
+20	Sales	Helene	2827	Hyderabad
+20	Sales	Jeanne	3214	Chicago
+30	Marketing	Frances	3675	Washington
+20	Sales	Karl	3295	Houston
+10	Accounts	Karl	3292	Boston
+10	Accounts	Virginie	3539	Los Angeles
+10	Accounts	Sam	2103	Chicago
+10	Accounts	Beryl	2873	Delhi
+30	Marketing	Wendy	3571	Hyderabad
+40	HR	Nate	2859	Denver
+30	Marketing	Josephine	3624	Chandigarh
+20	Sales	Sandy	2631	Miami
+20	Sales	Karen	3217	Boston
+10	Accounts	Sebastien	3594	Los Angeles
+10	Accounts	Lorenzo	2146	Chennai
+10	Accounts	Nana	2039	New York
+40	HR	Isidore	2063	Miami
+20	Sales	Miwa	3657	Boston
+10	Accounts	Jeanne	3898	Boston
+30	Marketing	Etsuko	3940	Kolkata
+30	Marketing	Marco	2663	Boston
+30	Marketing	Itoe	2860	Chandigarh
+40	HR	Paula	2422	Washington
+20	Sales	Jose	2126	Washington
+30	Marketing	Michael	2124	Kolkata
+10	Accounts	Tanya	2263	Chennai
+10	Accounts	Sandy	2073	New York
+20	Sales	Sachiko	2851	Washington
+10	Accounts	Miyako	2583	New York
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+30	Marketing	Gordon	3318	Mumbai
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+20	Sales	Victor	3349	Mumbai
+40	HR	Gabielle	3860	Chandigarh
+20	Sales	Lee	2285	New York
+30	Marketing	Bill	2374	Kolkata
+20	Sales	Grace	3038	Houston
+20	Sales	Josephine	3933	New York
+20	Sales	Gabielle	2806	Chennai
+30	Marketing	Wilma	2479	Washington
+20	Sales	Erin	2568	Chicago
+30	Marketing	Rafael	3573	Denver
+40	HR	Ernesto	3438	Boston
+10	Accounts	Philippe	3058	Mumbai
+20	Sales	Miharu	3532	Kolkata
+10	Accounts	Cindy	3617	New York
+30	Marketing	Arlene	3042	Pune
+20	Sales	Franklin	3154	Kolkata
+30	Marketing	Isabel	2189	Chicago
+30	Marketing	Gert	2269	Kolkata
+30	Marketing	Dennis	3151	Pune
+40	HR	Claudette	2118	Chicago
+20	Sales	Humberto	2376	Denver
+20	Sales	Junko	2374	Houston
+40	HR	Omar	3320	Mumbai
+20	Sales	Bill	3947	Los Angeles
+10	Accounts	Akane	2756	Denver
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+20	Sales	Danny	3566	Delhi
+20	Sales	Debby	3239	Pune
+40	HR	Nadine	3497	Hyderabad
+20	Sales	Oscar	2392	Los Angeles
+30	Marketing	Teresa	3292	Miami
+10	Accounts	Hitomi	3744	Mumbai
+30	Marketing	Alberto	2320	Washington
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+20	Sales	Van	2779	Washington
+30	Marketing	Ernesto	3624	Kolkata
+40	HR	Odette	2376	Chicago
+30	Marketing	Nana	3221	Chicago
+20	Sales	Isidore	2957	Delhi
+20	Sales	Omar	3554	Chicago
+30	Marketing	Wanda	3100	Mumbai
+10	Accounts	Sachiko	3249	New York
+40	HR	Gaston	3552	Delhi
+20	Sales	Paloma	3132	Pune
+10	Accounts	Edouard	3023	Chennai
+40	HR	Mieko	2002	Delhi
+10	Accounts	Fabian	3176	Austin
+10	Accounts	Juan	2955	New York
+20	Sales	Miwa	2929	Austin
+30	Marketing	Naoko	3814	Chandigarh
+20	Sales	Charley	3173	Pune
+10	Accounts	Maria	2143	Washington
+20	Sales	Ana	2538	Denver
+40	HR	Sachiko	3715	Denver
+30	Marketing	Tony	3342	Chennai
+30	Marketing	Nicole	3304	Miami
+30	Marketing	Gabielle	2669	Mumbai
+10	Accounts	Nicholas	3433	Kolkata
+40	HR	Rafael	3934	Pune
+10	Accounts	Omar	2952	Miami
+10	Accounts	Odette	2599	Houston
+30	Marketing	Pablo	2416	Houston
+40	HR	Emi	3178	Austin
+10	Accounts	Sebastien	2698	Kolkata
+10	Accounts	Reina	3415	Mumbai
+10	Accounts	Florence	2549	Chandigarh
+10	Accounts	Emi	2243	Los Angeles
+20	Sales	Gordon	2002	Mumbai
+30	Marketing	Nicole	2176	Pune
+10	Accounts	Harvey	2692	Miami
+10	Accounts	Nanaho	3472	Chandigarh
+20	Sales	Alex	2165	Chennai
+10	Accounts	Victor	3718	Houston
+10	Accounts	Beryl	2415	Hyderabad
+10	Accounts	Joyce	2212	Delhi
+20	Sales	Richard	2411	Hyderabad
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+30	Marketing	Victor	2093	Houston
+40	HR	Gordon	3784	Austin
+10	Accounts	Sandy	2730	New York
+10	Accounts	Alex	2492	Washington
+20	Sales	Ana	2364	Washington
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+30	Marketing	Philippe	3404	Chandigarh
+20	Sales	Joyce	2341	Boston
+10	Accounts	Alberto	2009	Chandigarh
+40	HR	Rafael	3089	Hyderabad
+20	Sales	Kaori	3664	Denver
+20	Sales	Fabian	2731	Mumbai
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+30	Marketing	Irene	2325	Kolkata
+10	Accounts	Hanna	3500	Chicago
+30	Marketing	Ivan	2354	Miami
+20	Sales	Gaston	3197	Pune
+20	Sales	Kumiko	3280	Chicago
+30	Marketing	Leslie	3220	Washington
+20	Sales	Dean	3250	Los Angeles
+30	Marketing	Leslie	2251	Los Angeles
+40	HR	Gustav	2340	Austin
+10	Accounts	Rafael	2765	Pune
+10	Accounts	Miwa	2251	Austin
+10	Accounts	Sam	2975	Miami
+20	Sales	Sebastien	3991	New York
+30	Marketing	Nanaho	2353	Hyderabad
+10	Accounts	Franklin	3322	Pune
+10	Accounts	Omar	2516	Los Angeles
+10	Accounts	Teresa	3799	Delhi
+20	Sales	Cindy	2197	New York
+30	Marketing	Barry	3443	Miami
+30	Marketing	Karl	2428	Chicago
+20	Sales	Naoko	3824	Delhi
+20	Sales	Lisa	2401	Washington
+20	Sales	Karl	2158	Boston
+20	Sales	Gordon	3664	Kolkata
+20	Sales	Vicky	2055	Los Angeles
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+30	Marketing	Harvey	3885	Mumbai
+10	Accounts	Valerie	3763	Chandigarh
+10	Accounts	Lili	2934	Miami
+20	Sales	Kirk	3232	Hyderabad
+40	HR	Miharu	2538	Houston
+10	Accounts	Mieko	3282	Chicago
+40	HR	Lili	2980	Chennai
+30	Marketing	Kazuko	3385	Chennai
+10	Accounts	Valerie	3891	Hyderabad
+10	Accounts	Arlene	2296	Austin
+10	Accounts	Joyce	2975	Houston
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+10	Accounts	Hermine	2314	Chandigarh
+20	Sales	Omar	2144	Washington
+30	Marketing	Ernesto	3593	Kolkata
+30	Marketing	Henri	3380	Pune
+10	Accounts	Emily	3723	Chicago
+30	Marketing	Charley	3828	Chicago
+20	Sales	Dolly	3130	Austin
+20	Sales	Bonnie	3071	Pune
+30	Marketing	Jeanne	3389	Washington
+20	Sales	Tanya	2580	Boston
+30	Marketing	Leslie	3669	Delhi
+30	Marketing	Nanaho	2255	Houston
+30	Marketing	Wendy	2284	Kolkata
+10	Accounts	Teddy	2832	Austin
+20	Sales	Stan	3817	Chennai
+10	Accounts	Barry	2596	Denver
+20	Sales	Itoe	2389	Hyderabad
+40	HR	Kaori	3930	Kolkata
+20	Sales	Wilma	3622	Boston
+20	Sales	Patty	3227	New York
+20	Sales	Helene	2345	Hyderabad
+20	Sales	Jeanne	2022	Chicago
+30	Marketing	Frances	2398	Washington
+20	Sales	Karl	2105	Houston
+10	Accounts	Karl	2032	Boston
+10	Accounts	Virginie	2788	Los Angeles
+10	Accounts	Sam	2501	Chicago
+10	Accounts	Beryl	2411	Delhi
+30	Marketing	Wendy	2937	Hyderabad
+40	HR	Nate	3287	Denver
+30	Marketing	Josephine	2485	Chandigarh
+20	Sales	Sandy	2341	Miami
+20	Sales	Karen	3691	Boston
+10	Accounts	Sebastien	2338	Los Angeles
+10	Accounts	Lorenzo	2467	Chennai
+10	Accounts	Nana	2744	New York
+40	HR	Isidore	2657	Miami
+20	Sales	Miwa	2213	Boston
+10	Accounts	Jeanne	3233	Boston
+30	Marketing	Etsuko	2266	Kolkata
+30	Marketing	Marco	2144	Boston
+30	Marketing	Itoe	3538	Chandigarh
+40	HR	Paula	3262	Washington
+20	Sales	Jose	2508	Washington
+30	Marketing	Michael	2905	Kolkata
+10	Accounts	Tanya	2179	Chennai
+10	Accounts	Sandy	2131	New York
+20	Sales	Sachiko	3619	Washington
+10	Accounts	Miyako	2039	New York
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+30	Marketing	Gordon	3923	Mumbai
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+20	Sales	Victor	2012	Mumbai
+40	HR	Gabielle	2757	Chandigarh
+20	Sales	Lee	2958	New York
+30	Marketing	Bill	2663	Kolkata
+20	Sales	Grace	2947	Houston
+20	Sales	Josephine	3006	New York
+20	Sales	Gabielle	3962	Chennai
+30	Marketing	Wilma	2665	Washington
+20	Sales	Erin	2698	Chicago
+30	Marketing	Rafael	3203	Denver
+40	HR	Ernesto	3134	Boston
+10	Accounts	Philippe	2308	Mumbai
+20	Sales	Miharu	2650	Kolkata
+10	Accounts	Cindy	3114	New York
+30	Marketing	Arlene	3746	Pune
+20	Sales	Franklin	3594	Kolkata
+30	Marketing	Isabel	2064	Chicago
+30	Marketing	Gert	3581	Kolkata
+30	Marketing	Dennis	2846	Pune
+40	HR	Claudette	2567	Chicago
+20	Sales	Humberto	2295	Denver
+20	Sales	Junko	2030	Houston
+40	HR	Omar	2164	Mumbai
+20	Sales	Bill	2131	Los Angeles
+10	Accounts	Akane	2554	Denver
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+20	Sales	Danny	3162	Delhi
+20	Sales	Debby	3833	Pune
+40	HR	Nadine	3927	Hyderabad
+20	Sales	Oscar	3086	Los Angeles
+30	Marketing	Teresa	3623	Miami
+10	Accounts	Hitomi	2836	Mumbai
+30	Marketing	Alberto	3093	Washington
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+20	Sales	Van	3553	Washington
+30	Marketing	Ernesto	2536	Kolkata
+40	HR	Odette	2268	Chicago
+30	Marketing	Nana	2427	Chicago
+20	Sales	Isidore	3187	Delhi
+20	Sales	Omar	3919	Chicago
+30	Marketing	Wanda	2069	Mumbai
+10	Accounts	Sachiko	2438	New York
+40	HR	Gaston	2881	Delhi
+20	Sales	Paloma	3972	Pune
+10	Accounts	Edouard	3308	Chennai
+40	HR	Mieko	2629	Delhi
+10	Accounts	Fabian	3578	Austin
+10	Accounts	Juan	3302	New York
+20	Sales	Miwa	3337	Austin
+30	Marketing	Naoko	2616	Chandigarh
+20	Sales	Charley	2298	Pune
+10	Accounts	Maria	3688	Washington
+20	Sales	Ana	3171	Denver
+40	HR	Sachiko	3728	Denver
+30	Marketing	Tony	2978	Chennai
+30	Marketing	Nicole	2911	Miami
+30	Marketing	Gabielle	2715	Mumbai
+10	Accounts	Nicholas	2306	Kolkata
+40	HR	Rafael	2610	Pune
+10	Accounts	Omar	2922	Miami
+10	Accounts	Odette	2524	Houston
+30	Marketing	Pablo	3042	Houston
+40	HR	Emi	2478	Austin
+10	Accounts	Sebastien	3147	Kolkata
+10	Accounts	Reina	2447	Mumbai
+10	Accounts	Florence	2787	Chandigarh
+10	Accounts	Emi	3589	Los Angeles
+20	Sales	Gordon	2315	Mumbai
+30	Marketing	Nicole	3902	Pune
+10	Accounts	Harvey	2180	Miami
+10	Accounts	Nanaho	2535	Chandigarh
+20	Sales	Alex	3631	Chennai
+10	Accounts	Victor	2947	Houston
+10	Accounts	Beryl	2814	Hyderabad
+10	Accounts	Joyce	2662	Delhi
+20	Sales	Richard	3311	Hyderabad
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+30	Marketing	Victor	3840	Houston
+40	HR	Gordon	3862	Austin
+10	Accounts	Sandy	2870	New York
+10	Accounts	Alex	2901	Washington
+20	Sales	Ana	2079	Washington
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+30	Marketing	Philippe	3453	Chandigarh
+20	Sales	Joyce	3169	Boston
+10	Accounts	Alberto	3989	Chandigarh
+40	HR	Rafael	3419	Hyderabad
+20	Sales	Kaori	2206	Denver
+20	Sales	Fabian	3062	Mumbai
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+30	Marketing	Irene	3905	Kolkata
+10	Accounts	Hanna	3696	Chicago
+30	Marketing	Ivan	2998	Miami
+20	Sales	Gaston	3250	Pune
+20	Sales	Kumiko	3729	Chicago
+30	Marketing	Leslie	3967	Washington
+20	Sales	Dean	2593	Los Angeles
+30	Marketing	Leslie	3088	Los Angeles
+40	HR	Gustav	3697	Austin
+10	Accounts	Rafael	3236	Pune
+10	Accounts	Miwa	3395	Austin
+10	Accounts	Sam	3920	Miami
+20	Sales	Sebastien	2254	New York
+30	Marketing	Nanaho	2332	Hyderabad
+10	Accounts	Franklin	2322	Pune
+10	Accounts	Omar	3718	Los Angeles
+10	Accounts	Teresa	2783	Delhi
+20	Sales	Cindy	2870	New York
+30	Marketing	Barry	2045	Miami
+30	Marketing	Karl	2519	Chicago
+20	Sales	Naoko	2885	Delhi
+20	Sales	Lisa	2714	Washington
+20	Sales	Karl	2030	Boston
+20	Sales	Gordon	3825	Kolkata
+20	Sales	Vicky	2189	Los Angeles
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+30	Marketing	Harvey	2362	Mumbai
+10	Accounts	Valerie	3361	Chandigarh
+10	Accounts	Lili	3694	Miami
+20	Sales	Kirk	3446	Hyderabad
+40	HR	Miharu	3347	Houston
+10	Accounts	Mieko	2806	Chicago
+40	HR	Lili	2230	Chennai
+30	Marketing	Kazuko	2085	Chennai
+10	Accounts	Valerie	3021	Hyderabad
+10	Accounts	Arlene	2321	Austin
+10	Accounts	Joyce	2485	Houston
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+10	Accounts	Hermine	2511	Chandigarh
+20	Sales	Omar	3055	Washington
+30	Marketing	Ernesto	2984	Kolkata
+30	Marketing	Henri	3306	Pune
+10	Accounts	Emily	2136	Chicago
+30	Marketing	Charley	3684	Chicago
+20	Sales	Dolly	3843	Austin
+20	Sales	Bonnie	2049	Pune
+30	Marketing	Jeanne	3078	Washington
+20	Sales	Tanya	2420	Boston
+30	Marketing	Leslie	2810	Delhi
+30	Marketing	Nanaho	3843	Houston
+30	Marketing	Wendy	2667	Kolkata
+10	Accounts	Teddy	3991	Austin
+20	Sales	Stan	2906	Chennai
+10	Accounts	Barry	2895	Denver
+20	Sales	Itoe	2185	Hyderabad
+40	HR	Kaori	3404	Kolkata
+20	Sales	Wilma	2411	Boston
+20	Sales	Patty	2523	New York
+20	Sales	Helene	3924	Hyderabad
+20	Sales	Jeanne	3494	Chicago
+30	Marketing	Frances	2086	Washington
+20	Sales	Karl	2282	Houston
+10	Accounts	Karl	3681	Boston
+10	Accounts	Virginie	3110	Los Angeles
+10	Accounts	Sam	3550	Chicago
+10	Accounts	Beryl	3463	Delhi
+30	Marketing	Wendy	2524	Hyderabad
+40	HR	Nate	3648	Denver
+30	Marketing	Josephine	2951	Chandigarh
+20	Sales	Sandy	2322	Miami
+20	Sales	Karen	3045	Boston
+10	Accounts	Sebastien	2537	Los Angeles
+10	Accounts	Lorenzo	3429	Chennai
+10	Accounts	Nana	2965	New York
+40	HR	Isidore	2488	Miami
+20	Sales	Miwa	3913	Boston
+10	Accounts	Jeanne	2569	Boston
+30	Marketing	Etsuko	2294	Kolkata
+30	Marketing	Marco	3974	Boston
+30	Marketing	Itoe	3074	Chandigarh
+40	HR	Paula	3684	Washington
+20	Sales	Jose	3975	Washington
+30	Marketing	Michael	2839	Kolkata
+10	Accounts	Tanya	2894	Chennai
+10	Accounts	Sandy	2665	New York
+20	Sales	Sachiko	3014	Washington
+10	Accounts	Miyako	3664	New York
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+30	Marketing	Gordon	3720	Mumbai
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+20	Sales	Victor	3737	Mumbai
+40	HR	Gabielle	3809	Chandigarh
+20	Sales	Lee	3278	New York
+30	Marketing	Bill	3090	Kolkata
+20	Sales	Grace	2632	Houston
+20	Sales	Josephine	2639	New York
+20	Sales	Gabielle	2056	Chennai
+30	Marketing	Wilma	3529	Washington
+20	Sales	Erin	3395	Chicago
+30	Marketing	Rafael	2983	Denver
+40	HR	Ernesto	3429	Boston
+10	Accounts	Philippe	2030	Mumbai
+20	Sales	Miharu	2657	Kolkata
+10	Accounts	Cindy	3311	New York
+30	Marketing	Arlene	2266	Pune
+20	Sales	Franklin	3106	Kolkata
+30	Marketing	Isabel	2457	Chicago
+30	Marketing	Gert	3469	Kolkata
+30	Marketing	Dennis	2598	Pune
+40	HR	Claudette	2271	Chicago
+20	Sales	Humberto	3885	Denver
+20	Sales	Junko	2605	Houston
+40	HR	Omar	2561	Mumbai
+20	Sales	Bill	2203	Los Angeles
+10	Accounts	Akane	2180	Denver
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+20	Sales	Danny	2757	Delhi
+20	Sales	Debby	2310	Pune
+40	HR	Nadine	2165	Hyderabad
+20	Sales	Oscar	3371	Los Angeles
+30	Marketing	Teresa	2613	Miami
+10	Accounts	Hitomi	3942	Mumbai
+30	Marketing	Alberto	3675	Washington
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+20	Sales	Van	3585	Washington
+30	Marketing	Ernesto	2623	Kolkata
+40	HR	Odette	2056	Chicago
+30	Marketing	Nana	3975	Chicago
+20	Sales	Isidore	2084	Delhi
+20	Sales	Omar	3609	Chicago
+30	Marketing	Wanda	3881	Mumbai
+10	Accounts	Sachiko	2806	New York
+40	HR	Gaston	2971	Delhi
+20	Sales	Paloma	3472	Pune
+10	Accounts	Edouard	2393	Chennai
+40	HR	Mieko	3186	Delhi
+10	Accounts	Fabian	2928	Austin
+10	Accounts	Juan	2399	New York
+20	Sales	Miwa	2566	Austin
+30	Marketing	Naoko	2039	Chandigarh
+20	Sales	Charley	2212	Pune
+10	Accounts	Maria	3814	Washington
+20	Sales	Ana	3229	Denver
+40	HR	Sachiko	2545	Denver
+30	Marketing	Tony	2926	Chennai
+30	Marketing	Nicole	2464	Miami
+30	Marketing	Gabielle	2092	Mumbai
+10	Accounts	Nicholas	2711	Kolkata
+40	HR	Rafael	2551	Pune
+10	Accounts	Omar	3400	Miami
+10	Accounts	Odette	3012	Houston
+30	Marketing	Pablo	3758	Houston
+40	HR	Emi	3064	Austin
+10	Accounts	Sebastien	2468	Kolkata
+10	Accounts	Reina	3468	Mumbai
+10	Accounts	Florence	3593	Chandigarh
+10	Accounts	Emi	2089	Los Angeles
+20	Sales	Gordon	2532	Mumbai
+30	Marketing	Nicole	2142	Pune
+10	Accounts	Harvey	2944	Miami
+10	Accounts	Nanaho	2133	Chandigarh
+20	Sales	Alex	3670	Chennai
+10	Accounts	Victor	2743	Houston
+10	Accounts	Beryl	2631	Hyderabad
+10	Accounts	Joyce	2054	Delhi
+20	Sales	Richard	3894	Hyderabad
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+30	Marketing	Victor	2414	Houston
+40	HR	Gordon	2011	Austin
+10	Accounts	Sandy	2103	New York
+10	Accounts	Alex	2600	Washington
+20	Sales	Ana	3674	Washington
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+30	Marketing	Philippe	2803	Chandigarh
+20	Sales	Joyce	2881	Boston
+10	Accounts	Alberto	2236	Chandigarh
+40	HR	Rafael	2638	Hyderabad
+20	Sales	Kaori	3763	Denver
+20	Sales	Fabian	2766	Mumbai
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+30	Marketing	Irene	2238	Kolkata
+10	Accounts	Hanna	2639	Chicago
+30	Marketing	Ivan	3820	Miami
+20	Sales	Gaston	3665	Pune
+20	Sales	Kumiko	3275	Chicago
+30	Marketing	Leslie	3704	Washington
+20	Sales	Dean	2430	Los Angeles
+30	Marketing	Leslie	3960	Los Angeles
+Time taken: 1.347 seconds, Fetched: 604 row(s)
+hive> 
+    > 
+    > select ( from [20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K( [15G[K[14G[K[13G[K*[13G[K  8[15G[K[14G[K* from emp{_t[26G[K[25G[K[24G[K_table[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[Ktable13 c[29G[Kwhter[33G[K[32G[K[31G[Ke[31G[K[30G[Khere col5 = mia[44G[K[43G[K[42G[K"miami[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K1 [39G[K [39G[K = ([42G[K[41G[K$ ( [44G[Kd[44G[Khive [48G[Kconf: deptno);
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:34 cannot recognize input near '$' '(' 'hiveconf' in expression specification
+hive> select * from table13 where col1 =$ (hiveconf: deptno);[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G(hiveconf: deptno);[K[42G[43G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G[59G[60G[61G[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K${hiveconf:deptno"\\\[61G[K[60G[K[59G[K[58G[K};
+OK
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+40	HR	Gordon	2780	Austin
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+40	HR	Rafael	3053	Hyderabad
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+40	HR	Gustav	2909	Austin
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+40	HR	Miharu	2073	Houston
+40	HR	Lili	3349	Chennai
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+40	HR	Kaori	3430	Kolkata
+40	HR	Nate	2859	Denver
+40	HR	Isidore	2063	Miami
+40	HR	Paula	2422	Washington
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+40	HR	Gabielle	3860	Chandigarh
+40	HR	Ernesto	3438	Boston
+40	HR	Claudette	2118	Chicago
+40	HR	Omar	3320	Mumbai
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+40	HR	Nadine	3497	Hyderabad
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+40	HR	Odette	2376	Chicago
+40	HR	Gaston	3552	Delhi
+40	HR	Mieko	2002	Delhi
+40	HR	Sachiko	3715	Denver
+40	HR	Rafael	3934	Pune
+40	HR	Emi	3178	Austin
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+40	HR	Gordon	3784	Austin
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+40	HR	Rafael	3089	Hyderabad
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+40	HR	Gustav	2340	Austin
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+40	HR	Miharu	2538	Houston
+40	HR	Lili	2980	Chennai
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+40	HR	Kaori	3930	Kolkata
+40	HR	Nate	3287	Denver
+40	HR	Isidore	2657	Miami
+40	HR	Paula	3262	Washington
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+40	HR	Gabielle	2757	Chandigarh
+40	HR	Ernesto	3134	Boston
+40	HR	Claudette	2567	Chicago
+40	HR	Omar	2164	Mumbai
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+40	HR	Nadine	3927	Hyderabad
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+40	HR	Odette	2268	Chicago
+40	HR	Gaston	2881	Delhi
+40	HR	Mieko	2629	Delhi
+40	HR	Sachiko	3728	Denver
+40	HR	Rafael	2610	Pune
+40	HR	Emi	2478	Austin
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+40	HR	Gordon	3862	Austin
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+40	HR	Rafael	3419	Hyderabad
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+40	HR	Gustav	3697	Austin
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+40	HR	Miharu	3347	Houston
+40	HR	Lili	2230	Chennai
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+40	HR	Kaori	3404	Kolkata
+40	HR	Nate	3648	Denver
+40	HR	Isidore	2488	Miami
+40	HR	Paula	3684	Washington
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+40	HR	Gabielle	3809	Chandigarh
+40	HR	Ernesto	3429	Boston
+40	HR	Claudette	2271	Chicago
+40	HR	Omar	2561	Mumbai
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+40	HR	Nadine	2165	Hyderabad
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+40	HR	Odette	2056	Chicago
+40	HR	Gaston	2971	Delhi
+40	HR	Mieko	3186	Delhi
+40	HR	Sachiko	2545	Denver
+40	HR	Rafael	2551	Pune
+40	HR	Emi	3064	Austin
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+40	HR	Gordon	2011	Austin
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+40	HR	Rafael	2638	Hyderabad
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+Time taken: 0.557 seconds, Fetched: 132 row(s)
+hive> 
+    > 
+    > 
+    > 
+    > 
+    > select * from table13 where col1 =${hiveconf:deptno};
+OK
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+40	HR	Gordon	2780	Austin
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+40	HR	Rafael	3053	Hyderabad
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+40	HR	Gustav	2909	Austin
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+40	HR	Miharu	2073	Houston
+40	HR	Lili	3349	Chennai
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+40	HR	Kaori	3430	Kolkata
+40	HR	Nate	2859	Denver
+40	HR	Isidore	2063	Miami
+40	HR	Paula	2422	Washington
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+40	HR	Gabielle	3860	Chandigarh
+40	HR	Ernesto	3438	Boston
+40	HR	Claudette	2118	Chicago
+40	HR	Omar	3320	Mumbai
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+40	HR	Nadine	3497	Hyderabad
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+40	HR	Odette	2376	Chicago
+40	HR	Gaston	3552	Delhi
+40	HR	Mieko	2002	Delhi
+40	HR	Sachiko	3715	Denver
+40	HR	Rafael	3934	Pune
+40	HR	Emi	3178	Austin
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+40	HR	Gordon	3784	Austin
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+40	HR	Rafael	3089	Hyderabad
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+40	HR	Gustav	2340	Austin
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+40	HR	Miharu	2538	Houston
+40	HR	Lili	2980	Chennai
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+40	HR	Kaori	3930	Kolkata
+40	HR	Nate	3287	Denver
+40	HR	Isidore	2657	Miami
+40	HR	Paula	3262	Washington
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+40	HR	Gabielle	2757	Chandigarh
+40	HR	Ernesto	3134	Boston
+40	HR	Claudette	2567	Chicago
+40	HR	Omar	2164	Mumbai
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+40	HR	Nadine	3927	Hyderabad
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+40	HR	Odette	2268	Chicago
+40	HR	Gaston	2881	Delhi
+40	HR	Mieko	2629	Delhi
+40	HR	Sachiko	3728	Denver
+40	HR	Rafael	2610	Pune
+40	HR	Emi	2478	Austin
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+40	HR	Gordon	3862	Austin
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+40	HR	Rafael	3419	Hyderabad
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+40	HR	Gustav	3697	Austin
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+40	HR	Miharu	3347	Houston
+40	HR	Lili	2230	Chennai
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+40	HR	Kaori	3404	Kolkata
+40	HR	Nate	3648	Denver
+40	HR	Isidore	2488	Miami
+40	HR	Paula	3684	Washington
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+40	HR	Gabielle	3809	Chandigarh
+40	HR	Ernesto	3429	Boston
+40	HR	Claudette	2271	Chicago
+40	HR	Omar	2561	Mumbai
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+40	HR	Nadine	2165	Hyderabad
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+40	HR	Odette	2056	Chicago
+40	HR	Gaston	2971	Delhi
+40	HR	Mieko	3186	Delhi
+40	HR	Sachiko	2545	Denver
+40	HR	Rafael	2551	Pune
+40	HR	Emi	3064	Austin
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+40	HR	Gordon	2011	Austin
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+40	HR	Rafael	2638	Hyderabad
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+Time taken: 0.28 seconds, Fetched: 132 row(s)
+hive> 
+    > 
+    > select * from c[21G[Ktable13 eh[30G[K[29G[Kwhere col5 = $Phivever[50G[Kar:[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K$(hivevar:e[52G[Kdeptnumber);[63G[K[62G[K][62G[K};[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G = $(hivevar:deptnumber};[K[38G1 = $(hivevar:deptnumber};[39G[64G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:35 cannot recognize input near '$' '(' 'hivevar' in expression specification
+hive> select * from table13 where col1 = $(hivevar:deptnumber};[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[44G[43Ghivevar:deptnumber};[K[43G{hivevar:deptnumber};[44G[64G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:35 cannot recognize input near '$' '{' 'hivevar' in expression specification
+hive> select * from table13 where col1 = ${hivevar:deptnumber};[43G[K(hivevar:deptnumber};[41G[K${hiveconf:deptno};[42G[K (hiveconf: deptno);[42G[K{hiveconf:deptno};[41G[K $(hivevar:deptnumber};[41G[K${hiveconf:deptno};[42G[K (hiveconf: deptno);[7G[K;[7G[Kselect * from table13[7G[Kuse d2;[7G[Kselect * from table13[7G[K;[7G[Kselect * from table13 where col1 =$ (hiveconf: deptno);[42G[K{hiveconf:deptno};[41G[K $(hivevar:deptnumber};[63G[62G[61G};[K[61G[60G};[K[60G[59G};[K[59G[58G};[K[58G[57G};[K[57G[43G};[K[43G[K{hivevar:deptnumber};[7G[Kselect * from table13 where col1 = ${hivevar:deptnumber};[63G[62G[61G[62G[61G};[K[61G[60G};[K[60G[59G};[K[59G[58G};[K[58G[57G};[K[57Go};[58G[60G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:35 cannot recognize input near '$' '{' 'hivevar' in expression specification
+hive> select * from table13 where col1 = ${hivevar:deptno};[7G[K
+    > 
+    > 
+    > 
+    > select * from table13 where col1 = ${hivevar:deptno};[57G[Kumber};[43G[K(hivevar:deptnumber};[41G[K${hiveconf:deptno};[42G[K (hiveconf: deptno);[7G[K;[7G[Kselect * from table13[7G[Kuse d2;[7G[Kselect * from table13[7G[K;[7G[Kselect * from table13 where col1 =$ (hiveconf: deptno);[42G[K{hiveconf:deptno};
+OK
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+40	HR	Gordon	2780	Austin
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+40	HR	Rafael	3053	Hyderabad
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+40	HR	Gustav	2909	Austin
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+40	HR	Miharu	2073	Houston
+40	HR	Lili	3349	Chennai
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+40	HR	Kaori	3430	Kolkata
+40	HR	Nate	2859	Denver
+40	HR	Isidore	2063	Miami
+40	HR	Paula	2422	Washington
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+40	HR	Gabielle	3860	Chandigarh
+40	HR	Ernesto	3438	Boston
+40	HR	Claudette	2118	Chicago
+40	HR	Omar	3320	Mumbai
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+40	HR	Nadine	3497	Hyderabad
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+40	HR	Odette	2376	Chicago
+40	HR	Gaston	3552	Delhi
+40	HR	Mieko	2002	Delhi
+40	HR	Sachiko	3715	Denver
+40	HR	Rafael	3934	Pune
+40	HR	Emi	3178	Austin
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+40	HR	Gordon	3784	Austin
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+40	HR	Rafael	3089	Hyderabad
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+40	HR	Gustav	2340	Austin
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+40	HR	Miharu	2538	Houston
+40	HR	Lili	2980	Chennai
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+40	HR	Kaori	3930	Kolkata
+40	HR	Nate	3287	Denver
+40	HR	Isidore	2657	Miami
+40	HR	Paula	3262	Washington
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+40	HR	Gabielle	2757	Chandigarh
+40	HR	Ernesto	3134	Boston
+40	HR	Claudette	2567	Chicago
+40	HR	Omar	2164	Mumbai
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+40	HR	Nadine	3927	Hyderabad
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+40	HR	Odette	2268	Chicago
+40	HR	Gaston	2881	Delhi
+40	HR	Mieko	2629	Delhi
+40	HR	Sachiko	3728	Denver
+40	HR	Rafael	2610	Pune
+40	HR	Emi	2478	Austin
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+40	HR	Gordon	3862	Austin
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+40	HR	Rafael	3419	Hyderabad
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+40	HR	Gustav	3697	Austin
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+40	HR	Miharu	3347	Houston
+40	HR	Lili	2230	Chennai
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+40	HR	Kaori	3404	Kolkata
+40	HR	Nate	3648	Denver
+40	HR	Isidore	2488	Miami
+40	HR	Paula	3684	Washington
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+40	HR	Gabielle	3809	Chandigarh
+40	HR	Ernesto	3429	Boston
+40	HR	Claudette	2271	Chicago
+40	HR	Omar	2561	Mumbai
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+40	HR	Nadine	2165	Hyderabad
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+40	HR	Odette	2056	Chicago
+40	HR	Gaston	2971	Delhi
+40	HR	Mieko	3186	Delhi
+40	HR	Sachiko	2545	Denver
+40	HR	Rafael	2551	Pune
+40	HR	Emi	3064	Austin
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+40	HR	Gordon	2011	Austin
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+40	HR	Rafael	2638	Hyderabad
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+Time taken: 0.243 seconds, Fetched: 132 row(s)
+hive> 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > select * from table13 where col1 =${hiveconf:deptno};<<<[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[42G[K[41G[K[40G[K[39G[K[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kset hivevar :deptnumber - 10;
+hivevar :deptnumber - 10 is undefined
+hive> set hivevar :deptnumber - 10;[35G[34G[33G[32G[31G[32G[31G 10;[K[31G= 10;[32G[36G
+hive> selec[11G[K[10G[K[9G[K[8G[K[7G[Kset deptnumber;
+deptnumber is undefined
+hive> set hive[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kset deptnumber;[11G[Khivevar :deptnumber = 10;[35G[36G[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K;
+hivevar :deptnumber=10
+hive> 
+    > 
+    > select*[13G[K * from table13 where col1 [39G[K= ${{[43G[K}[43Gh}[44Gi}[45Gv}[46Ge}[47Gv}[48Ga}[49Gr}[50G:}[51G }[52Ge}[53G[52G}[K[52Gd}[53Ge}[54Gp}[55Gt}[56Gh}[57Gn}[58Gu}[59Gm}[60Gb}[61Ge}[62Gr}[63G[62G}[K[62G[61G}[K[61G[60G}[K[60G[59G}[K[59G[58G}[K[58G[57G}[K[57G[56G}[K[56G[55G}[K[55Gt}[56Gn}[57Gu}[58Gm}[59Gb}[60Ge}[61Gr}[62G[63G
+    > ;
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:34 cannot recognize input near '$' '{' 'hivevar' in expression specification
+hive> ;[7G[Kselect * from table13 where col1= ${hivevar: deptnumber}'[63G[K'[63G[K'[63G[K;[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51Gdeptnumber};[K[51G[50Gdeptnumber};[K[50G[49Gdeptnumber};[K[49G[48Gdeptnumber};[K[48G[47Gdeptnumber};[K[47G[46Gdeptnumber};[K[46G[45Gdeptnumber};[K[45G[44Gdeptnumber};[K[44G[43Gdeptnumber};[K[43G[55G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:34 cannot recognize input near '$' '{' 'deptnumber' in expression specification
+hive> 
+    > 
+    > 
+    > 
+    > seel[10G[K[9G[Klect ([14G[K* from table13;
+OK
+10	Accounts	Joyce	2098	Delhi
+20	Sales	Richard	2743	Hyderabad
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+30	Marketing	Victor	2365	Houston
+40	HR	Gordon	2780	Austin
+10	Accounts	Sandy	3284	New York
+10	Accounts	Alex	2562	Washington
+20	Sales	Ana	3457	Washington
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+30	Marketing	Philippe	3244	Chandigarh
+20	Sales	Joyce	2598	Boston
+10	Accounts	Alberto	3786	Chandigarh
+40	HR	Rafael	3053	Hyderabad
+20	Sales	Kaori	2720	Denver
+20	Sales	Fabian	3257	Mumbai
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+30	Marketing	Irene	2905	Kolkata
+10	Accounts	Hanna	2449	Chicago
+30	Marketing	Ivan	2138	Miami
+20	Sales	Gaston	3984	Pune
+20	Sales	Kumiko	2443	Chicago
+30	Marketing	Leslie	2540	Washington
+20	Sales	Dean	2593	Los Angeles
+30	Marketing	Leslie	3959	Los Angeles
+40	HR	Gustav	2909	Austin
+10	Accounts	Rafael	3711	Pune
+10	Accounts	Miwa	2727	Austin
+10	Accounts	Sam	2729	Miami
+20	Sales	Sebastien	2042	New York
+30	Marketing	Nanaho	2693	Hyderabad
+10	Accounts	Franklin	2328	Pune
+10	Accounts	Omar	2292	Los Angeles
+10	Accounts	Teresa	2124	Delhi
+20	Sales	Cindy	3279	New York
+30	Marketing	Barry	2921	Miami
+30	Marketing	Karl	2709	Chicago
+20	Sales	Naoko	3596	Delhi
+20	Sales	Lisa	2917	Washington
+20	Sales	Karl	3506	Boston
+20	Sales	Gordon	3838	Kolkata
+20	Sales	Vicky	3670	Los Angeles
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+30	Marketing	Harvey	2577	Mumbai
+10	Accounts	Valerie	2993	Chandigarh
+10	Accounts	Lili	3366	Miami
+20	Sales	Kirk	3448	Hyderabad
+40	HR	Miharu	2073	Houston
+10	Accounts	Mieko	2402	Chicago
+40	HR	Lili	3349	Chennai
+30	Marketing	Kazuko	2941	Chennai
+10	Accounts	Valerie	2968	Hyderabad
+10	Accounts	Arlene	3427	Austin
+10	Accounts	Joyce	3572	Houston
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+10	Accounts	Hermine	2168	Chandigarh
+20	Sales	Omar	2272	Washington
+30	Marketing	Ernesto	2408	Kolkata
+30	Marketing	Henri	3943	Pune
+10	Accounts	Emily	3329	Chicago
+30	Marketing	Charley	2949	Chicago
+20	Sales	Dolly	3658	Austin
+20	Sales	Bonnie	3519	Pune
+30	Marketing	Jeanne	2597	Washington
+20	Sales	Tanya	2348	Boston
+30	Marketing	Leslie	3222	Delhi
+30	Marketing	Nanaho	2445	Houston
+30	Marketing	Wendy	2195	Kolkata
+10	Accounts	Teddy	3080	Austin
+20	Sales	Stan	3725	Chennai
+10	Accounts	Barry	3824	Denver
+20	Sales	Itoe	3448	Hyderabad
+40	HR	Kaori	3430	Kolkata
+20	Sales	Wilma	2209	Boston
+20	Sales	Patty	2262	New York
+20	Sales	Helene	2827	Hyderabad
+20	Sales	Jeanne	3214	Chicago
+30	Marketing	Frances	3675	Washington
+20	Sales	Karl	3295	Houston
+10	Accounts	Karl	3292	Boston
+10	Accounts	Virginie	3539	Los Angeles
+10	Accounts	Sam	2103	Chicago
+10	Accounts	Beryl	2873	Delhi
+30	Marketing	Wendy	3571	Hyderabad
+40	HR	Nate	2859	Denver
+30	Marketing	Josephine	3624	Chandigarh
+20	Sales	Sandy	2631	Miami
+20	Sales	Karen	3217	Boston
+10	Accounts	Sebastien	3594	Los Angeles
+10	Accounts	Lorenzo	2146	Chennai
+10	Accounts	Nana	2039	New York
+40	HR	Isidore	2063	Miami
+20	Sales	Miwa	3657	Boston
+10	Accounts	Jeanne	3898	Boston
+30	Marketing	Etsuko	3940	Kolkata
+30	Marketing	Marco	2663	Boston
+30	Marketing	Itoe	2860	Chandigarh
+40	HR	Paula	2422	Washington
+20	Sales	Jose	2126	Washington
+30	Marketing	Michael	2124	Kolkata
+10	Accounts	Tanya	2263	Chennai
+10	Accounts	Sandy	2073	New York
+20	Sales	Sachiko	2851	Washington
+10	Accounts	Miyako	2583	New York
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+30	Marketing	Gordon	3318	Mumbai
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+20	Sales	Victor	3349	Mumbai
+40	HR	Gabielle	3860	Chandigarh
+20	Sales	Lee	2285	New York
+30	Marketing	Bill	2374	Kolkata
+20	Sales	Grace	3038	Houston
+20	Sales	Josephine	3933	New York
+20	Sales	Gabielle	2806	Chennai
+30	Marketing	Wilma	2479	Washington
+20	Sales	Erin	2568	Chicago
+30	Marketing	Rafael	3573	Denver
+40	HR	Ernesto	3438	Boston
+10	Accounts	Philippe	3058	Mumbai
+20	Sales	Miharu	3532	Kolkata
+10	Accounts	Cindy	3617	New York
+30	Marketing	Arlene	3042	Pune
+20	Sales	Franklin	3154	Kolkata
+30	Marketing	Isabel	2189	Chicago
+30	Marketing	Gert	2269	Kolkata
+30	Marketing	Dennis	3151	Pune
+40	HR	Claudette	2118	Chicago
+20	Sales	Humberto	2376	Denver
+20	Sales	Junko	2374	Houston
+40	HR	Omar	3320	Mumbai
+20	Sales	Bill	3947	Los Angeles
+10	Accounts	Akane	2756	Denver
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+20	Sales	Danny	3566	Delhi
+20	Sales	Debby	3239	Pune
+40	HR	Nadine	3497	Hyderabad
+20	Sales	Oscar	2392	Los Angeles
+30	Marketing	Teresa	3292	Miami
+10	Accounts	Hitomi	3744	Mumbai
+30	Marketing	Alberto	2320	Washington
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+20	Sales	Van	2779	Washington
+30	Marketing	Ernesto	3624	Kolkata
+40	HR	Odette	2376	Chicago
+30	Marketing	Nana	3221	Chicago
+20	Sales	Isidore	2957	Delhi
+20	Sales	Omar	3554	Chicago
+30	Marketing	Wanda	3100	Mumbai
+10	Accounts	Sachiko	3249	New York
+40	HR	Gaston	3552	Delhi
+20	Sales	Paloma	3132	Pune
+10	Accounts	Edouard	3023	Chennai
+40	HR	Mieko	2002	Delhi
+10	Accounts	Fabian	3176	Austin
+10	Accounts	Juan	2955	New York
+20	Sales	Miwa	2929	Austin
+30	Marketing	Naoko	3814	Chandigarh
+20	Sales	Charley	3173	Pune
+10	Accounts	Maria	2143	Washington
+20	Sales	Ana	2538	Denver
+40	HR	Sachiko	3715	Denver
+30	Marketing	Tony	3342	Chennai
+30	Marketing	Nicole	3304	Miami
+30	Marketing	Gabielle	2669	Mumbai
+10	Accounts	Nicholas	3433	Kolkata
+40	HR	Rafael	3934	Pune
+10	Accounts	Omar	2952	Miami
+10	Accounts	Odette	2599	Houston
+30	Marketing	Pablo	2416	Houston
+40	HR	Emi	3178	Austin
+10	Accounts	Sebastien	2698	Kolkata
+10	Accounts	Reina	3415	Mumbai
+10	Accounts	Florence	2549	Chandigarh
+10	Accounts	Emi	2243	Los Angeles
+20	Sales	Gordon	2002	Mumbai
+30	Marketing	Nicole	2176	Pune
+10	Accounts	Harvey	2692	Miami
+10	Accounts	Nanaho	3472	Chandigarh
+20	Sales	Alex	2165	Chennai
+10	Accounts	Victor	3718	Houston
+10	Accounts	Beryl	2415	Hyderabad
+10	Accounts	Joyce	2212	Delhi
+20	Sales	Richard	2411	Hyderabad
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+30	Marketing	Victor	2093	Houston
+40	HR	Gordon	3784	Austin
+10	Accounts	Sandy	2730	New York
+10	Accounts	Alex	2492	Washington
+20	Sales	Ana	2364	Washington
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+30	Marketing	Philippe	3404	Chandigarh
+20	Sales	Joyce	2341	Boston
+10	Accounts	Alberto	2009	Chandigarh
+40	HR	Rafael	3089	Hyderabad
+20	Sales	Kaori	3664	Denver
+20	Sales	Fabian	2731	Mumbai
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+30	Marketing	Irene	2325	Kolkata
+10	Accounts	Hanna	3500	Chicago
+30	Marketing	Ivan	2354	Miami
+20	Sales	Gaston	3197	Pune
+20	Sales	Kumiko	3280	Chicago
+30	Marketing	Leslie	3220	Washington
+20	Sales	Dean	3250	Los Angeles
+30	Marketing	Leslie	2251	Los Angeles
+40	HR	Gustav	2340	Austin
+10	Accounts	Rafael	2765	Pune
+10	Accounts	Miwa	2251	Austin
+10	Accounts	Sam	2975	Miami
+20	Sales	Sebastien	3991	New York
+30	Marketing	Nanaho	2353	Hyderabad
+10	Accounts	Franklin	3322	Pune
+10	Accounts	Omar	2516	Los Angeles
+10	Accounts	Teresa	3799	Delhi
+20	Sales	Cindy	2197	New York
+30	Marketing	Barry	3443	Miami
+30	Marketing	Karl	2428	Chicago
+20	Sales	Naoko	3824	Delhi
+20	Sales	Lisa	2401	Washington
+20	Sales	Karl	2158	Boston
+20	Sales	Gordon	3664	Kolkata
+20	Sales	Vicky	2055	Los Angeles
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+30	Marketing	Harvey	3885	Mumbai
+10	Accounts	Valerie	3763	Chandigarh
+10	Accounts	Lili	2934	Miami
+20	Sales	Kirk	3232	Hyderabad
+40	HR	Miharu	2538	Houston
+10	Accounts	Mieko	3282	Chicago
+40	HR	Lili	2980	Chennai
+30	Marketing	Kazuko	3385	Chennai
+10	Accounts	Valerie	3891	Hyderabad
+10	Accounts	Arlene	2296	Austin
+10	Accounts	Joyce	2975	Houston
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+10	Accounts	Hermine	2314	Chandigarh
+20	Sales	Omar	2144	Washington
+30	Marketing	Ernesto	3593	Kolkata
+30	Marketing	Henri	3380	Pune
+10	Accounts	Emily	3723	Chicago
+30	Marketing	Charley	3828	Chicago
+20	Sales	Dolly	3130	Austin
+20	Sales	Bonnie	3071	Pune
+30	Marketing	Jeanne	3389	Washington
+20	Sales	Tanya	2580	Boston
+30	Marketing	Leslie	3669	Delhi
+30	Marketing	Nanaho	2255	Houston
+30	Marketing	Wendy	2284	Kolkata
+10	Accounts	Teddy	2832	Austin
+20	Sales	Stan	3817	Chennai
+10	Accounts	Barry	2596	Denver
+20	Sales	Itoe	2389	Hyderabad
+40	HR	Kaori	3930	Kolkata
+20	Sales	Wilma	3622	Boston
+20	Sales	Patty	3227	New York
+20	Sales	Helene	2345	Hyderabad
+20	Sales	Jeanne	2022	Chicago
+30	Marketing	Frances	2398	Washington
+20	Sales	Karl	2105	Houston
+10	Accounts	Karl	2032	Boston
+10	Accounts	Virginie	2788	Los Angeles
+10	Accounts	Sam	2501	Chicago
+10	Accounts	Beryl	2411	Delhi
+30	Marketing	Wendy	2937	Hyderabad
+40	HR	Nate	3287	Denver
+30	Marketing	Josephine	2485	Chandigarh
+20	Sales	Sandy	2341	Miami
+20	Sales	Karen	3691	Boston
+10	Accounts	Sebastien	2338	Los Angeles
+10	Accounts	Lorenzo	2467	Chennai
+10	Accounts	Nana	2744	New York
+40	HR	Isidore	2657	Miami
+20	Sales	Miwa	2213	Boston
+10	Accounts	Jeanne	3233	Boston
+30	Marketing	Etsuko	2266	Kolkata
+30	Marketing	Marco	2144	Boston
+30	Marketing	Itoe	3538	Chandigarh
+40	HR	Paula	3262	Washington
+20	Sales	Jose	2508	Washington
+30	Marketing	Michael	2905	Kolkata
+10	Accounts	Tanya	2179	Chennai
+10	Accounts	Sandy	2131	New York
+20	Sales	Sachiko	3619	Washington
+10	Accounts	Miyako	2039	New York
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+30	Marketing	Gordon	3923	Mumbai
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+20	Sales	Victor	2012	Mumbai
+40	HR	Gabielle	2757	Chandigarh
+20	Sales	Lee	2958	New York
+30	Marketing	Bill	2663	Kolkata
+20	Sales	Grace	2947	Houston
+20	Sales	Josephine	3006	New York
+20	Sales	Gabielle	3962	Chennai
+30	Marketing	Wilma	2665	Washington
+20	Sales	Erin	2698	Chicago
+30	Marketing	Rafael	3203	Denver
+40	HR	Ernesto	3134	Boston
+10	Accounts	Philippe	2308	Mumbai
+20	Sales	Miharu	2650	Kolkata
+10	Accounts	Cindy	3114	New York
+30	Marketing	Arlene	3746	Pune
+20	Sales	Franklin	3594	Kolkata
+30	Marketing	Isabel	2064	Chicago
+30	Marketing	Gert	3581	Kolkata
+30	Marketing	Dennis	2846	Pune
+40	HR	Claudette	2567	Chicago
+20	Sales	Humberto	2295	Denver
+20	Sales	Junko	2030	Houston
+40	HR	Omar	2164	Mumbai
+20	Sales	Bill	2131	Los Angeles
+10	Accounts	Akane	2554	Denver
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+20	Sales	Danny	3162	Delhi
+20	Sales	Debby	3833	Pune
+40	HR	Nadine	3927	Hyderabad
+20	Sales	Oscar	3086	Los Angeles
+30	Marketing	Teresa	3623	Miami
+10	Accounts	Hitomi	2836	Mumbai
+30	Marketing	Alberto	3093	Washington
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+20	Sales	Van	3553	Washington
+30	Marketing	Ernesto	2536	Kolkata
+40	HR	Odette	2268	Chicago
+30	Marketing	Nana	2427	Chicago
+20	Sales	Isidore	3187	Delhi
+20	Sales	Omar	3919	Chicago
+30	Marketing	Wanda	2069	Mumbai
+10	Accounts	Sachiko	2438	New York
+40	HR	Gaston	2881	Delhi
+20	Sales	Paloma	3972	Pune
+10	Accounts	Edouard	3308	Chennai
+40	HR	Mieko	2629	Delhi
+10	Accounts	Fabian	3578	Austin
+10	Accounts	Juan	3302	New York
+20	Sales	Miwa	3337	Austin
+30	Marketing	Naoko	2616	Chandigarh
+20	Sales	Charley	2298	Pune
+10	Accounts	Maria	3688	Washington
+20	Sales	Ana	3171	Denver
+40	HR	Sachiko	3728	Denver
+30	Marketing	Tony	2978	Chennai
+30	Marketing	Nicole	2911	Miami
+30	Marketing	Gabielle	2715	Mumbai
+10	Accounts	Nicholas	2306	Kolkata
+40	HR	Rafael	2610	Pune
+10	Accounts	Omar	2922	Miami
+10	Accounts	Odette	2524	Houston
+30	Marketing	Pablo	3042	Houston
+40	HR	Emi	2478	Austin
+10	Accounts	Sebastien	3147	Kolkata
+10	Accounts	Reina	2447	Mumbai
+10	Accounts	Florence	2787	Chandigarh
+10	Accounts	Emi	3589	Los Angeles
+20	Sales	Gordon	2315	Mumbai
+30	Marketing	Nicole	3902	Pune
+10	Accounts	Harvey	2180	Miami
+10	Accounts	Nanaho	2535	Chandigarh
+20	Sales	Alex	3631	Chennai
+10	Accounts	Victor	2947	Houston
+10	Accounts	Beryl	2814	Hyderabad
+10	Accounts	Joyce	2662	Delhi
+20	Sales	Richard	3311	Hyderabad
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+30	Marketing	Victor	3840	Houston
+40	HR	Gordon	3862	Austin
+10	Accounts	Sandy	2870	New York
+10	Accounts	Alex	2901	Washington
+20	Sales	Ana	2079	Washington
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+30	Marketing	Philippe	3453	Chandigarh
+20	Sales	Joyce	3169	Boston
+10	Accounts	Alberto	3989	Chandigarh
+40	HR	Rafael	3419	Hyderabad
+20	Sales	Kaori	2206	Denver
+20	Sales	Fabian	3062	Mumbai
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+30	Marketing	Irene	3905	Kolkata
+10	Accounts	Hanna	3696	Chicago
+30	Marketing	Ivan	2998	Miami
+20	Sales	Gaston	3250	Pune
+20	Sales	Kumiko	3729	Chicago
+30	Marketing	Leslie	3967	Washington
+20	Sales	Dean	2593	Los Angeles
+30	Marketing	Leslie	3088	Los Angeles
+40	HR	Gustav	3697	Austin
+10	Accounts	Rafael	3236	Pune
+10	Accounts	Miwa	3395	Austin
+10	Accounts	Sam	3920	Miami
+20	Sales	Sebastien	2254	New York
+30	Marketing	Nanaho	2332	Hyderabad
+10	Accounts	Franklin	2322	Pune
+10	Accounts	Omar	3718	Los Angeles
+10	Accounts	Teresa	2783	Delhi
+20	Sales	Cindy	2870	New York
+30	Marketing	Barry	2045	Miami
+30	Marketing	Karl	2519	Chicago
+20	Sales	Naoko	2885	Delhi
+20	Sales	Lisa	2714	Washington
+20	Sales	Karl	2030	Boston
+20	Sales	Gordon	3825	Kolkata
+20	Sales	Vicky	2189	Los Angeles
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+30	Marketing	Harvey	2362	Mumbai
+10	Accounts	Valerie	3361	Chandigarh
+10	Accounts	Lili	3694	Miami
+20	Sales	Kirk	3446	Hyderabad
+40	HR	Miharu	3347	Houston
+10	Accounts	Mieko	2806	Chicago
+40	HR	Lili	2230	Chennai
+30	Marketing	Kazuko	2085	Chennai
+10	Accounts	Valerie	3021	Hyderabad
+10	Accounts	Arlene	2321	Austin
+10	Accounts	Joyce	2485	Houston
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+10	Accounts	Hermine	2511	Chandigarh
+20	Sales	Omar	3055	Washington
+30	Marketing	Ernesto	2984	Kolkata
+30	Marketing	Henri	3306	Pune
+10	Accounts	Emily	2136	Chicago
+30	Marketing	Charley	3684	Chicago
+20	Sales	Dolly	3843	Austin
+20	Sales	Bonnie	2049	Pune
+30	Marketing	Jeanne	3078	Washington
+20	Sales	Tanya	2420	Boston
+30	Marketing	Leslie	2810	Delhi
+30	Marketing	Nanaho	3843	Houston
+30	Marketing	Wendy	2667	Kolkata
+10	Accounts	Teddy	3991	Austin
+20	Sales	Stan	2906	Chennai
+10	Accounts	Barry	2895	Denver
+20	Sales	Itoe	2185	Hyderabad
+40	HR	Kaori	3404	Kolkata
+20	Sales	Wilma	2411	Boston
+20	Sales	Patty	2523	New York
+20	Sales	Helene	3924	Hyderabad
+20	Sales	Jeanne	3494	Chicago
+30	Marketing	Frances	2086	Washington
+20	Sales	Karl	2282	Houston
+10	Accounts	Karl	3681	Boston
+10	Accounts	Virginie	3110	Los Angeles
+10	Accounts	Sam	3550	Chicago
+10	Accounts	Beryl	3463	Delhi
+30	Marketing	Wendy	2524	Hyderabad
+40	HR	Nate	3648	Denver
+30	Marketing	Josephine	2951	Chandigarh
+20	Sales	Sandy	2322	Miami
+20	Sales	Karen	3045	Boston
+10	Accounts	Sebastien	2537	Los Angeles
+10	Accounts	Lorenzo	3429	Chennai
+10	Accounts	Nana	2965	New York
+40	HR	Isidore	2488	Miami
+20	Sales	Miwa	3913	Boston
+10	Accounts	Jeanne	2569	Boston
+30	Marketing	Etsuko	2294	Kolkata
+30	Marketing	Marco	3974	Boston
+30	Marketing	Itoe	3074	Chandigarh
+40	HR	Paula	3684	Washington
+20	Sales	Jose	3975	Washington
+30	Marketing	Michael	2839	Kolkata
+10	Accounts	Tanya	2894	Chennai
+10	Accounts	Sandy	2665	New York
+20	Sales	Sachiko	3014	Washington
+10	Accounts	Miyako	3664	New York
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+30	Marketing	Gordon	3720	Mumbai
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+20	Sales	Victor	3737	Mumbai
+40	HR	Gabielle	3809	Chandigarh
+20	Sales	Lee	3278	New York
+30	Marketing	Bill	3090	Kolkata
+20	Sales	Grace	2632	Houston
+20	Sales	Josephine	2639	New York
+20	Sales	Gabielle	2056	Chennai
+30	Marketing	Wilma	3529	Washington
+20	Sales	Erin	3395	Chicago
+30	Marketing	Rafael	2983	Denver
+40	HR	Ernesto	3429	Boston
+10	Accounts	Philippe	2030	Mumbai
+20	Sales	Miharu	2657	Kolkata
+10	Accounts	Cindy	3311	New York
+30	Marketing	Arlene	2266	Pune
+20	Sales	Franklin	3106	Kolkata
+30	Marketing	Isabel	2457	Chicago
+30	Marketing	Gert	3469	Kolkata
+30	Marketing	Dennis	2598	Pune
+40	HR	Claudette	2271	Chicago
+20	Sales	Humberto	3885	Denver
+20	Sales	Junko	2605	Houston
+40	HR	Omar	2561	Mumbai
+20	Sales	Bill	2203	Los Angeles
+10	Accounts	Akane	2180	Denver
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+20	Sales	Danny	2757	Delhi
+20	Sales	Debby	2310	Pune
+40	HR	Nadine	2165	Hyderabad
+20	Sales	Oscar	3371	Los Angeles
+30	Marketing	Teresa	2613	Miami
+10	Accounts	Hitomi	3942	Mumbai
+30	Marketing	Alberto	3675	Washington
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+20	Sales	Van	3585	Washington
+30	Marketing	Ernesto	2623	Kolkata
+40	HR	Odette	2056	Chicago
+30	Marketing	Nana	3975	Chicago
+20	Sales	Isidore	2084	Delhi
+20	Sales	Omar	3609	Chicago
+30	Marketing	Wanda	3881	Mumbai
+10	Accounts	Sachiko	2806	New York
+40	HR	Gaston	2971	Delhi
+20	Sales	Paloma	3472	Pune
+10	Accounts	Edouard	2393	Chennai
+40	HR	Mieko	3186	Delhi
+10	Accounts	Fabian	2928	Austin
+10	Accounts	Juan	2399	New York
+20	Sales	Miwa	2566	Austin
+30	Marketing	Naoko	2039	Chandigarh
+20	Sales	Charley	2212	Pune
+10	Accounts	Maria	3814	Washington
+20	Sales	Ana	3229	Denver
+40	HR	Sachiko	2545	Denver
+30	Marketing	Tony	2926	Chennai
+30	Marketing	Nicole	2464	Miami
+30	Marketing	Gabielle	2092	Mumbai
+10	Accounts	Nicholas	2711	Kolkata
+40	HR	Rafael	2551	Pune
+10	Accounts	Omar	3400	Miami
+10	Accounts	Odette	3012	Houston
+30	Marketing	Pablo	3758	Houston
+40	HR	Emi	3064	Austin
+10	Accounts	Sebastien	2468	Kolkata
+10	Accounts	Reina	3468	Mumbai
+10	Accounts	Florence	3593	Chandigarh
+10	Accounts	Emi	2089	Los Angeles
+20	Sales	Gordon	2532	Mumbai
+30	Marketing	Nicole	2142	Pune
+10	Accounts	Harvey	2944	Miami
+10	Accounts	Nanaho	2133	Chandigarh
+20	Sales	Alex	3670	Chennai
+10	Accounts	Victor	2743	Houston
+10	Accounts	Beryl	2631	Hyderabad
+10	Accounts	Joyce	2054	Delhi
+20	Sales	Richard	3894	Hyderabad
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+30	Marketing	Victor	2414	Houston
+40	HR	Gordon	2011	Austin
+10	Accounts	Sandy	2103	New York
+10	Accounts	Alex	2600	Washington
+20	Sales	Ana	3674	Washington
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+30	Marketing	Philippe	2803	Chandigarh
+20	Sales	Joyce	2881	Boston
+10	Accounts	Alberto	2236	Chandigarh
+40	HR	Rafael	2638	Hyderabad
+20	Sales	Kaori	3763	Denver
+20	Sales	Fabian	2766	Mumbai
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+30	Marketing	Irene	2238	Kolkata
+10	Accounts	Hanna	2639	Chicago
+30	Marketing	Ivan	3820	Miami
+20	Sales	Gaston	3665	Pune
+20	Sales	Kumiko	3275	Chicago
+30	Marketing	Leslie	3704	Washington
+20	Sales	Dean	2430	Los Angeles
+30	Marketing	Leslie	3960	Los Angeles
+Time taken: 0.111 seconds, Fetched: 604 row(s)
+hive> 
+    > 
+    > select [13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kset hivevar:deptnumber;
+hivevar:deptnumber is undefined as a hive variable
+Query returned non-zero code: 1, cause: null
+hive> s[7G[Kse hivevar:deptnumver [28G[K[27G[K[26G[K[25G[Kber = 10;
+NoViableAltException(26@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1020)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'se' 'hivevar' ':'
+hive> se hivevar:deptnumber = 10;[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[11G[10G[9Gt hivevar:deptnumber = 10;[10G[35G
+hive> set hivevar:deptnumber;
+hivevar:deptnumber=10
+hive> 
+    > 
+    > se[8G[Kelect * from table14[27G[K3 where col1 = $:[43G[K{};[45G[44Gh};[45Gi};[46Gv};[47Ge};[48Gv};[49Ga};[50Gr};[51G:};[52G };[53Gd};[54Ge};[55Gp};[56Gt};[57Gn};[58Gu};[59Gm};[60Gb};[61Ge};[62Gr};[63G[65G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:35 cannot recognize input near '$' '{' 'hivevar' in expression specification
+hive> 
+    > 
+    > select * from table13 where col1 = ${hivevar: deptnumber};[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G${hivevar: deptnumber};[K[41G[40G[39G[40G[39G=${hivevar: deptnumber};[K[39G[63G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:33 cannot recognize input near '$' '{' 'hivevar' in expression specification
+hive> select * from table13 where col1=${hivevar: deptnumber};[39G[K = ${hivevar: deptnumber};[9G[Kt hivevar:deptnumber;[29G[K = 10;[9G[K hivevar:deptnumber = 10;[9G[Kt hivevar:deptnumber;[9G[Klect * from table13;[28G[K where col1= ${deptnumber};[7G[K;[7G[Kselect * from table13 where col1= ${hivevar: deptnumber}[9G[Kt hivevar :deptnumber;[11G[Kdeptnumber;[11G[Khivevar :deptnumber = 10;[31G[K- 10;[9G[Klect * from table13 where col1 =${hiveconf:deptno};[41G[K ${hivevar:deptno};[57G[Kumber};[43G[K(hivevar:deptnumber};[41G[K${hiveconf:deptno};[42G[K (hiveconf: deptno);[7G[K;[7G[Kselect * from table13[7G[K;[7G[Kselect * from table13 where col1 =$ (hiveconf: deptno);[61G[60G[59G[58G[59G[60G[61G[62G
+NoViableAltException(16@[269:1: atomExpression : ( KW_NULL -> TOK_NULL | constant | castExpression | caseExpression | whenExpression | ( functionName LPAREN )=> function | tableOrColumn | LPAREN ! expression RPAREN !);])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser$DFA32.specialStateTransition(HiveParser_IdentifiersParser.java:15155)
+	at org.antlr.runtime.DFA.predict(DFA.java:80)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6435)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:6641)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7026)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7086)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7270)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:7430)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:7590)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:7750)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:7909)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:8565)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:9452)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:9571)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:9730)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6363)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.expression(HiveParser.java:44344)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.searchCondition(HiveParser_FromClauseParser.java:6506)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.whereClause(HiveParser_FromClauseParser.java:6414)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.whereClause(HiveParser.java:44368)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41535)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:34 cannot recognize input near '$' '(' 'hiveconf' in expression specification
+hive> select * from table13 where col1 =$ (hiveconf: deptno);[39G[K=${hivevar: deptnumber};[39G[K = ${hivevar: deptnumber};[9G[Kt hivevar:deptnumber;[9G[Klect * from table13 where col1 = ${hivevar: deptnumber};[39G[K=${hivevar: deptnumber};[39G[K =$ (hiveconf: deptno);[7G[Kselect * from table13 where col1 =$ (hiveconf: deptno);[39G[K=${hivevar: deptnumber};[39G[K = ${hivevar: deptnumber};[9G[Kt hivevar:deptnumber;[29G[K = 10;[9G[K hivevar:deptnumber = 10;[9G[Kt hivevar:deptnumber;[9G[Klect * from table13;[28G[K where col1= ${deptnumber};[7G[K;[7G[Kselect * from table13 where col1= ${hivevar: deptnumber}[9G[Kt hivevar :deptnumber;[11G[Kdeptnumber;[11G[Khivevar :deptnumber = 10;[31G[K- 10;[9G[Klect * from table13 where col1 =${hiveconf:deptno};[41G[K ${hivevar:deptno};[57G[Kumber};[43G[K(hivevar:deptnumber};[41G[K${hiveconf:deptno};[42G[K (hiveconf: deptno);[7G[K;[7G[Kselect * from table13[7G[Kuse d2;[7G[Kset d2;[7G[K;[7G[Kselect * from table13 where col6 = $( hiveconf: deptno);[9G[Kt hiveconf;[11G[Kd1;[11G[Khiveconf: d1 =50;[10G[Kconf d1:50;[10G[K hiveconf: d1 =50;[11G[Kd1;[11G[Khiveconf: d1 =50;[10G[Kconf d1:50;[10G[K deptno;[17G[K =40;[17G[K;[10G[Kconf d1:50;[10G[K deptno;[17G[K =40;[17G[K;[10G[Kconf d1:50;[10G[K hiveconf: d1 =50;[11G[Kd1;[11G[Khiveconf;[11G[Kd1;[11G[Khiveconf: d1 =50;[11G[Kd1;[11G[Khiveconf;[9G[Klect * from table13 where col6 = $( hiveconf: deptno);[28G[K[7G[K;[7G[Kset d2;[7G[Kuse d2;[7G[Kselect * from table13[7G[K;[7G[Kselect * from table13 where col1 =$ (hiveconf: deptno);[42G[K{hiveconf:deptno};
+OK
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+40	HR	Gordon	2780	Austin
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+40	HR	Rafael	3053	Hyderabad
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+40	HR	Gustav	2909	Austin
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+40	HR	Miharu	2073	Houston
+40	HR	Lili	3349	Chennai
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+40	HR	Kaori	3430	Kolkata
+40	HR	Nate	2859	Denver
+40	HR	Isidore	2063	Miami
+40	HR	Paula	2422	Washington
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+40	HR	Gabielle	3860	Chandigarh
+40	HR	Ernesto	3438	Boston
+40	HR	Claudette	2118	Chicago
+40	HR	Omar	3320	Mumbai
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+40	HR	Nadine	3497	Hyderabad
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+40	HR	Odette	2376	Chicago
+40	HR	Gaston	3552	Delhi
+40	HR	Mieko	2002	Delhi
+40	HR	Sachiko	3715	Denver
+40	HR	Rafael	3934	Pune
+40	HR	Emi	3178	Austin
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+40	HR	Gordon	3784	Austin
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+40	HR	Rafael	3089	Hyderabad
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+40	HR	Gustav	2340	Austin
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+40	HR	Miharu	2538	Houston
+40	HR	Lili	2980	Chennai
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+40	HR	Kaori	3930	Kolkata
+40	HR	Nate	3287	Denver
+40	HR	Isidore	2657	Miami
+40	HR	Paula	3262	Washington
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+40	HR	Gabielle	2757	Chandigarh
+40	HR	Ernesto	3134	Boston
+40	HR	Claudette	2567	Chicago
+40	HR	Omar	2164	Mumbai
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+40	HR	Nadine	3927	Hyderabad
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+40	HR	Odette	2268	Chicago
+40	HR	Gaston	2881	Delhi
+40	HR	Mieko	2629	Delhi
+40	HR	Sachiko	3728	Denver
+40	HR	Rafael	2610	Pune
+40	HR	Emi	2478	Austin
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+40	HR	Gordon	3862	Austin
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+40	HR	Rafael	3419	Hyderabad
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+40	HR	Gustav	3697	Austin
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+40	HR	Miharu	3347	Houston
+40	HR	Lili	2230	Chennai
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+40	HR	Kaori	3404	Kolkata
+40	HR	Nate	3648	Denver
+40	HR	Isidore	2488	Miami
+40	HR	Paula	3684	Washington
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+40	HR	Gabielle	3809	Chandigarh
+40	HR	Ernesto	3429	Boston
+40	HR	Claudette	2271	Chicago
+40	HR	Omar	2561	Mumbai
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+40	HR	Nadine	2165	Hyderabad
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+40	HR	Odette	2056	Chicago
+40	HR	Gaston	2971	Delhi
+40	HR	Mieko	3186	Delhi
+40	HR	Sachiko	2545	Denver
+40	HR	Rafael	2551	Pune
+40	HR	Emi	3064	Austin
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+40	HR	Gordon	2011	Austin
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+40	HR	Rafael	2638	Hyderabad
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+Time taken: 0.132 seconds, Fetched: 132 row(s)
+hive> select * from table13 where col1 =${hiveconf:deptno};[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G:deptno};[K[50G[49G:deptno};[K[49G[48G:deptno};[K[48G[47G:deptno};[K[47Gc:deptno};[48G[47G:deptno};[K[47Ge:deptno};[48G[47G:deptno};[K[47Gv:deptno};[48Ga:deptno};[49Gr:deptno};[50G[51G[52G[53G[54G[55G[56G[57G[56G};[K[56Gu};[57Gm};[58Gv};[59Ge};[60Gr};[61G[60G};[K[60G[59G};[K[59G[58G};[K[58Gb};[59Ge};[60Gr};[61G[63G
+OK
+10	Accounts	Joyce	2098	Delhi
+10	Accounts	Sandy	3284	New York
+10	Accounts	Alex	2562	Washington
+10	Accounts	Alberto	3786	Chandigarh
+10	Accounts	Hanna	2449	Chicago
+10	Accounts	Rafael	3711	Pune
+10	Accounts	Miwa	2727	Austin
+10	Accounts	Sam	2729	Miami
+10	Accounts	Franklin	2328	Pune
+10	Accounts	Omar	2292	Los Angeles
+10	Accounts	Teresa	2124	Delhi
+10	Accounts	Valerie	2993	Chandigarh
+10	Accounts	Lili	3366	Miami
+10	Accounts	Mieko	2402	Chicago
+10	Accounts	Valerie	2968	Hyderabad
+10	Accounts	Arlene	3427	Austin
+10	Accounts	Joyce	3572	Houston
+10	Accounts	Hermine	2168	Chandigarh
+10	Accounts	Emily	3329	Chicago
+10	Accounts	Teddy	3080	Austin
+10	Accounts	Barry	3824	Denver
+10	Accounts	Karl	3292	Boston
+10	Accounts	Virginie	3539	Los Angeles
+10	Accounts	Sam	2103	Chicago
+10	Accounts	Beryl	2873	Delhi
+10	Accounts	Sebastien	3594	Los Angeles
+10	Accounts	Lorenzo	2146	Chennai
+10	Accounts	Nana	2039	New York
+10	Accounts	Jeanne	3898	Boston
+10	Accounts	Tanya	2263	Chennai
+10	Accounts	Sandy	2073	New York
+10	Accounts	Miyako	2583	New York
+10	Accounts	Philippe	3058	Mumbai
+10	Accounts	Cindy	3617	New York
+10	Accounts	Akane	2756	Denver
+10	Accounts	Hitomi	3744	Mumbai
+10	Accounts	Sachiko	3249	New York
+10	Accounts	Edouard	3023	Chennai
+10	Accounts	Fabian	3176	Austin
+10	Accounts	Juan	2955	New York
+10	Accounts	Maria	2143	Washington
+10	Accounts	Nicholas	3433	Kolkata
+10	Accounts	Omar	2952	Miami
+10	Accounts	Odette	2599	Houston
+10	Accounts	Sebastien	2698	Kolkata
+10	Accounts	Reina	3415	Mumbai
+10	Accounts	Florence	2549	Chandigarh
+10	Accounts	Emi	2243	Los Angeles
+10	Accounts	Harvey	2692	Miami
+10	Accounts	Nanaho	3472	Chandigarh
+10	Accounts	Victor	3718	Houston
+10	Accounts	Beryl	2415	Hyderabad
+10	Accounts	Joyce	2212	Delhi
+10	Accounts	Sandy	2730	New York
+10	Accounts	Alex	2492	Washington
+10	Accounts	Alberto	2009	Chandigarh
+10	Accounts	Hanna	3500	Chicago
+10	Accounts	Rafael	2765	Pune
+10	Accounts	Miwa	2251	Austin
+10	Accounts	Sam	2975	Miami
+10	Accounts	Franklin	3322	Pune
+10	Accounts	Omar	2516	Los Angeles
+10	Accounts	Teresa	3799	Delhi
+10	Accounts	Valerie	3763	Chandigarh
+10	Accounts	Lili	2934	Miami
+10	Accounts	Mieko	3282	Chicago
+10	Accounts	Valerie	3891	Hyderabad
+10	Accounts	Arlene	2296	Austin
+10	Accounts	Joyce	2975	Houston
+10	Accounts	Hermine	2314	Chandigarh
+10	Accounts	Emily	3723	Chicago
+10	Accounts	Teddy	2832	Austin
+10	Accounts	Barry	2596	Denver
+10	Accounts	Karl	2032	Boston
+10	Accounts	Virginie	2788	Los Angeles
+10	Accounts	Sam	2501	Chicago
+10	Accounts	Beryl	2411	Delhi
+10	Accounts	Sebastien	2338	Los Angeles
+10	Accounts	Lorenzo	2467	Chennai
+10	Accounts	Nana	2744	New York
+10	Accounts	Jeanne	3233	Boston
+10	Accounts	Tanya	2179	Chennai
+10	Accounts	Sandy	2131	New York
+10	Accounts	Miyako	2039	New York
+10	Accounts	Philippe	2308	Mumbai
+10	Accounts	Cindy	3114	New York
+10	Accounts	Akane	2554	Denver
+10	Accounts	Hitomi	2836	Mumbai
+10	Accounts	Sachiko	2438	New York
+10	Accounts	Edouard	3308	Chennai
+10	Accounts	Fabian	3578	Austin
+10	Accounts	Juan	3302	New York
+10	Accounts	Maria	3688	Washington
+10	Accounts	Nicholas	2306	Kolkata
+10	Accounts	Omar	2922	Miami
+10	Accounts	Odette	2524	Houston
+10	Accounts	Sebastien	3147	Kolkata
+10	Accounts	Reina	2447	Mumbai
+10	Accounts	Florence	2787	Chandigarh
+10	Accounts	Emi	3589	Los Angeles
+10	Accounts	Harvey	2180	Miami
+10	Accounts	Nanaho	2535	Chandigarh
+10	Accounts	Victor	2947	Houston
+10	Accounts	Beryl	2814	Hyderabad
+10	Accounts	Joyce	2662	Delhi
+10	Accounts	Sandy	2870	New York
+10	Accounts	Alex	2901	Washington
+10	Accounts	Alberto	3989	Chandigarh
+10	Accounts	Hanna	3696	Chicago
+10	Accounts	Rafael	3236	Pune
+10	Accounts	Miwa	3395	Austin
+10	Accounts	Sam	3920	Miami
+10	Accounts	Franklin	2322	Pune
+10	Accounts	Omar	3718	Los Angeles
+10	Accounts	Teresa	2783	Delhi
+10	Accounts	Valerie	3361	Chandigarh
+10	Accounts	Lili	3694	Miami
+10	Accounts	Mieko	2806	Chicago
+10	Accounts	Valerie	3021	Hyderabad
+10	Accounts	Arlene	2321	Austin
+10	Accounts	Joyce	2485	Houston
+10	Accounts	Hermine	2511	Chandigarh
+10	Accounts	Emily	2136	Chicago
+10	Accounts	Teddy	3991	Austin
+10	Accounts	Barry	2895	Denver
+10	Accounts	Karl	3681	Boston
+10	Accounts	Virginie	3110	Los Angeles
+10	Accounts	Sam	3550	Chicago
+10	Accounts	Beryl	3463	Delhi
+10	Accounts	Sebastien	2537	Los Angeles
+10	Accounts	Lorenzo	3429	Chennai
+10	Accounts	Nana	2965	New York
+10	Accounts	Jeanne	2569	Boston
+10	Accounts	Tanya	2894	Chennai
+10	Accounts	Sandy	2665	New York
+10	Accounts	Miyako	3664	New York
+10	Accounts	Philippe	2030	Mumbai
+10	Accounts	Cindy	3311	New York
+10	Accounts	Akane	2180	Denver
+10	Accounts	Hitomi	3942	Mumbai
+10	Accounts	Sachiko	2806	New York
+10	Accounts	Edouard	2393	Chennai
+10	Accounts	Fabian	2928	Austin
+10	Accounts	Juan	2399	New York
+10	Accounts	Maria	3814	Washington
+10	Accounts	Nicholas	2711	Kolkata
+10	Accounts	Omar	3400	Miami
+10	Accounts	Odette	3012	Houston
+10	Accounts	Sebastien	2468	Kolkata
+10	Accounts	Reina	3468	Mumbai
+10	Accounts	Florence	3593	Chandigarh
+10	Accounts	Emi	2089	Los Angeles
+10	Accounts	Harvey	2944	Miami
+10	Accounts	Nanaho	2133	Chandigarh
+10	Accounts	Victor	2743	Houston
+10	Accounts	Beryl	2631	Hyderabad
+10	Accounts	Joyce	2054	Delhi
+10	Accounts	Sandy	2103	New York
+10	Accounts	Alex	2600	Washington
+10	Accounts	Alberto	2236	Chandigarh
+10	Accounts	Hanna	2639	Chicago
+Time taken: 0.112 seconds, Fetched: 161 row(s)
+hive> select * from table13 where col1 =${hivevar:deptnumber};[62G[K
+    > select ( [15G[K[14G[K* from table13 where col2 [39G[K[38G[K1 = ${hivevar :[52G[K[51G[K[50G[Kr:deptnumber{[62G[K}
+    > ;
+FAILED: ParseException line 2:0 missing EOF at 'select' near '10'
+hive> ;[7G[Kselect * from table13 where col1 = ${hivevar:deptnumber};
+OK
+10	Accounts	Joyce	2098	Delhi
+10	Accounts	Sandy	3284	New York
+10	Accounts	Alex	2562	Washington
+10	Accounts	Alberto	3786	Chandigarh
+10	Accounts	Hanna	2449	Chicago
+10	Accounts	Rafael	3711	Pune
+10	Accounts	Miwa	2727	Austin
+10	Accounts	Sam	2729	Miami
+10	Accounts	Franklin	2328	Pune
+10	Accounts	Omar	2292	Los Angeles
+10	Accounts	Teresa	2124	Delhi
+10	Accounts	Valerie	2993	Chandigarh
+10	Accounts	Lili	3366	Miami
+10	Accounts	Mieko	2402	Chicago
+10	Accounts	Valerie	2968	Hyderabad
+10	Accounts	Arlene	3427	Austin
+10	Accounts	Joyce	3572	Houston
+10	Accounts	Hermine	2168	Chandigarh
+10	Accounts	Emily	3329	Chicago
+10	Accounts	Teddy	3080	Austin
+10	Accounts	Barry	3824	Denver
+10	Accounts	Karl	3292	Boston
+10	Accounts	Virginie	3539	Los Angeles
+10	Accounts	Sam	2103	Chicago
+10	Accounts	Beryl	2873	Delhi
+10	Accounts	Sebastien	3594	Los Angeles
+10	Accounts	Lorenzo	2146	Chennai
+10	Accounts	Nana	2039	New York
+10	Accounts	Jeanne	3898	Boston
+10	Accounts	Tanya	2263	Chennai
+10	Accounts	Sandy	2073	New York
+10	Accounts	Miyako	2583	New York
+10	Accounts	Philippe	3058	Mumbai
+10	Accounts	Cindy	3617	New York
+10	Accounts	Akane	2756	Denver
+10	Accounts	Hitomi	3744	Mumbai
+10	Accounts	Sachiko	3249	New York
+10	Accounts	Edouard	3023	Chennai
+10	Accounts	Fabian	3176	Austin
+10	Accounts	Juan	2955	New York
+10	Accounts	Maria	2143	Washington
+10	Accounts	Nicholas	3433	Kolkata
+10	Accounts	Omar	2952	Miami
+10	Accounts	Odette	2599	Houston
+10	Accounts	Sebastien	2698	Kolkata
+10	Accounts	Reina	3415	Mumbai
+10	Accounts	Florence	2549	Chandigarh
+10	Accounts	Emi	2243	Los Angeles
+10	Accounts	Harvey	2692	Miami
+10	Accounts	Nanaho	3472	Chandigarh
+10	Accounts	Victor	3718	Houston
+10	Accounts	Beryl	2415	Hyderabad
+10	Accounts	Joyce	2212	Delhi
+10	Accounts	Sandy	2730	New York
+10	Accounts	Alex	2492	Washington
+10	Accounts	Alberto	2009	Chandigarh
+10	Accounts	Hanna	3500	Chicago
+10	Accounts	Rafael	2765	Pune
+10	Accounts	Miwa	2251	Austin
+10	Accounts	Sam	2975	Miami
+10	Accounts	Franklin	3322	Pune
+10	Accounts	Omar	2516	Los Angeles
+10	Accounts	Teresa	3799	Delhi
+10	Accounts	Valerie	3763	Chandigarh
+10	Accounts	Lili	2934	Miami
+10	Accounts	Mieko	3282	Chicago
+10	Accounts	Valerie	3891	Hyderabad
+10	Accounts	Arlene	2296	Austin
+10	Accounts	Joyce	2975	Houston
+10	Accounts	Hermine	2314	Chandigarh
+10	Accounts	Emily	3723	Chicago
+10	Accounts	Teddy	2832	Austin
+10	Accounts	Barry	2596	Denver
+10	Accounts	Karl	2032	Boston
+10	Accounts	Virginie	2788	Los Angeles
+10	Accounts	Sam	2501	Chicago
+10	Accounts	Beryl	2411	Delhi
+10	Accounts	Sebastien	2338	Los Angeles
+10	Accounts	Lorenzo	2467	Chennai
+10	Accounts	Nana	2744	New York
+10	Accounts	Jeanne	3233	Boston
+10	Accounts	Tanya	2179	Chennai
+10	Accounts	Sandy	2131	New York
+10	Accounts	Miyako	2039	New York
+10	Accounts	Philippe	2308	Mumbai
+10	Accounts	Cindy	3114	New York
+10	Accounts	Akane	2554	Denver
+10	Accounts	Hitomi	2836	Mumbai
+10	Accounts	Sachiko	2438	New York
+10	Accounts	Edouard	3308	Chennai
+10	Accounts	Fabian	3578	Austin
+10	Accounts	Juan	3302	New York
+10	Accounts	Maria	3688	Washington
+10	Accounts	Nicholas	2306	Kolkata
+10	Accounts	Omar	2922	Miami
+10	Accounts	Odette	2524	Houston
+10	Accounts	Sebastien	3147	Kolkata
+10	Accounts	Reina	2447	Mumbai
+10	Accounts	Florence	2787	Chandigarh
+10	Accounts	Emi	3589	Los Angeles
+10	Accounts	Harvey	2180	Miami
+10	Accounts	Nanaho	2535	Chandigarh
+10	Accounts	Victor	2947	Houston
+10	Accounts	Beryl	2814	Hyderabad
+10	Accounts	Joyce	2662	Delhi
+10	Accounts	Sandy	2870	New York
+10	Accounts	Alex	2901	Washington
+10	Accounts	Alberto	3989	Chandigarh
+10	Accounts	Hanna	3696	Chicago
+10	Accounts	Rafael	3236	Pune
+10	Accounts	Miwa	3395	Austin
+10	Accounts	Sam	3920	Miami
+10	Accounts	Franklin	2322	Pune
+10	Accounts	Omar	3718	Los Angeles
+10	Accounts	Teresa	2783	Delhi
+10	Accounts	Valerie	3361	Chandigarh
+10	Accounts	Lili	3694	Miami
+10	Accounts	Mieko	2806	Chicago
+10	Accounts	Valerie	3021	Hyderabad
+10	Accounts	Arlene	2321	Austin
+10	Accounts	Joyce	2485	Houston
+10	Accounts	Hermine	2511	Chandigarh
+10	Accounts	Emily	2136	Chicago
+10	Accounts	Teddy	3991	Austin
+10	Accounts	Barry	2895	Denver
+10	Accounts	Karl	3681	Boston
+10	Accounts	Virginie	3110	Los Angeles
+10	Accounts	Sam	3550	Chicago
+10	Accounts	Beryl	3463	Delhi
+10	Accounts	Sebastien	2537	Los Angeles
+10	Accounts	Lorenzo	3429	Chennai
+10	Accounts	Nana	2965	New York
+10	Accounts	Jeanne	2569	Boston
+10	Accounts	Tanya	2894	Chennai
+10	Accounts	Sandy	2665	New York
+10	Accounts	Miyako	3664	New York
+10	Accounts	Philippe	2030	Mumbai
+10	Accounts	Cindy	3311	New York
+10	Accounts	Akane	2180	Denver
+10	Accounts	Hitomi	3942	Mumbai
+10	Accounts	Sachiko	2806	New York
+10	Accounts	Edouard	2393	Chennai
+10	Accounts	Fabian	2928	Austin
+10	Accounts	Juan	2399	New York
+10	Accounts	Maria	3814	Washington
+10	Accounts	Nicholas	2711	Kolkata
+10	Accounts	Omar	3400	Miami
+10	Accounts	Odette	3012	Houston
+10	Accounts	Sebastien	2468	Kolkata
+10	Accounts	Reina	3468	Mumbai
+10	Accounts	Florence	3593	Chandigarh
+10	Accounts	Emi	2089	Los Angeles
+10	Accounts	Harvey	2944	Miami
+10	Accounts	Nanaho	2133	Chandigarh
+10	Accounts	Victor	2743	Houston
+10	Accounts	Beryl	2631	Hyderabad
+10	Accounts	Joyce	2054	Delhi
+10	Accounts	Sandy	2103	New York
+10	Accounts	Alex	2600	Washington
+10	Accounts	Alberto	2236	Chandigarh
+10	Accounts	Hanna	2639	Chicago
+Time taken: 0.169 seconds, Fetched: 161 row(s)
+hive> select * from table13 where col1 = ${hivevar:deptnumber};[7G[K;[7G[Kselect * from table13 where col1 = ${hivevar:deptnumber}[41G[K${hivevar:deptnumber};[47G[Kconf:deptno};[42G[K (hiveconf: deptno);[39G[K=${hivevar: deptnumber};[39G[K = ${hivevar: deptnumber};[9G[Kt hivevar:deptnumber;[29G[K = 10;[9G[K hivevar:deptnumber = 10;[9G[Kt hivevar:deptnumber = 10;[29G[K;[9G[Klect * from table13 where col1 = ${hivevar: deptnumber};[39G[K=${hivevar: deptnumber};[39G[K =$ (hiveconf: deptno);[42G[K{hiveconf:deptno};[47G[Kvar:deptnumber};[62G[K[41G[K ${hivevar:deptnumber}[7G[K;[7G[Kselect * from table13 where col1 = ${hivevar:deptnumber};[7G[Kselect * from table13 where col1 = ${hivevar:deptnumber};
+OK
+10	Accounts	Joyce	2098	Delhi
+10	Accounts	Sandy	3284	New York
+10	Accounts	Alex	2562	Washington
+10	Accounts	Alberto	3786	Chandigarh
+10	Accounts	Hanna	2449	Chicago
+10	Accounts	Rafael	3711	Pune
+10	Accounts	Miwa	2727	Austin
+10	Accounts	Sam	2729	Miami
+10	Accounts	Franklin	2328	Pune
+10	Accounts	Omar	2292	Los Angeles
+10	Accounts	Teresa	2124	Delhi
+10	Accounts	Valerie	2993	Chandigarh
+10	Accounts	Lili	3366	Miami
+10	Accounts	Mieko	2402	Chicago
+10	Accounts	Valerie	2968	Hyderabad
+10	Accounts	Arlene	3427	Austin
+10	Accounts	Joyce	3572	Houston
+10	Accounts	Hermine	2168	Chandigarh
+10	Accounts	Emily	3329	Chicago
+10	Accounts	Teddy	3080	Austin
+10	Accounts	Barry	3824	Denver
+10	Accounts	Karl	3292	Boston
+10	Accounts	Virginie	3539	Los Angeles
+10	Accounts	Sam	2103	Chicago
+10	Accounts	Beryl	2873	Delhi
+10	Accounts	Sebastien	3594	Los Angeles
+10	Accounts	Lorenzo	2146	Chennai
+10	Accounts	Nana	2039	New York
+10	Accounts	Jeanne	3898	Boston
+10	Accounts	Tanya	2263	Chennai
+10	Accounts	Sandy	2073	New York
+10	Accounts	Miyako	2583	New York
+10	Accounts	Philippe	3058	Mumbai
+10	Accounts	Cindy	3617	New York
+10	Accounts	Akane	2756	Denver
+10	Accounts	Hitomi	3744	Mumbai
+10	Accounts	Sachiko	3249	New York
+10	Accounts	Edouard	3023	Chennai
+10	Accounts	Fabian	3176	Austin
+10	Accounts	Juan	2955	New York
+10	Accounts	Maria	2143	Washington
+10	Accounts	Nicholas	3433	Kolkata
+10	Accounts	Omar	2952	Miami
+10	Accounts	Odette	2599	Houston
+10	Accounts	Sebastien	2698	Kolkata
+10	Accounts	Reina	3415	Mumbai
+10	Accounts	Florence	2549	Chandigarh
+10	Accounts	Emi	2243	Los Angeles
+10	Accounts	Harvey	2692	Miami
+10	Accounts	Nanaho	3472	Chandigarh
+10	Accounts	Victor	3718	Houston
+10	Accounts	Beryl	2415	Hyderabad
+10	Accounts	Joyce	2212	Delhi
+10	Accounts	Sandy	2730	New York
+10	Accounts	Alex	2492	Washington
+10	Accounts	Alberto	2009	Chandigarh
+10	Accounts	Hanna	3500	Chicago
+10	Accounts	Rafael	2765	Pune
+10	Accounts	Miwa	2251	Austin
+10	Accounts	Sam	2975	Miami
+10	Accounts	Franklin	3322	Pune
+10	Accounts	Omar	2516	Los Angeles
+10	Accounts	Teresa	3799	Delhi
+10	Accounts	Valerie	3763	Chandigarh
+10	Accounts	Lili	2934	Miami
+10	Accounts	Mieko	3282	Chicago
+10	Accounts	Valerie	3891	Hyderabad
+10	Accounts	Arlene	2296	Austin
+10	Accounts	Joyce	2975	Houston
+10	Accounts	Hermine	2314	Chandigarh
+10	Accounts	Emily	3723	Chicago
+10	Accounts	Teddy	2832	Austin
+10	Accounts	Barry	2596	Denver
+10	Accounts	Karl	2032	Boston
+10	Accounts	Virginie	2788	Los Angeles
+10	Accounts	Sam	2501	Chicago
+10	Accounts	Beryl	2411	Delhi
+10	Accounts	Sebastien	2338	Los Angeles
+10	Accounts	Lorenzo	2467	Chennai
+10	Accounts	Nana	2744	New York
+10	Accounts	Jeanne	3233	Boston
+10	Accounts	Tanya	2179	Chennai
+10	Accounts	Sandy	2131	New York
+10	Accounts	Miyako	2039	New York
+10	Accounts	Philippe	2308	Mumbai
+10	Accounts	Cindy	3114	New York
+10	Accounts	Akane	2554	Denver
+10	Accounts	Hitomi	2836	Mumbai
+10	Accounts	Sachiko	2438	New York
+10	Accounts	Edouard	3308	Chennai
+10	Accounts	Fabian	3578	Austin
+10	Accounts	Juan	3302	New York
+10	Accounts	Maria	3688	Washington
+10	Accounts	Nicholas	2306	Kolkata
+10	Accounts	Omar	2922	Miami
+10	Accounts	Odette	2524	Houston
+10	Accounts	Sebastien	3147	Kolkata
+10	Accounts	Reina	2447	Mumbai
+10	Accounts	Florence	2787	Chandigarh
+10	Accounts	Emi	3589	Los Angeles
+10	Accounts	Harvey	2180	Miami
+10	Accounts	Nanaho	2535	Chandigarh
+10	Accounts	Victor	2947	Houston
+10	Accounts	Beryl	2814	Hyderabad
+10	Accounts	Joyce	2662	Delhi
+10	Accounts	Sandy	2870	New York
+10	Accounts	Alex	2901	Washington
+10	Accounts	Alberto	3989	Chandigarh
+10	Accounts	Hanna	3696	Chicago
+10	Accounts	Rafael	3236	Pune
+10	Accounts	Miwa	3395	Austin
+10	Accounts	Sam	3920	Miami
+10	Accounts	Franklin	2322	Pune
+10	Accounts	Omar	3718	Los Angeles
+10	Accounts	Teresa	2783	Delhi
+10	Accounts	Valerie	3361	Chandigarh
+10	Accounts	Lili	3694	Miami
+10	Accounts	Mieko	2806	Chicago
+10	Accounts	Valerie	3021	Hyderabad
+10	Accounts	Arlene	2321	Austin
+10	Accounts	Joyce	2485	Houston
+10	Accounts	Hermine	2511	Chandigarh
+10	Accounts	Emily	2136	Chicago
+10	Accounts	Teddy	3991	Austin
+10	Accounts	Barry	2895	Denver
+10	Accounts	Karl	3681	Boston
+10	Accounts	Virginie	3110	Los Angeles
+10	Accounts	Sam	3550	Chicago
+10	Accounts	Beryl	3463	Delhi
+10	Accounts	Sebastien	2537	Los Angeles
+10	Accounts	Lorenzo	3429	Chennai
+10	Accounts	Nana	2965	New York
+10	Accounts	Jeanne	2569	Boston
+10	Accounts	Tanya	2894	Chennai
+10	Accounts	Sandy	2665	New York
+10	Accounts	Miyako	3664	New York
+10	Accounts	Philippe	2030	Mumbai
+10	Accounts	Cindy	3311	New York
+10	Accounts	Akane	2180	Denver
+10	Accounts	Hitomi	3942	Mumbai
+10	Accounts	Sachiko	2806	New York
+10	Accounts	Edouard	2393	Chennai
+10	Accounts	Fabian	2928	Austin
+10	Accounts	Juan	2399	New York
+10	Accounts	Maria	3814	Washington
+10	Accounts	Nicholas	2711	Kolkata
+10	Accounts	Omar	3400	Miami
+10	Accounts	Odette	3012	Houston
+10	Accounts	Sebastien	2468	Kolkata
+10	Accounts	Reina	3468	Mumbai
+10	Accounts	Florence	3593	Chandigarh
+10	Accounts	Emi	2089	Los Angeles
+10	Accounts	Harvey	2944	Miami
+10	Accounts	Nanaho	2133	Chandigarh
+10	Accounts	Victor	2743	Houston
+10	Accounts	Beryl	2631	Hyderabad
+10	Accounts	Joyce	2054	Delhi
+10	Accounts	Sandy	2103	New York
+10	Accounts	Alex	2600	Washington
+10	Accounts	Alberto	2236	Chandigarh
+10	Accounts	Hanna	2639	Chicago
+Time taken: 0.109 seconds, Fetched: 161 row(s)
+hive> 
+    > 
+    > 
+    > select * from table13 where col1 = ${hivevar:deptnumber};[7G[K;[7G[Kselect * from table13 where col1 = ${hivevar:deptnumber}[41G[K${hivevar:deptnumber};[47G[Kconf:deptno};[42G[K (hiveconf: deptno);[39G[K=${hivevar: deptnumber};[39G[K = ${hivevar: deptnumber};[9G[Kt hivevar:deptnumber;[29G[K = 10;[29G[K;[29G[K = 10;[34G[K[33G[K[32G[K20;
+hive> set hivevar:deptnumber = 20;[9G[Klect * from table13 where col1 = ${hivevar:deptnumber};
+OK
+20	Sales	Richard	2743	Hyderabad
+20	Sales	Ana	3457	Washington
+20	Sales	Joyce	2598	Boston
+20	Sales	Kaori	2720	Denver
+20	Sales	Fabian	3257	Mumbai
+20	Sales	Gaston	3984	Pune
+20	Sales	Kumiko	2443	Chicago
+20	Sales	Dean	2593	Los Angeles
+20	Sales	Sebastien	2042	New York
+20	Sales	Cindy	3279	New York
+20	Sales	Naoko	3596	Delhi
+20	Sales	Lisa	2917	Washington
+20	Sales	Karl	3506	Boston
+20	Sales	Gordon	3838	Kolkata
+20	Sales	Vicky	3670	Los Angeles
+20	Sales	Kirk	3448	Hyderabad
+20	Sales	Omar	2272	Washington
+20	Sales	Dolly	3658	Austin
+20	Sales	Bonnie	3519	Pune
+20	Sales	Tanya	2348	Boston
+20	Sales	Stan	3725	Chennai
+20	Sales	Itoe	3448	Hyderabad
+20	Sales	Wilma	2209	Boston
+20	Sales	Patty	2262	New York
+20	Sales	Helene	2827	Hyderabad
+20	Sales	Jeanne	3214	Chicago
+20	Sales	Karl	3295	Houston
+20	Sales	Sandy	2631	Miami
+20	Sales	Karen	3217	Boston
+20	Sales	Miwa	3657	Boston
+20	Sales	Jose	2126	Washington
+20	Sales	Sachiko	2851	Washington
+20	Sales	Victor	3349	Mumbai
+20	Sales	Lee	2285	New York
+20	Sales	Grace	3038	Houston
+20	Sales	Josephine	3933	New York
+20	Sales	Gabielle	2806	Chennai
+20	Sales	Erin	2568	Chicago
+20	Sales	Miharu	3532	Kolkata
+20	Sales	Franklin	3154	Kolkata
+20	Sales	Humberto	2376	Denver
+20	Sales	Junko	2374	Houston
+20	Sales	Bill	3947	Los Angeles
+20	Sales	Danny	3566	Delhi
+20	Sales	Debby	3239	Pune
+20	Sales	Oscar	2392	Los Angeles
+20	Sales	Van	2779	Washington
+20	Sales	Isidore	2957	Delhi
+20	Sales	Omar	3554	Chicago
+20	Sales	Paloma	3132	Pune
+20	Sales	Miwa	2929	Austin
+20	Sales	Charley	3173	Pune
+20	Sales	Ana	2538	Denver
+20	Sales	Gordon	2002	Mumbai
+20	Sales	Alex	2165	Chennai
+20	Sales	Richard	2411	Hyderabad
+20	Sales	Ana	2364	Washington
+20	Sales	Joyce	2341	Boston
+20	Sales	Kaori	3664	Denver
+20	Sales	Fabian	2731	Mumbai
+20	Sales	Gaston	3197	Pune
+20	Sales	Kumiko	3280	Chicago
+20	Sales	Dean	3250	Los Angeles
+20	Sales	Sebastien	3991	New York
+20	Sales	Cindy	2197	New York
+20	Sales	Naoko	3824	Delhi
+20	Sales	Lisa	2401	Washington
+20	Sales	Karl	2158	Boston
+20	Sales	Gordon	3664	Kolkata
+20	Sales	Vicky	2055	Los Angeles
+20	Sales	Kirk	3232	Hyderabad
+20	Sales	Omar	2144	Washington
+20	Sales	Dolly	3130	Austin
+20	Sales	Bonnie	3071	Pune
+20	Sales	Tanya	2580	Boston
+20	Sales	Stan	3817	Chennai
+20	Sales	Itoe	2389	Hyderabad
+20	Sales	Wilma	3622	Boston
+20	Sales	Patty	3227	New York
+20	Sales	Helene	2345	Hyderabad
+20	Sales	Jeanne	2022	Chicago
+20	Sales	Karl	2105	Houston
+20	Sales	Sandy	2341	Miami
+20	Sales	Karen	3691	Boston
+20	Sales	Miwa	2213	Boston
+20	Sales	Jose	2508	Washington
+20	Sales	Sachiko	3619	Washington
+20	Sales	Victor	2012	Mumbai
+20	Sales	Lee	2958	New York
+20	Sales	Grace	2947	Houston
+20	Sales	Josephine	3006	New York
+20	Sales	Gabielle	3962	Chennai
+20	Sales	Erin	2698	Chicago
+20	Sales	Miharu	2650	Kolkata
+20	Sales	Franklin	3594	Kolkata
+20	Sales	Humberto	2295	Denver
+20	Sales	Junko	2030	Houston
+20	Sales	Bill	2131	Los Angeles
+20	Sales	Danny	3162	Delhi
+20	Sales	Debby	3833	Pune
+20	Sales	Oscar	3086	Los Angeles
+20	Sales	Van	3553	Washington
+20	Sales	Isidore	3187	Delhi
+20	Sales	Omar	3919	Chicago
+20	Sales	Paloma	3972	Pune
+20	Sales	Miwa	3337	Austin
+20	Sales	Charley	2298	Pune
+20	Sales	Ana	3171	Denver
+20	Sales	Gordon	2315	Mumbai
+20	Sales	Alex	3631	Chennai
+20	Sales	Richard	3311	Hyderabad
+20	Sales	Ana	2079	Washington
+20	Sales	Joyce	3169	Boston
+20	Sales	Kaori	2206	Denver
+20	Sales	Fabian	3062	Mumbai
+20	Sales	Gaston	3250	Pune
+20	Sales	Kumiko	3729	Chicago
+20	Sales	Dean	2593	Los Angeles
+20	Sales	Sebastien	2254	New York
+20	Sales	Cindy	2870	New York
+20	Sales	Naoko	2885	Delhi
+20	Sales	Lisa	2714	Washington
+20	Sales	Karl	2030	Boston
+20	Sales	Gordon	3825	Kolkata
+20	Sales	Vicky	2189	Los Angeles
+20	Sales	Kirk	3446	Hyderabad
+20	Sales	Omar	3055	Washington
+20	Sales	Dolly	3843	Austin
+20	Sales	Bonnie	2049	Pune
+20	Sales	Tanya	2420	Boston
+20	Sales	Stan	2906	Chennai
+20	Sales	Itoe	2185	Hyderabad
+20	Sales	Wilma	2411	Boston
+20	Sales	Patty	2523	New York
+20	Sales	Helene	3924	Hyderabad
+20	Sales	Jeanne	3494	Chicago
+20	Sales	Karl	2282	Houston
+20	Sales	Sandy	2322	Miami
+20	Sales	Karen	3045	Boston
+20	Sales	Miwa	3913	Boston
+20	Sales	Jose	3975	Washington
+20	Sales	Sachiko	3014	Washington
+20	Sales	Victor	3737	Mumbai
+20	Sales	Lee	3278	New York
+20	Sales	Grace	2632	Houston
+20	Sales	Josephine	2639	New York
+20	Sales	Gabielle	2056	Chennai
+20	Sales	Erin	3395	Chicago
+20	Sales	Miharu	2657	Kolkata
+20	Sales	Franklin	3106	Kolkata
+20	Sales	Humberto	3885	Denver
+20	Sales	Junko	2605	Houston
+20	Sales	Bill	2203	Los Angeles
+20	Sales	Danny	2757	Delhi
+20	Sales	Debby	2310	Pune
+20	Sales	Oscar	3371	Los Angeles
+20	Sales	Van	3585	Washington
+20	Sales	Isidore	2084	Delhi
+20	Sales	Omar	3609	Chicago
+20	Sales	Paloma	3472	Pune
+20	Sales	Miwa	2566	Austin
+20	Sales	Charley	2212	Pune
+20	Sales	Ana	3229	Denver
+20	Sales	Gordon	2532	Mumbai
+20	Sales	Alex	3670	Chennai
+20	Sales	Richard	3894	Hyderabad
+20	Sales	Ana	3674	Washington
+20	Sales	Joyce	2881	Boston
+20	Sales	Kaori	3763	Denver
+20	Sales	Fabian	2766	Mumbai
+20	Sales	Gaston	3665	Pune
+20	Sales	Kumiko	3275	Chicago
+20	Sales	Dean	2430	Los Angeles
+Time taken: 0.122 seconds, Fetched: 173 row(s)
+hive> 
+    > 
+    > set hivea[15G[Kvar:name = col2;
+hive> select col2,${cole[24G[K2"[25G[K},col3 from e[37G[Ktable13;[44G[K whrere col4[55G[K5[55G[K2[55G[K2[55G[K1 = P[59G[K$ [60G[K{hivevar:deptnumber{[79G[K};
+NoViableAltException(16@[124:1: selectItem : ( ( expression ( ( ( KW_AS )? identifier ) | ( KW_AS LPAREN identifier ( COMMA identifier )* RPAREN ) )? ) -> ^( TOK_SELEXPR expression ( identifier )* ) | tableAllColumns -> ^( TOK_SELEXPR tableAllColumns ) );])
+	at org.antlr.runtime.DFA.noViableAlt(DFA.java:158)
+	at org.antlr.runtime.DFA.predict(DFA.java:116)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.selectItem(HiveParser_SelectClauseParser.java:3049)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.selectList(HiveParser_SelectClauseParser.java:1348)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_SelectClauseParser.selectClause(HiveParser_SelectClauseParser.java:1083)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectClause(HiveParser.java:44365)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41487)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:12 cannot recognize input near '$' '{' 'col2' in selection target
+hive> select col2,${col2},col3 from table13 whrere col1 = ${hivevar:deptnumber};[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47G[46G[45G[44G[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G},col3 from table13 whrere col1 = ${hivevar:deptnumber};[K[24G[23G},col3 from table13 whrere col1 = ${hivevar:deptnumber};[K[23G[22G},col3 from table13 whrere col1 = ${hivevar:deptnumber};[K[22G[21G},col3 from table13 whrere col1 = ${hivevar:deptnumber};[K[21Gn},col3 from table13 whrere col1 = ${hivevar:deptnumber};[22Ga},col3 from table13 whrere col1 = ${hivevar:deptnumber};[23Gm},col3 from table13 whrere col1 = ${hivevar:deptnumber};[24Ge},col3 from table13 whrere col1 = ${hivevar:deptnumber};[25G[81G
+FAILED: ParseException line 1:42 missing EOF at 'col1' near 'whrere'
+hive> select col2,${name},col3 from table13 whrere col1 = ${hivevar:deptnumber};[80G[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G${hivevar:deptnumber};[K[58G[80G
+FAILED: ParseException line 1:42 missing EOF at 'col1' near 'whrere'
+hive> select col2,${name},col3 from table13 whrere col1 =${hivevar:deptnumber};[79G[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G[56G[55G[54G[53G[52G[51G[50G[49G[48G[47Gere col1 =${hivevar:deptnumber};[K[47G[79G
+OK
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Sales	Sales	Sebastien
+Sales	Sales	Cindy
+Sales	Sales	Naoko
+Sales	Sales	Lisa
+Sales	Sales	Karl
+Sales	Sales	Gordon
+Sales	Sales	Vicky
+Sales	Sales	Kirk
+Sales	Sales	Omar
+Sales	Sales	Dolly
+Sales	Sales	Bonnie
+Sales	Sales	Tanya
+Sales	Sales	Stan
+Sales	Sales	Itoe
+Sales	Sales	Wilma
+Sales	Sales	Patty
+Sales	Sales	Helene
+Sales	Sales	Jeanne
+Sales	Sales	Karl
+Sales	Sales	Sandy
+Sales	Sales	Karen
+Sales	Sales	Miwa
+Sales	Sales	Jose
+Sales	Sales	Sachiko
+Sales	Sales	Victor
+Sales	Sales	Lee
+Sales	Sales	Grace
+Sales	Sales	Josephine
+Sales	Sales	Gabielle
+Sales	Sales	Erin
+Sales	Sales	Miharu
+Sales	Sales	Franklin
+Sales	Sales	Humberto
+Sales	Sales	Junko
+Sales	Sales	Bill
+Sales	Sales	Danny
+Sales	Sales	Debby
+Sales	Sales	Oscar
+Sales	Sales	Van
+Sales	Sales	Isidore
+Sales	Sales	Omar
+Sales	Sales	Paloma
+Sales	Sales	Miwa
+Sales	Sales	Charley
+Sales	Sales	Ana
+Sales	Sales	Gordon
+Sales	Sales	Alex
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Sales	Sales	Sebastien
+Sales	Sales	Cindy
+Sales	Sales	Naoko
+Sales	Sales	Lisa
+Sales	Sales	Karl
+Sales	Sales	Gordon
+Sales	Sales	Vicky
+Sales	Sales	Kirk
+Sales	Sales	Omar
+Sales	Sales	Dolly
+Sales	Sales	Bonnie
+Sales	Sales	Tanya
+Sales	Sales	Stan
+Sales	Sales	Itoe
+Sales	Sales	Wilma
+Sales	Sales	Patty
+Sales	Sales	Helene
+Sales	Sales	Jeanne
+Sales	Sales	Karl
+Sales	Sales	Sandy
+Sales	Sales	Karen
+Sales	Sales	Miwa
+Sales	Sales	Jose
+Sales	Sales	Sachiko
+Sales	Sales	Victor
+Sales	Sales	Lee
+Sales	Sales	Grace
+Sales	Sales	Josephine
+Sales	Sales	Gabielle
+Sales	Sales	Erin
+Sales	Sales	Miharu
+Sales	Sales	Franklin
+Sales	Sales	Humberto
+Sales	Sales	Junko
+Sales	Sales	Bill
+Sales	Sales	Danny
+Sales	Sales	Debby
+Sales	Sales	Oscar
+Sales	Sales	Van
+Sales	Sales	Isidore
+Sales	Sales	Omar
+Sales	Sales	Paloma
+Sales	Sales	Miwa
+Sales	Sales	Charley
+Sales	Sales	Ana
+Sales	Sales	Gordon
+Sales	Sales	Alex
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Sales	Sales	Sebastien
+Sales	Sales	Cindy
+Sales	Sales	Naoko
+Sales	Sales	Lisa
+Sales	Sales	Karl
+Sales	Sales	Gordon
+Sales	Sales	Vicky
+Sales	Sales	Kirk
+Sales	Sales	Omar
+Sales	Sales	Dolly
+Sales	Sales	Bonnie
+Sales	Sales	Tanya
+Sales	Sales	Stan
+Sales	Sales	Itoe
+Sales	Sales	Wilma
+Sales	Sales	Patty
+Sales	Sales	Helene
+Sales	Sales	Jeanne
+Sales	Sales	Karl
+Sales	Sales	Sandy
+Sales	Sales	Karen
+Sales	Sales	Miwa
+Sales	Sales	Jose
+Sales	Sales	Sachiko
+Sales	Sales	Victor
+Sales	Sales	Lee
+Sales	Sales	Grace
+Sales	Sales	Josephine
+Sales	Sales	Gabielle
+Sales	Sales	Erin
+Sales	Sales	Miharu
+Sales	Sales	Franklin
+Sales	Sales	Humberto
+Sales	Sales	Junko
+Sales	Sales	Bill
+Sales	Sales	Danny
+Sales	Sales	Debby
+Sales	Sales	Oscar
+Sales	Sales	Van
+Sales	Sales	Isidore
+Sales	Sales	Omar
+Sales	Sales	Paloma
+Sales	Sales	Miwa
+Sales	Sales	Charley
+Sales	Sales	Ana
+Sales	Sales	Gordon
+Sales	Sales	Alex
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Time taken: 0.148 seconds, Fetched: 173 row(s)
+hive> select col2,${name},col3 from table13 where col1 =${hivevar:deptnumber};[78G[77G[76G[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59G[58G[57G ${hivevar:deptnumber};[58G[80G
+OK
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Sales	Sales	Sebastien
+Sales	Sales	Cindy
+Sales	Sales	Naoko
+Sales	Sales	Lisa
+Sales	Sales	Karl
+Sales	Sales	Gordon
+Sales	Sales	Vicky
+Sales	Sales	Kirk
+Sales	Sales	Omar
+Sales	Sales	Dolly
+Sales	Sales	Bonnie
+Sales	Sales	Tanya
+Sales	Sales	Stan
+Sales	Sales	Itoe
+Sales	Sales	Wilma
+Sales	Sales	Patty
+Sales	Sales	Helene
+Sales	Sales	Jeanne
+Sales	Sales	Karl
+Sales	Sales	Sandy
+Sales	Sales	Karen
+Sales	Sales	Miwa
+Sales	Sales	Jose
+Sales	Sales	Sachiko
+Sales	Sales	Victor
+Sales	Sales	Lee
+Sales	Sales	Grace
+Sales	Sales	Josephine
+Sales	Sales	Gabielle
+Sales	Sales	Erin
+Sales	Sales	Miharu
+Sales	Sales	Franklin
+Sales	Sales	Humberto
+Sales	Sales	Junko
+Sales	Sales	Bill
+Sales	Sales	Danny
+Sales	Sales	Debby
+Sales	Sales	Oscar
+Sales	Sales	Van
+Sales	Sales	Isidore
+Sales	Sales	Omar
+Sales	Sales	Paloma
+Sales	Sales	Miwa
+Sales	Sales	Charley
+Sales	Sales	Ana
+Sales	Sales	Gordon
+Sales	Sales	Alex
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Sales	Sales	Sebastien
+Sales	Sales	Cindy
+Sales	Sales	Naoko
+Sales	Sales	Lisa
+Sales	Sales	Karl
+Sales	Sales	Gordon
+Sales	Sales	Vicky
+Sales	Sales	Kirk
+Sales	Sales	Omar
+Sales	Sales	Dolly
+Sales	Sales	Bonnie
+Sales	Sales	Tanya
+Sales	Sales	Stan
+Sales	Sales	Itoe
+Sales	Sales	Wilma
+Sales	Sales	Patty
+Sales	Sales	Helene
+Sales	Sales	Jeanne
+Sales	Sales	Karl
+Sales	Sales	Sandy
+Sales	Sales	Karen
+Sales	Sales	Miwa
+Sales	Sales	Jose
+Sales	Sales	Sachiko
+Sales	Sales	Victor
+Sales	Sales	Lee
+Sales	Sales	Grace
+Sales	Sales	Josephine
+Sales	Sales	Gabielle
+Sales	Sales	Erin
+Sales	Sales	Miharu
+Sales	Sales	Franklin
+Sales	Sales	Humberto
+Sales	Sales	Junko
+Sales	Sales	Bill
+Sales	Sales	Danny
+Sales	Sales	Debby
+Sales	Sales	Oscar
+Sales	Sales	Van
+Sales	Sales	Isidore
+Sales	Sales	Omar
+Sales	Sales	Paloma
+Sales	Sales	Miwa
+Sales	Sales	Charley
+Sales	Sales	Ana
+Sales	Sales	Gordon
+Sales	Sales	Alex
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Sales	Sales	Sebastien
+Sales	Sales	Cindy
+Sales	Sales	Naoko
+Sales	Sales	Lisa
+Sales	Sales	Karl
+Sales	Sales	Gordon
+Sales	Sales	Vicky
+Sales	Sales	Kirk
+Sales	Sales	Omar
+Sales	Sales	Dolly
+Sales	Sales	Bonnie
+Sales	Sales	Tanya
+Sales	Sales	Stan
+Sales	Sales	Itoe
+Sales	Sales	Wilma
+Sales	Sales	Patty
+Sales	Sales	Helene
+Sales	Sales	Jeanne
+Sales	Sales	Karl
+Sales	Sales	Sandy
+Sales	Sales	Karen
+Sales	Sales	Miwa
+Sales	Sales	Jose
+Sales	Sales	Sachiko
+Sales	Sales	Victor
+Sales	Sales	Lee
+Sales	Sales	Grace
+Sales	Sales	Josephine
+Sales	Sales	Gabielle
+Sales	Sales	Erin
+Sales	Sales	Miharu
+Sales	Sales	Franklin
+Sales	Sales	Humberto
+Sales	Sales	Junko
+Sales	Sales	Bill
+Sales	Sales	Danny
+Sales	Sales	Debby
+Sales	Sales	Oscar
+Sales	Sales	Van
+Sales	Sales	Isidore
+Sales	Sales	Omar
+Sales	Sales	Paloma
+Sales	Sales	Miwa
+Sales	Sales	Charley
+Sales	Sales	Ana
+Sales	Sales	Gordon
+Sales	Sales	Alex
+Sales	Sales	Richard
+Sales	Sales	Ana
+Sales	Sales	Joyce
+Sales	Sales	Kaori
+Sales	Sales	Fabian
+Sales	Sales	Gaston
+Sales	Sales	Kumiko
+Sales	Sales	Dean
+Time taken: 0.134 seconds, Fetched: 173 row(s)
+hive> select col2,${name},col3 from table13 where col1 = ${hivevar:deptnumber};[79G[K[78G[K[77G[K[76G[K[75G[K[74G[K[73G[K[72G[K[71G[K[70G[K[69G[K[68G[K[67G[K[66G[K[65G[K[64G[K[63G[K[62G[K
+[1]+  Stopped                 hive
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+
+
+WARNING: Hive CLI is deprecated and migration to Beeline is recommended.
+hive> 
+    > 
+    > set hive[14G[Ke.variable [24G[K.sustitute = true;
+hive> set table = table [24G[K13;
+hive> set new_table= ${};[25G[24Gh};[25Gi};[26Gv};[27Ge};[28Gc};[29Go};[30Gn};[31Gf};[32G:};[33Gt};[34Ga};[35Gb};[36Gl};[37Ge};[38G[39G[40G
+hive> set new_tabe[18G[Kle;
+new_table=table13
+hive> select * from ${hiveconf:new_table
+    > };
+FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'table13'
+hive> };[7G[Kselect * from ${hiveconf:new_table[7G[K};[7G[Kuse db2;
+FAILED: SemanticException [Error 10072]: Database does not exist: db2
+hive> hs[8G[K[7G[Kshow databases;
+OK
+d1
+d2
+d3
+default
+Time taken: 0.354 seconds, Fetched: 4 row(s)
+hive> use d2;
+OK
+Time taken: 0.048 seconds
+hive> 
+    > 
+    > use d2;[7G[Kshow databases;[7G[Kuse db2;[7G[K};[7G[Kselect * from ${hiveconf:new_table[9G[Kt new_table;[20G[K= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;
+hive> set hive.variable.sustitute = true;[7G[Kuse d2;[7G[Kshow databases;[7G[Kuse db2;[7G[K};[7G[Kselect * from ${hiveconf:new_table[9G[Kt new_table;[20G[K= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[11G[Ktable = table13;
+hive> set table = table13;[11G[Khive.variable.sustitute = true;[7G[Kuse d2;[7G[Kshow databases;[7G[Kuse db2;[7G[K};[7G[Kselect * from ${hiveconf:new_table[9G[Kt new_table;[20G[K= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[11G[Ktable = table13;[11G[Knew_table= ${hiveconf:table};
+hive> set new_table= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[7G[Kuse d2;[7G[Kshow databases;[7G[Kuse db2;[7G[K};[7G[Kselect * from ${hiveconf:new_table[9G[Kt new_table;[20G[K= ${hiveconf:table};[20G[K;
+new_table=table13
+hive> set new_table;[20G[K= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[7G[Kuse d2;[7G[Kshow databases;[7G[Kuse db2;[7G[K};[7G[Kselect * from ${hiveconf:new_table[9G[Kt new_table;[20G[K= ${hiveconf:table};[20G[K;[9G[Klect * from ${hiveconf:new_table};
+OK
+10	Accounts	Joyce	2098	Delhi
+20	Sales	Richard	2743	Hyderabad
+40	HR	Yumi	3154	Los Angeles
+40	HR	Michiyo	2239	Washington
+30	Marketing	Victor	2365	Houston
+40	HR	Gordon	2780	Austin
+10	Accounts	Sandy	3284	New York
+10	Accounts	Alex	2562	Washington
+20	Sales	Ana	3457	Washington
+40	HR	Valerie	2091	Denver
+40	HR	Gordon	3441	Denver
+40	HR	Miharu	3094	Kolkata
+30	Marketing	Philippe	3244	Chandigarh
+20	Sales	Joyce	2598	Boston
+10	Accounts	Alberto	3786	Chandigarh
+40	HR	Rafael	3053	Hyderabad
+20	Sales	Kaori	2720	Denver
+20	Sales	Fabian	3257	Mumbai
+40	HR	Oscar	2174	Delhi
+40	HR	Tammy	2184	Houston
+30	Marketing	Irene	2905	Kolkata
+10	Accounts	Hanna	2449	Chicago
+30	Marketing	Ivan	2138	Miami
+20	Sales	Gaston	3984	Pune
+20	Sales	Kumiko	2443	Chicago
+30	Marketing	Leslie	2540	Washington
+20	Sales	Dean	2593	Los Angeles
+30	Marketing	Leslie	3959	Los Angeles
+40	HR	Gustav	2909	Austin
+10	Accounts	Rafael	3711	Pune
+10	Accounts	Miwa	2727	Austin
+10	Accounts	Sam	2729	Miami
+20	Sales	Sebastien	2042	New York
+30	Marketing	Nanaho	2693	Hyderabad
+10	Accounts	Franklin	2328	Pune
+10	Accounts	Omar	2292	Los Angeles
+10	Accounts	Teresa	2124	Delhi
+20	Sales	Cindy	3279	New York
+30	Marketing	Barry	2921	Miami
+30	Marketing	Karl	2709	Chicago
+20	Sales	Naoko	3596	Delhi
+20	Sales	Lisa	2917	Washington
+20	Sales	Karl	3506	Boston
+20	Sales	Gordon	3838	Kolkata
+20	Sales	Vicky	3670	Los Angeles
+40	HR	Michael	2450	Washington
+40	HR	Frances	2093	Boston
+40	HR	Juan	3944	Chandigarh
+30	Marketing	Harvey	2577	Mumbai
+10	Accounts	Valerie	2993	Chandigarh
+10	Accounts	Lili	3366	Miami
+20	Sales	Kirk	3448	Hyderabad
+40	HR	Miharu	2073	Houston
+10	Accounts	Mieko	2402	Chicago
+40	HR	Lili	3349	Chennai
+30	Marketing	Kazuko	2941	Chennai
+10	Accounts	Valerie	2968	Hyderabad
+10	Accounts	Arlene	3427	Austin
+10	Accounts	Joyce	3572	Houston
+40	HR	Nana	3709	Mumbai
+40	HR	Wanda	3514	Pune
+10	Accounts	Hermine	2168	Chandigarh
+20	Sales	Omar	2272	Washington
+30	Marketing	Ernesto	2408	Kolkata
+30	Marketing	Henri	3943	Pune
+10	Accounts	Emily	3329	Chicago
+30	Marketing	Charley	2949	Chicago
+20	Sales	Dolly	3658	Austin
+20	Sales	Bonnie	3519	Pune
+30	Marketing	Jeanne	2597	Washington
+20	Sales	Tanya	2348	Boston
+30	Marketing	Leslie	3222	Delhi
+30	Marketing	Nanaho	2445	Houston
+30	Marketing	Wendy	2195	Kolkata
+10	Accounts	Teddy	3080	Austin
+20	Sales	Stan	3725	Chennai
+10	Accounts	Barry	3824	Denver
+20	Sales	Itoe	3448	Hyderabad
+40	HR	Kaori	3430	Kolkata
+20	Sales	Wilma	2209	Boston
+20	Sales	Patty	2262	New York
+20	Sales	Helene	2827	Hyderabad
+20	Sales	Jeanne	3214	Chicago
+30	Marketing	Frances	3675	Washington
+20	Sales	Karl	3295	Houston
+10	Accounts	Karl	3292	Boston
+10	Accounts	Virginie	3539	Los Angeles
+10	Accounts	Sam	2103	Chicago
+10	Accounts	Beryl	2873	Delhi
+30	Marketing	Wendy	3571	Hyderabad
+40	HR	Nate	2859	Denver
+30	Marketing	Josephine	3624	Chandigarh
+20	Sales	Sandy	2631	Miami
+20	Sales	Karen	3217	Boston
+10	Accounts	Sebastien	3594	Los Angeles
+10	Accounts	Lorenzo	2146	Chennai
+10	Accounts	Nana	2039	New York
+40	HR	Isidore	2063	Miami
+20	Sales	Miwa	3657	Boston
+10	Accounts	Jeanne	3898	Boston
+30	Marketing	Etsuko	3940	Kolkata
+30	Marketing	Marco	2663	Boston
+30	Marketing	Itoe	2860	Chandigarh
+40	HR	Paula	2422	Washington
+20	Sales	Jose	2126	Washington
+30	Marketing	Michael	2124	Kolkata
+10	Accounts	Tanya	2263	Chennai
+10	Accounts	Sandy	2073	New York
+20	Sales	Sachiko	2851	Washington
+10	Accounts	Miyako	2583	New York
+40	HR	Kate	2188	Austin
+40	HR	Sebastien	2064	Houston
+30	Marketing	Gordon	3318	Mumbai
+40	HR	Lili	2864	Chandigarh
+40	HR	Barry	3527	Chandigarh
+40	HR	Kaori	3393	Houston
+20	Sales	Victor	3349	Mumbai
+40	HR	Gabielle	3860	Chandigarh
+20	Sales	Lee	2285	New York
+30	Marketing	Bill	2374	Kolkata
+20	Sales	Grace	3038	Houston
+20	Sales	Josephine	3933	New York
+20	Sales	Gabielle	2806	Chennai
+30	Marketing	Wilma	2479	Washington
+20	Sales	Erin	2568	Chicago
+30	Marketing	Rafael	3573	Denver
+40	HR	Ernesto	3438	Boston
+10	Accounts	Philippe	3058	Mumbai
+20	Sales	Miharu	3532	Kolkata
+10	Accounts	Cindy	3617	New York
+30	Marketing	Arlene	3042	Pune
+20	Sales	Franklin	3154	Kolkata
+30	Marketing	Isabel	2189	Chicago
+30	Marketing	Gert	2269	Kolkata
+30	Marketing	Dennis	3151	Pune
+40	HR	Claudette	2118	Chicago
+20	Sales	Humberto	2376	Denver
+20	Sales	Junko	2374	Houston
+40	HR	Omar	3320	Mumbai
+20	Sales	Bill	3947	Los Angeles
+10	Accounts	Akane	2756	Denver
+40	HR	Marco	3505	Pune
+40	HR	Sayuri	3770	Chandigarh
+20	Sales	Danny	3566	Delhi
+20	Sales	Debby	3239	Pune
+40	HR	Nadine	3497	Hyderabad
+20	Sales	Oscar	2392	Los Angeles
+30	Marketing	Teresa	3292	Miami
+10	Accounts	Hitomi	3744	Mumbai
+30	Marketing	Alberto	2320	Washington
+40	HR	Rie	2825	Chandigarh
+40	HR	Cindy	2428	Mumbai
+20	Sales	Van	2779	Washington
+30	Marketing	Ernesto	3624	Kolkata
+40	HR	Odette	2376	Chicago
+30	Marketing	Nana	3221	Chicago
+20	Sales	Isidore	2957	Delhi
+20	Sales	Omar	3554	Chicago
+30	Marketing	Wanda	3100	Mumbai
+10	Accounts	Sachiko	3249	New York
+40	HR	Gaston	3552	Delhi
+20	Sales	Paloma	3132	Pune
+10	Accounts	Edouard	3023	Chennai
+40	HR	Mieko	2002	Delhi
+10	Accounts	Fabian	3176	Austin
+10	Accounts	Juan	2955	New York
+20	Sales	Miwa	2929	Austin
+30	Marketing	Naoko	3814	Chandigarh
+20	Sales	Charley	3173	Pune
+10	Accounts	Maria	2143	Washington
+20	Sales	Ana	2538	Denver
+40	HR	Sachiko	3715	Denver
+30	Marketing	Tony	3342	Chennai
+30	Marketing	Nicole	3304	Miami
+30	Marketing	Gabielle	2669	Mumbai
+10	Accounts	Nicholas	3433	Kolkata
+40	HR	Rafael	3934	Pune
+10	Accounts	Omar	2952	Miami
+10	Accounts	Odette	2599	Houston
+30	Marketing	Pablo	2416	Houston
+40	HR	Emi	3178	Austin
+10	Accounts	Sebastien	2698	Kolkata
+10	Accounts	Reina	3415	Mumbai
+10	Accounts	Florence	2549	Chandigarh
+10	Accounts	Emi	2243	Los Angeles
+20	Sales	Gordon	2002	Mumbai
+30	Marketing	Nicole	2176	Pune
+10	Accounts	Harvey	2692	Miami
+10	Accounts	Nanaho	3472	Chandigarh
+20	Sales	Alex	2165	Chennai
+10	Accounts	Victor	3718	Houston
+10	Accounts	Beryl	2415	Hyderabad
+10	Accounts	Joyce	2212	Delhi
+20	Sales	Richard	2411	Hyderabad
+40	HR	Yumi	3277	Los Angeles
+40	HR	Michiyo	2842	Washington
+30	Marketing	Victor	2093	Houston
+40	HR	Gordon	3784	Austin
+10	Accounts	Sandy	2730	New York
+10	Accounts	Alex	2492	Washington
+20	Sales	Ana	2364	Washington
+40	HR	Valerie	3890	Denver
+40	HR	Gordon	3137	Denver
+40	HR	Miharu	3712	Kolkata
+30	Marketing	Philippe	3404	Chandigarh
+20	Sales	Joyce	2341	Boston
+10	Accounts	Alberto	2009	Chandigarh
+40	HR	Rafael	3089	Hyderabad
+20	Sales	Kaori	3664	Denver
+20	Sales	Fabian	2731	Mumbai
+40	HR	Oscar	2878	Delhi
+40	HR	Tammy	2880	Houston
+30	Marketing	Irene	2325	Kolkata
+10	Accounts	Hanna	3500	Chicago
+30	Marketing	Ivan	2354	Miami
+20	Sales	Gaston	3197	Pune
+20	Sales	Kumiko	3280	Chicago
+30	Marketing	Leslie	3220	Washington
+20	Sales	Dean	3250	Los Angeles
+30	Marketing	Leslie	2251	Los Angeles
+40	HR	Gustav	2340	Austin
+10	Accounts	Rafael	2765	Pune
+10	Accounts	Miwa	2251	Austin
+10	Accounts	Sam	2975	Miami
+20	Sales	Sebastien	3991	New York
+30	Marketing	Nanaho	2353	Hyderabad
+10	Accounts	Franklin	3322	Pune
+10	Accounts	Omar	2516	Los Angeles
+10	Accounts	Teresa	3799	Delhi
+20	Sales	Cindy	2197	New York
+30	Marketing	Barry	3443	Miami
+30	Marketing	Karl	2428	Chicago
+20	Sales	Naoko	3824	Delhi
+20	Sales	Lisa	2401	Washington
+20	Sales	Karl	2158	Boston
+20	Sales	Gordon	3664	Kolkata
+20	Sales	Vicky	2055	Los Angeles
+40	HR	Michael	3323	Washington
+40	HR	Frances	2080	Boston
+40	HR	Juan	2810	Chandigarh
+30	Marketing	Harvey	3885	Mumbai
+10	Accounts	Valerie	3763	Chandigarh
+10	Accounts	Lili	2934	Miami
+20	Sales	Kirk	3232	Hyderabad
+40	HR	Miharu	2538	Houston
+10	Accounts	Mieko	3282	Chicago
+40	HR	Lili	2980	Chennai
+30	Marketing	Kazuko	3385	Chennai
+10	Accounts	Valerie	3891	Hyderabad
+10	Accounts	Arlene	2296	Austin
+10	Accounts	Joyce	2975	Houston
+40	HR	Nana	2125	Mumbai
+40	HR	Wanda	3736	Pune
+10	Accounts	Hermine	2314	Chandigarh
+20	Sales	Omar	2144	Washington
+30	Marketing	Ernesto	3593	Kolkata
+30	Marketing	Henri	3380	Pune
+10	Accounts	Emily	3723	Chicago
+30	Marketing	Charley	3828	Chicago
+20	Sales	Dolly	3130	Austin
+20	Sales	Bonnie	3071	Pune
+30	Marketing	Jeanne	3389	Washington
+20	Sales	Tanya	2580	Boston
+30	Marketing	Leslie	3669	Delhi
+30	Marketing	Nanaho	2255	Houston
+30	Marketing	Wendy	2284	Kolkata
+10	Accounts	Teddy	2832	Austin
+20	Sales	Stan	3817	Chennai
+10	Accounts	Barry	2596	Denver
+20	Sales	Itoe	2389	Hyderabad
+40	HR	Kaori	3930	Kolkata
+20	Sales	Wilma	3622	Boston
+20	Sales	Patty	3227	New York
+20	Sales	Helene	2345	Hyderabad
+20	Sales	Jeanne	2022	Chicago
+30	Marketing	Frances	2398	Washington
+20	Sales	Karl	2105	Houston
+10	Accounts	Karl	2032	Boston
+10	Accounts	Virginie	2788	Los Angeles
+10	Accounts	Sam	2501	Chicago
+10	Accounts	Beryl	2411	Delhi
+30	Marketing	Wendy	2937	Hyderabad
+40	HR	Nate	3287	Denver
+30	Marketing	Josephine	2485	Chandigarh
+20	Sales	Sandy	2341	Miami
+20	Sales	Karen	3691	Boston
+10	Accounts	Sebastien	2338	Los Angeles
+10	Accounts	Lorenzo	2467	Chennai
+10	Accounts	Nana	2744	New York
+40	HR	Isidore	2657	Miami
+20	Sales	Miwa	2213	Boston
+10	Accounts	Jeanne	3233	Boston
+30	Marketing	Etsuko	2266	Kolkata
+30	Marketing	Marco	2144	Boston
+30	Marketing	Itoe	3538	Chandigarh
+40	HR	Paula	3262	Washington
+20	Sales	Jose	2508	Washington
+30	Marketing	Michael	2905	Kolkata
+10	Accounts	Tanya	2179	Chennai
+10	Accounts	Sandy	2131	New York
+20	Sales	Sachiko	3619	Washington
+10	Accounts	Miyako	2039	New York
+40	HR	Kate	3304	Austin
+40	HR	Sebastien	2629	Houston
+30	Marketing	Gordon	3923	Mumbai
+40	HR	Lili	2101	Chandigarh
+40	HR	Barry	2092	Chandigarh
+40	HR	Kaori	3420	Houston
+20	Sales	Victor	2012	Mumbai
+40	HR	Gabielle	2757	Chandigarh
+20	Sales	Lee	2958	New York
+30	Marketing	Bill	2663	Kolkata
+20	Sales	Grace	2947	Houston
+20	Sales	Josephine	3006	New York
+20	Sales	Gabielle	3962	Chennai
+30	Marketing	Wilma	2665	Washington
+20	Sales	Erin	2698	Chicago
+30	Marketing	Rafael	3203	Denver
+40	HR	Ernesto	3134	Boston
+10	Accounts	Philippe	2308	Mumbai
+20	Sales	Miharu	2650	Kolkata
+10	Accounts	Cindy	3114	New York
+30	Marketing	Arlene	3746	Pune
+20	Sales	Franklin	3594	Kolkata
+30	Marketing	Isabel	2064	Chicago
+30	Marketing	Gert	3581	Kolkata
+30	Marketing	Dennis	2846	Pune
+40	HR	Claudette	2567	Chicago
+20	Sales	Humberto	2295	Denver
+20	Sales	Junko	2030	Houston
+40	HR	Omar	2164	Mumbai
+20	Sales	Bill	2131	Los Angeles
+10	Accounts	Akane	2554	Denver
+40	HR	Marco	2915	Pune
+40	HR	Sayuri	3640	Chandigarh
+20	Sales	Danny	3162	Delhi
+20	Sales	Debby	3833	Pune
+40	HR	Nadine	3927	Hyderabad
+20	Sales	Oscar	3086	Los Angeles
+30	Marketing	Teresa	3623	Miami
+10	Accounts	Hitomi	2836	Mumbai
+30	Marketing	Alberto	3093	Washington
+40	HR	Rie	2793	Chandigarh
+40	HR	Cindy	2325	Mumbai
+20	Sales	Van	3553	Washington
+30	Marketing	Ernesto	2536	Kolkata
+40	HR	Odette	2268	Chicago
+30	Marketing	Nana	2427	Chicago
+20	Sales	Isidore	3187	Delhi
+20	Sales	Omar	3919	Chicago
+30	Marketing	Wanda	2069	Mumbai
+10	Accounts	Sachiko	2438	New York
+40	HR	Gaston	2881	Delhi
+20	Sales	Paloma	3972	Pune
+10	Accounts	Edouard	3308	Chennai
+40	HR	Mieko	2629	Delhi
+10	Accounts	Fabian	3578	Austin
+10	Accounts	Juan	3302	New York
+20	Sales	Miwa	3337	Austin
+30	Marketing	Naoko	2616	Chandigarh
+20	Sales	Charley	2298	Pune
+10	Accounts	Maria	3688	Washington
+20	Sales	Ana	3171	Denver
+40	HR	Sachiko	3728	Denver
+30	Marketing	Tony	2978	Chennai
+30	Marketing	Nicole	2911	Miami
+30	Marketing	Gabielle	2715	Mumbai
+10	Accounts	Nicholas	2306	Kolkata
+40	HR	Rafael	2610	Pune
+10	Accounts	Omar	2922	Miami
+10	Accounts	Odette	2524	Houston
+30	Marketing	Pablo	3042	Houston
+40	HR	Emi	2478	Austin
+10	Accounts	Sebastien	3147	Kolkata
+10	Accounts	Reina	2447	Mumbai
+10	Accounts	Florence	2787	Chandigarh
+10	Accounts	Emi	3589	Los Angeles
+20	Sales	Gordon	2315	Mumbai
+30	Marketing	Nicole	3902	Pune
+10	Accounts	Harvey	2180	Miami
+10	Accounts	Nanaho	2535	Chandigarh
+20	Sales	Alex	3631	Chennai
+10	Accounts	Victor	2947	Houston
+10	Accounts	Beryl	2814	Hyderabad
+10	Accounts	Joyce	2662	Delhi
+20	Sales	Richard	3311	Hyderabad
+40	HR	Yumi	3795	Los Angeles
+40	HR	Michiyo	3916	Washington
+30	Marketing	Victor	3840	Houston
+40	HR	Gordon	3862	Austin
+10	Accounts	Sandy	2870	New York
+10	Accounts	Alex	2901	Washington
+20	Sales	Ana	2079	Washington
+40	HR	Valerie	3393	Denver
+40	HR	Gordon	2809	Denver
+40	HR	Miharu	2593	Kolkata
+30	Marketing	Philippe	3453	Chandigarh
+20	Sales	Joyce	3169	Boston
+10	Accounts	Alberto	3989	Chandigarh
+40	HR	Rafael	3419	Hyderabad
+20	Sales	Kaori	2206	Denver
+20	Sales	Fabian	3062	Mumbai
+40	HR	Oscar	3593	Delhi
+40	HR	Tammy	2664	Houston
+30	Marketing	Irene	3905	Kolkata
+10	Accounts	Hanna	3696	Chicago
+30	Marketing	Ivan	2998	Miami
+20	Sales	Gaston	3250	Pune
+20	Sales	Kumiko	3729	Chicago
+30	Marketing	Leslie	3967	Washington
+20	Sales	Dean	2593	Los Angeles
+30	Marketing	Leslie	3088	Los Angeles
+40	HR	Gustav	3697	Austin
+10	Accounts	Rafael	3236	Pune
+10	Accounts	Miwa	3395	Austin
+10	Accounts	Sam	3920	Miami
+20	Sales	Sebastien	2254	New York
+30	Marketing	Nanaho	2332	Hyderabad
+10	Accounts	Franklin	2322	Pune
+10	Accounts	Omar	3718	Los Angeles
+10	Accounts	Teresa	2783	Delhi
+20	Sales	Cindy	2870	New York
+30	Marketing	Barry	2045	Miami
+30	Marketing	Karl	2519	Chicago
+20	Sales	Naoko	2885	Delhi
+20	Sales	Lisa	2714	Washington
+20	Sales	Karl	2030	Boston
+20	Sales	Gordon	3825	Kolkata
+20	Sales	Vicky	2189	Los Angeles
+40	HR	Michael	3921	Washington
+40	HR	Frances	2783	Boston
+40	HR	Juan	3711	Chandigarh
+30	Marketing	Harvey	2362	Mumbai
+10	Accounts	Valerie	3361	Chandigarh
+10	Accounts	Lili	3694	Miami
+20	Sales	Kirk	3446	Hyderabad
+40	HR	Miharu	3347	Houston
+10	Accounts	Mieko	2806	Chicago
+40	HR	Lili	2230	Chennai
+30	Marketing	Kazuko	2085	Chennai
+10	Accounts	Valerie	3021	Hyderabad
+10	Accounts	Arlene	2321	Austin
+10	Accounts	Joyce	2485	Houston
+40	HR	Nana	3837	Mumbai
+40	HR	Wanda	3968	Pune
+10	Accounts	Hermine	2511	Chandigarh
+20	Sales	Omar	3055	Washington
+30	Marketing	Ernesto	2984	Kolkata
+30	Marketing	Henri	3306	Pune
+10	Accounts	Emily	2136	Chicago
+30	Marketing	Charley	3684	Chicago
+20	Sales	Dolly	3843	Austin
+20	Sales	Bonnie	2049	Pune
+30	Marketing	Jeanne	3078	Washington
+20	Sales	Tanya	2420	Boston
+30	Marketing	Leslie	2810	Delhi
+30	Marketing	Nanaho	3843	Houston
+30	Marketing	Wendy	2667	Kolkata
+10	Accounts	Teddy	3991	Austin
+20	Sales	Stan	2906	Chennai
+10	Accounts	Barry	2895	Denver
+20	Sales	Itoe	2185	Hyderabad
+40	HR	Kaori	3404	Kolkata
+20	Sales	Wilma	2411	Boston
+20	Sales	Patty	2523	New York
+20	Sales	Helene	3924	Hyderabad
+20	Sales	Jeanne	3494	Chicago
+30	Marketing	Frances	2086	Washington
+20	Sales	Karl	2282	Houston
+10	Accounts	Karl	3681	Boston
+10	Accounts	Virginie	3110	Los Angeles
+10	Accounts	Sam	3550	Chicago
+10	Accounts	Beryl	3463	Delhi
+30	Marketing	Wendy	2524	Hyderabad
+40	HR	Nate	3648	Denver
+30	Marketing	Josephine	2951	Chandigarh
+20	Sales	Sandy	2322	Miami
+20	Sales	Karen	3045	Boston
+10	Accounts	Sebastien	2537	Los Angeles
+10	Accounts	Lorenzo	3429	Chennai
+10	Accounts	Nana	2965	New York
+40	HR	Isidore	2488	Miami
+20	Sales	Miwa	3913	Boston
+10	Accounts	Jeanne	2569	Boston
+30	Marketing	Etsuko	2294	Kolkata
+30	Marketing	Marco	3974	Boston
+30	Marketing	Itoe	3074	Chandigarh
+40	HR	Paula	3684	Washington
+20	Sales	Jose	3975	Washington
+30	Marketing	Michael	2839	Kolkata
+10	Accounts	Tanya	2894	Chennai
+10	Accounts	Sandy	2665	New York
+20	Sales	Sachiko	3014	Washington
+10	Accounts	Miyako	3664	New York
+40	HR	Kate	3535	Austin
+40	HR	Sebastien	3061	Houston
+30	Marketing	Gordon	3720	Mumbai
+40	HR	Lili	3168	Chandigarh
+40	HR	Barry	2491	Chandigarh
+40	HR	Kaori	3265	Houston
+20	Sales	Victor	3737	Mumbai
+40	HR	Gabielle	3809	Chandigarh
+20	Sales	Lee	3278	New York
+30	Marketing	Bill	3090	Kolkata
+20	Sales	Grace	2632	Houston
+20	Sales	Josephine	2639	New York
+20	Sales	Gabielle	2056	Chennai
+30	Marketing	Wilma	3529	Washington
+20	Sales	Erin	3395	Chicago
+30	Marketing	Rafael	2983	Denver
+40	HR	Ernesto	3429	Boston
+10	Accounts	Philippe	2030	Mumbai
+20	Sales	Miharu	2657	Kolkata
+10	Accounts	Cindy	3311	New York
+30	Marketing	Arlene	2266	Pune
+20	Sales	Franklin	3106	Kolkata
+30	Marketing	Isabel	2457	Chicago
+30	Marketing	Gert	3469	Kolkata
+30	Marketing	Dennis	2598	Pune
+40	HR	Claudette	2271	Chicago
+20	Sales	Humberto	3885	Denver
+20	Sales	Junko	2605	Houston
+40	HR	Omar	2561	Mumbai
+20	Sales	Bill	2203	Los Angeles
+10	Accounts	Akane	2180	Denver
+40	HR	Marco	3735	Pune
+40	HR	Sayuri	2932	Chandigarh
+20	Sales	Danny	2757	Delhi
+20	Sales	Debby	2310	Pune
+40	HR	Nadine	2165	Hyderabad
+20	Sales	Oscar	3371	Los Angeles
+30	Marketing	Teresa	2613	Miami
+10	Accounts	Hitomi	3942	Mumbai
+30	Marketing	Alberto	3675	Washington
+40	HR	Rie	3182	Chandigarh
+40	HR	Cindy	3451	Mumbai
+20	Sales	Van	3585	Washington
+30	Marketing	Ernesto	2623	Kolkata
+40	HR	Odette	2056	Chicago
+30	Marketing	Nana	3975	Chicago
+20	Sales	Isidore	2084	Delhi
+20	Sales	Omar	3609	Chicago
+30	Marketing	Wanda	3881	Mumbai
+10	Accounts	Sachiko	2806	New York
+40	HR	Gaston	2971	Delhi
+20	Sales	Paloma	3472	Pune
+10	Accounts	Edouard	2393	Chennai
+40	HR	Mieko	3186	Delhi
+10	Accounts	Fabian	2928	Austin
+10	Accounts	Juan	2399	New York
+20	Sales	Miwa	2566	Austin
+30	Marketing	Naoko	2039	Chandigarh
+20	Sales	Charley	2212	Pune
+10	Accounts	Maria	3814	Washington
+20	Sales	Ana	3229	Denver
+40	HR	Sachiko	2545	Denver
+30	Marketing	Tony	2926	Chennai
+30	Marketing	Nicole	2464	Miami
+30	Marketing	Gabielle	2092	Mumbai
+10	Accounts	Nicholas	2711	Kolkata
+40	HR	Rafael	2551	Pune
+10	Accounts	Omar	3400	Miami
+10	Accounts	Odette	3012	Houston
+30	Marketing	Pablo	3758	Houston
+40	HR	Emi	3064	Austin
+10	Accounts	Sebastien	2468	Kolkata
+10	Accounts	Reina	3468	Mumbai
+10	Accounts	Florence	3593	Chandigarh
+10	Accounts	Emi	2089	Los Angeles
+20	Sales	Gordon	2532	Mumbai
+30	Marketing	Nicole	2142	Pune
+10	Accounts	Harvey	2944	Miami
+10	Accounts	Nanaho	2133	Chandigarh
+20	Sales	Alex	3670	Chennai
+10	Accounts	Victor	2743	Houston
+10	Accounts	Beryl	2631	Hyderabad
+10	Accounts	Joyce	2054	Delhi
+20	Sales	Richard	3894	Hyderabad
+40	HR	Yumi	2993	Los Angeles
+40	HR	Michiyo	2427	Washington
+30	Marketing	Victor	2414	Houston
+40	HR	Gordon	2011	Austin
+10	Accounts	Sandy	2103	New York
+10	Accounts	Alex	2600	Washington
+20	Sales	Ana	3674	Washington
+40	HR	Valerie	2889	Denver
+40	HR	Gordon	2065	Denver
+40	HR	Miharu	2638	Kolkata
+30	Marketing	Philippe	2803	Chandigarh
+20	Sales	Joyce	2881	Boston
+10	Accounts	Alberto	2236	Chandigarh
+40	HR	Rafael	2638	Hyderabad
+20	Sales	Kaori	3763	Denver
+20	Sales	Fabian	2766	Mumbai
+40	HR	Oscar	3450	Delhi
+40	HR	Tammy	3284	Houston
+30	Marketing	Irene	2238	Kolkata
+10	Accounts	Hanna	2639	Chicago
+30	Marketing	Ivan	3820	Miami
+20	Sales	Gaston	3665	Pune
+20	Sales	Kumiko	3275	Chicago
+30	Marketing	Leslie	3704	Washington
+20	Sales	Dean	2430	Los Angeles
+30	Marketing	Leslie	3960	Los Angeles
+Time taken: 0.922 seconds, Fetched: 604 row(s)
+hive> 
+    > 
+    > 
+    > select * from ${hiveconf:new_table};[9G[Kt new_table;[20G[K= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[7G[Kuse d2;[7G[Kshow databases;[7G[Kuse d2;[7G[Kset hive.variable.sustitute = true;
+hive> set hive.variable.sustitute = true;[9G[Klect * from ${hiveconf:new_table};[9G[Kt new_table;[20G[K= ${hiveconf:table};[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[7G[Kuse d2;[7G[Kset hive.variable.sustitute = true;[11G[Ktable = table13;
+hive> set table = table13;[7G[Kset new_table= table;
+hive> set new_table;
+new_table=table
+hive> select * from ta[22G[K[21G[Knew_table
+    > ;
+FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'new_table'
+hive> 
+    > 
+    > 
+    > set hiv[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[Kst[8G[Ket table = table [24G[K2[24G[K13;
+hive> set new [14G[K_table = $(hiveconf:table);
+hive> set new_table;
+new_table=$(hiveconf:table)
+hive> set new_tal[17G[Kble;
+new_table=$(hiveconf:table)
+hive> set new_table;[20G[K = $(hiveconf:table);[11G[Ktable = table13;[7G[K;[7G[Kselect * from new_table[9G[Kt new_table;[20G[K= table;[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[9G[Klect * from ${hiveconf:new_table};[9G[Kt hive.variable.sustitute = true;
+hive> set table = talb[22G[K[21G[Kble13;
+hive> set new_table = $(hiveconf: table);
+hive> set new_table;
+new_table=$(hiveconf: table)
+hive> select ([14G[K* from $ [22G[K(hive [27G[Kdonf[30G[K[29G[K[28G[K[27G[Kconf: new_table);
+NoViableAltException(16@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.joinSource(HiveParser_FromClauseParser.java:1808)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.fromClause(HiveParser_FromClauseParser.java:1478)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.fromClause(HiveParser.java:44339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41508)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:14 cannot recognize input near '$' '(' 'hiveconf' in join source
+hive> select * from $(hiveconf: new_table);[43G[42G[41G[40G[39G[38G[37G[36G[35G[34G[33G[32Gnew_table);[K[32G[43G
+NoViableAltException(16@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.joinSource(HiveParser_FromClauseParser.java:1808)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.fromClause(HiveParser_FromClauseParser.java:1478)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.fromClause(HiveParser.java:44339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41508)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:14 cannot recognize input near '$' '(' 'hiveconf' in join source
+hive> select * from $(hiveconf:new_table);[32G[K new_table);[9G[Kt new_table;[20G[K = $(hiveconf: table);[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[11G[Knew_table;[11G[Khive.variable.sustitute = true;[11G[Ktable = table13;[11G[Knew_table = $(hiveconf: table);[20G[K;[9G[Klect * from $(hiveconf: new_table);[32G[Knew_table);[7G[K
+    > 
+    > 
+    > 
+    > 
+    > 
+    > select * from $(hiveconf:new_table);[32G[K new_table);[9G[Kt new_table;[20G[K = $(hiveconf: table);[11G[Ktable = table13;[11G[Knew_table = $(hiveconf: table);[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;
+hive> set hive.variable.sustitute = true;[9G[Klect * from $(hiveconf:new_table);[32G[K new_table);[9G[Kt new_table;[20G[K = $(hiveconf: table);[11G[Ktable = table13;
+hive> set table = table13;[11G[Khive.variable.sustitute = true;[9G[Klect * from $(hiveconf:new_table);[42G[41G[40G);[K[40G[39G);[K[39G[38G);[K[38G[37G);[K[37G[36G);[K[36G[35G);[K[35G[34G);[K[34G[33G);[K[33G[32G);[K[32Gt);[33Ga);[34G[33G);[K[33G[32G);[K[32G[31G);[K[31G[30G);[K[30G[29G);[K[29G[28G);[K[28G[27G);[K[27G[26G);[K[26G[25G);[K[25G[24G);[K[24G[23G);[K[23G[22G);[K[22G[21G);[K[21G[20G);[K[20G[19G);[K[19G[18G);[K[18G[17G);[K[17G[16G);[K[16G[15G);[K[15G[14G);[K[14G[13G);[K[13G[12G);[K[12G[11G);[K[11G[10G);[K[10G[9G);[K[9G[8G);[K[8G[7G);[K[7G[Kselect * from $(hiveconf: new_table);[9G[Kt new_table;[20G[K = $(hiveconf: table);[41G[40G[39G[38G[37G[36G[35G[34Gtable);[K[34G[33G[32G[31G[30G[29G[28G[27G[26G[25G[24G[23G[24G<(hiveconf:table);[25G[24G(hiveconf:table);[K[24G[23G[22G$(hiveconf:table);[K[22G[40G
+hive> set new_table =$(hiveconf:table);[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[9G[Klect * from $(hiveconf:new_table);[32G[K new_table);[9G[Kt new_table;
+new_table=$(hiveconf:table)
+hive> set new_table;[20G[K =$(hiveconf:table);[11G[Ktable = table13;[11G[Knew_table =$(hiveconf:table);[20G[K;[7G[Kset new_table;[20G[K =$(hiveconf:table);[11G[Ktable = table13;[11G[Khive.variable.sustitute = true;[9G[Klect * from $(hiveconf:new_table);[32G[K new_table);[9G[Kt new_table;[9G[Klect * from $(hiveconf: new_table);[32G[Knew_table);[32G[K new_table);
+NoViableAltException(16@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.joinSource(HiveParser_FromClauseParser.java:1808)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_FromClauseParser.fromClause(HiveParser_FromClauseParser.java:1478)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.fromClause(HiveParser.java:44339)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.singleSelectStatement(HiveParser.java:41508)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:41193)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.regularBody(HiveParser.java:41130)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpressionBody(HiveParser.java:40183)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.queryStatementExpression(HiveParser.java:40059)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:1519)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1057)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:393)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:307)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1110)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1158)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1047)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1037)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:207)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:159)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:370)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:756)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:14 cannot recognize input near '$' '(' 'hiveconf' in join source
+hive> 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    > quit;
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ exit
+exit
+There are stopped jobs.
+]0;cloudera@quickstart:~[cloudera@quickstart ~]$ es[Kxit
+exit
+
+Script done on Sun 22 Mar 2020 07:26:27 PM PDT
