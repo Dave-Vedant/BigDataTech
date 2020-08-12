@@ -21,12 +21,13 @@ object popularSuperHero {
   
   def main(args: Array[String]){
     Logger.getLogger("org").setLevel(Level.ERROR)
+   
+    
     val sc = new SparkContext("local[*]", "MostPopularSuperHero")
     val names = sc.textFile("../Marvel-names.txt")
     val namesRdd = names.flatMap(parseNames)
     
-    val lines = sc.textFile("../Marvel-graph.txt")
-    
+    val lines = sc.textFile("../Marvel-graph.txt")    
     val pairings = lines.map(coOccurances)
     val totalFriendsByCharacter = pairings.reduceByKey((x,y) => x+y)
     val flipped = totalFriendsByCharacter.map(x=>(x._2,x._1))
