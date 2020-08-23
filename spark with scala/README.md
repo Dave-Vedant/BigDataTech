@@ -13,3 +13,9 @@ AWS (EMR instance for spark cluster)
  4. MLlib for Spark
  5. GraphX for Spark
  6. Spark Streaming Application (twitter real time analysis)
+
+### Projects:
+* Movie Lense Analysis
+* Friends Average
+* Word Count
+* Max/Min Temperature
